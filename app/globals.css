@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  /* Deep forest green — primary brand color */
+  --color-forest-50: #eef7f2;
+  --color-forest-100: #d5ebdd;
+  --color-forest-200: #aed6bf;
+  --color-forest-300: #7fbc9c;
+  --color-forest-400: #4f9d76;
+  --color-forest-500: #1a5c38;
+  --color-forest-600: #14532d;
+  --color-forest-700: #0f3d2e;
+  --color-forest-800: #0d3527;
+  --color-forest-900: #092b1f;
+  --color-forest-950: #061f16;
+
+  /* Saffron orange — secondary / accent color */
+  --color-saffron-50: #fef4ec;
+  --color-saffron-100: #fde3cc;
+  --color-saffron-200: #fac89a;
+  --color-saffron-300: #f7a862;
+  --color-saffron-400: #f48e3d;
+  --color-saffron-500: #f1731f;
+  --color-saffron-600: #d95f10;
+  --color-saffron-700: #b44a0e;
+
+  --color-whatsapp: #25d366;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-gray-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hero slider pagination dots */
+.hero-swiper .swiper-pagination {
+  bottom: 5.5rem !important;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  opacity: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: var(--color-saffron-500);
+  transform: scale(1.1);
+}
