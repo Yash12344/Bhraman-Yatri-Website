@@ -11,15 +11,15 @@ export function EnquirySection() {
           <div className="grid overflow-hidden rounded-3xl bg-neutral-100 shadow-[0_16px_40px_-20px_rgba(0,0,0,0.25)] lg:grid-cols-[333px_1fr]">
             <div className="relative px-7 py-9">
               <Image
-                src="/images/enquiry-mountain-range.jpg"
+                src="/site-images/general/enquiry-form-background.jpg"
                 alt="Faded mountain range backdrop"
                 fill
                 sizes="(max-width: 1024px) 100vw, 333px"
-                className="object-cover opacity-60"
+                className="object-cover object-bottom opacity-45"
               />
               <div
                 aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-b from-white/55 via-white/35 to-white/55"
+                className="absolute inset-0 bg-gradient-to-b from-neutral-100 via-neutral-100/80 to-neutral-100/10"
               />
               <div className="relative">
                 <h2

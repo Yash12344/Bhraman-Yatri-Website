@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Discover India's most beautiful treks with Bhraman Yatri. Expert guides, small groups and best prices across the Himalayas.",
     images: [
       {
-        url: "/images/hero-himalayan-trekker.jpg",
+        url: "/site-images/hero/slide-1-explore-beyond-limits.jpg",
         width: 1920,
         height: 1080,
         alt: "A trekker facing snow-covered Himalayan peaks",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Bhraman Yatri — Explore Beyond Limits",
     description:
       "Discover India's most beautiful treks with Bhraman Yatri. Expert guides, small groups and best prices.",
-    images: ["/images/hero-himalayan-trekker.jpg"],
+    images: ["/site-images/hero/slide-1-explore-beyond-limits.jpg"],
   },
   robots: { index: true, follow: true },
 };
