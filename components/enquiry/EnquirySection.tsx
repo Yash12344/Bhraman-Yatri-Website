@@ -8,7 +8,7 @@ export function EnquirySection() {
     <section id="enquiry" aria-labelledby="enquiry-heading" className="pb-10">
       <Container>
         <FadeIn>
-          <div className="grid overflow-hidden rounded-3xl bg-gray-100 shadow-[0_16px_40px_-20px_rgba(0,0,0,0.25)] lg:grid-cols-[333px_1fr]">
+          <div className="grid overflow-hidden rounded-3xl bg-neutral-100 shadow-[0_16px_40px_-20px_rgba(0,0,0,0.25)] lg:grid-cols-[333px_1fr]">
             <div className="relative px-7 py-9">
               <Image
                 src="/images/enquiry-mountain-range.jpg"
@@ -33,7 +33,7 @@ export function EnquirySection() {
                 </p>
               </div>
             </div>
-            <div className="bg-gray-100 px-6 py-4">
+            <div className="bg-neutral-100 px-6 py-4">
               <EnquiryForm />
             </div>
           </div>

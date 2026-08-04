@@ -5,18 +5,20 @@
 }
 
 @theme {
-  /* Deep forest green — primary brand color */
-  --color-forest-50: #eef7f2;
-  --color-forest-100: #d5ebdd;
-  --color-forest-200: #aed6bf;
-  --color-forest-300: #7fbc9c;
-  --color-forest-400: #4f9d76;
-  --color-forest-500: #1a5c38;
-  --color-forest-600: #14532d;
-  --color-forest-700: #0f3d2e;
-  --color-forest-800: #0d3527;
-  --color-forest-900: #092b1f;
-  --color-forest-950: #061f16;
+  /* Deep forest green — primary brand color.
+     forest-800 is the single brand dark used by the top bar, footer,
+     winter season header and dark buttons; they are one green. */
+  --color-forest-50: #eff6f2;
+  --color-forest-100: #d6e9e0;
+  --color-forest-200: #add3c1;
+  --color-forest-300: #7eb99e;
+  --color-forest-400: #4e9a79;
+  --color-forest-500: #1e6b4c;
+  --color-forest-600: #17573d;
+  --color-forest-700: #134a34;
+  --color-forest-800: #0f3d2e;
+  --color-forest-900: #0a2b20;
+  --color-forest-950: #061c15;
 
   /* Saffron orange — secondary / accent color */
   --color-saffron-50: #fef4ec;

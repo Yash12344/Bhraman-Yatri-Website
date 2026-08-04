@@ -27,7 +27,7 @@ function SearchSelectField({
   return (
     <div
       className={cn(
-        "flex items-center gap-3 lg:border-l lg:border-gray-200 lg:pl-6",
+        "flex items-center gap-3 lg:border-l lg:border-neutral-200 lg:pl-6",
         className
       )}
     >
@@ -72,7 +72,7 @@ export function SearchBar() {
         className="flex flex-col gap-5 rounded-2xl bg-white px-6 py-6 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.25)] lg:h-24 lg:flex-row lg:items-center lg:gap-6 lg:py-7"
       >
         <div className="flex flex-[1.47] items-center gap-3">
-          <span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-gray-200 text-forest-700">
+          <span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-neutral-200 text-forest-700">
             <MapPin aria-hidden="true" className="size-5" />
           </span>
           <div className="w-full">

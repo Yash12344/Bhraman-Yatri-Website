@@ -54,7 +54,7 @@ export function PopularTreks() {
             type="button"
             aria-label="Previous treks"
             onClick={() => swiperRef.current?.slidePrev()}
-            className="absolute -left-2 top-1/2 z-10 flex size-8 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 min-[1380px]:-left-11"
+            className="absolute -left-2 top-1/2 z-10 flex size-8 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 min-[1380px]:-left-11"
           >
             <ChevronLeft aria-hidden="true" className="size-4" />
           </button>
@@ -62,7 +62,7 @@ export function PopularTreks() {
             type="button"
             aria-label="Next treks"
             onClick={() => swiperRef.current?.slideNext()}
-            className="absolute -right-2 top-1/2 z-10 flex size-8 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 min-[1380px]:-right-11"
+            className="absolute -right-2 top-1/2 z-10 flex size-8 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 min-[1380px]:-right-11"
           >
             <ChevronRight aria-hidden="true" className="size-4" />
           </button>

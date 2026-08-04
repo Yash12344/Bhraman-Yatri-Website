@@ -49,7 +49,7 @@ export function Navbar() {
                 )}
               </Link>
               {link.children && (
-                <ul className="invisible absolute left-1/2 top-full z-50 w-60 -translate-x-1/2 translate-y-2 rounded-xl border border-gray-100 bg-white p-2 opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                <ul className="invisible absolute left-1/2 top-full z-50 w-60 -translate-x-1/2 translate-y-2 rounded-xl border border-neutral-100 bg-white p-2 opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                   {link.children.map((child) => (
                     <li key={child.label}>
                       <Link
@@ -78,7 +78,7 @@ export function Navbar() {
             aria-expanded={isMobileOpen}
             aria-controls="mobile-menu"
             onClick={() => setIsMobileOpen((open) => !open)}
-            className="flex size-10 items-center justify-center rounded-lg text-forest-800 transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 lg:hidden"
+            className="flex size-10 items-center justify-center rounded-lg text-forest-800 transition-colors hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 lg:hidden"
           >
             {isMobileOpen ? (
               <X aria-hidden="true" className="size-6" />
@@ -93,7 +93,7 @@ export function Navbar() {
       <div
         id="mobile-menu"
         className={cn(
-          "overflow-hidden border-t border-gray-100 bg-white transition-all duration-300 lg:hidden",
+          "overflow-hidden border-t border-neutral-100 bg-white transition-all duration-300 lg:hidden",
           isMobileOpen ? "max-h-[480px]" : "max-h-0 border-t-0"
         )}
       >

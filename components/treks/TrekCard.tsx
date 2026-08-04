@@ -11,7 +11,7 @@ interface TrekCardProps {
 
 export function TrekCard({ trek }: TrekCardProps) {
   return (
-    <article className="group h-full overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_10px_30px_-14px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-16px_rgba(0,0,0,0.3)]">
+    <article className="group h-full overflow-hidden rounded-2xl border border-neutral-100 bg-white shadow-[0_10px_30px_-14px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-16px_rgba(0,0,0,0.3)]">
       <div className="relative h-[143px] overflow-hidden">
         <Image
           src={trek.image}

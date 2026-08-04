@@ -15,7 +15,7 @@ export function SeasonCard({ season }: SeasonCardProps) {
   const treks = season.trekIds.map(getTrekById);
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_10px_30px_-14px_rgba(0,0,0,0.18)] transition-shadow duration-300 hover:shadow-[0_18px_40px_-16px_rgba(0,0,0,0.28)]">
+    <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-100 bg-white shadow-[0_10px_30px_-14px_rgba(0,0,0,0.18)] transition-shadow duration-300 hover:shadow-[0_18px_40px_-16px_rgba(0,0,0,0.28)]">
       <h3
         className={cn(
           "flex h-[46px] shrink-0 items-center justify-center gap-2 text-[15px] font-bold uppercase tracking-wide text-white",
@@ -46,7 +46,7 @@ export function SeasonCard({ season }: SeasonCardProps) {
 
       <Link
         href={season.viewAllHref}
-        className="flex h-[35px] shrink-0 items-center justify-center gap-1 border-t border-gray-100 bg-gray-50 text-sm font-semibold uppercase tracking-wide text-gray-900 transition-colors hover:text-saffron-500"
+        className="flex h-[35px] shrink-0 items-center justify-center gap-1 border-t border-neutral-100 bg-neutral-50 text-sm font-semibold uppercase tracking-wide text-gray-900 transition-colors hover:text-saffron-500"
       >
         {season.viewAllLabel}
         <ChevronRight aria-hidden="true" className="size-4" />
