@@ -51,21 +51,21 @@ export function Hero() {
                 <Container>
                   <div className="max-w-2xl pb-10 lg:pb-14">
                     {index === 0 ? (
-                      <h1 className="text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                      <h1 className="text-5xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-6xl lg:text-7xl">
                         {slide.titleTop}
                         <span className="block text-saffron-500">
                           {slide.titleHighlight}
                         </span>
                       </h1>
                     ) : (
-                      <p className="text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                      <p className="text-5xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-6xl lg:text-7xl">
                         {slide.titleTop}
                         <span className="block text-saffron-500">
                           {slide.titleHighlight}
                         </span>
                       </p>
                     )}
-                    <p className="mt-5 max-w-md text-base text-white/90 sm:text-lg">
+                    <p className="mt-5 max-w-md text-[18px] leading-[1.3] text-white/90 sm:text-[20px] lg:text-[22px]">
                       {slide.subtitle}
                     </p>
                     <div className="mt-8 flex flex-wrap items-center gap-4">

@@ -42,7 +42,7 @@ export function Logo({ variant = "dark", size = "md", className }: LogoProps) {
       <span className="flex flex-col">
         <span
           className={cn(
-            "text-lg font-bold leading-tight tracking-wide uppercase md:text-xl",
+            "text-xl font-bold leading-tight tracking-wide uppercase lg:text-2xl",
             variant === "dark" ? "text-forest-800" : "text-white"
           )}
         >

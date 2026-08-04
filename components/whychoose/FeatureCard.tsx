@@ -18,7 +18,7 @@ export function FeatureCard({ feature }: FeatureCardProps) {
         <h3 className="text-[15px] font-semibold leading-tight text-gray-900">
           {feature.title}
         </h3>
-        <p className="mt-1 text-xs leading-snug text-gray-500">
+        <p className="mt-1 text-xs leading-normal text-gray-500">
           {feature.description}
         </p>
       </div>

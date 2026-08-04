@@ -38,7 +38,7 @@ export function Navbar() {
             <li key={link.label} className={cn(link.children && "group relative")}>
               <Link
                 href={link.href}
-                className="flex items-center gap-1 text-[15px] font-medium text-gray-800 transition-colors hover:text-saffron-500"
+                className="flex items-center gap-1 text-base font-medium text-gray-800 transition-colors hover:text-saffron-500"
               >
                 {link.label}
                 {link.children && (

@@ -27,7 +27,7 @@ export function TrekCard({ trek }: TrekCardProps) {
         )}
       </div>
       <div className="px-4 pb-3 pt-3.5">
-        <h3 className="text-[15px] font-semibold text-gray-900">{trek.name}</h3>
+        <h3 className="text-base font-semibold text-gray-900">{trek.name}</h3>
         <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
           <span className="flex items-center gap-1">
             <Clock aria-hidden="true" className="size-3.5" />
