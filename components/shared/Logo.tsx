@@ -3,10 +3,12 @@ import { cn } from "@/lib/utils";
 
 interface LogoProps {
   variant?: "dark" | "light";
+  /** "md" is the navbar mark; "sm" is the smaller footer mark. */
+  size?: "sm" | "md";
   className?: string;
 }
 
-export function Logo({ variant = "dark", className }: LogoProps) {
+export function Logo({ variant = "dark", size = "md", className }: LogoProps) {
   return (
     <Link
       href="#home"
@@ -16,7 +18,10 @@ export function Logo({ variant = "dark", className }: LogoProps) {
       <svg
         viewBox="0 0 48 48"
         aria-hidden="true"
-        className="size-11 shrink-0 md:size-12"
+        className={cn(
+          "shrink-0",
+          size === "sm" ? "size-11" : "size-12 lg:size-14"
+        )}
       >
         <circle cx="26" cy="18" r="13" fill="var(--color-saffron-500)" />
         <path

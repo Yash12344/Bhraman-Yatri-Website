@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperInstance } from "swiper";
+import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { TrekCard } from "@/components/treks/TrekCard";
@@ -18,21 +19,21 @@ export function PopularTreks() {
     <section
       id="popular-treks"
       aria-labelledby="popular-treks-heading"
-      className="py-16"
+      className="pb-9 pt-11"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <Container>
         <FadeIn>
           <div id="popular-treks-heading">
             <SectionHeading title="Popular Treks" />
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.1} className="relative mt-10">
+        <FadeIn delay={0.1} className="relative mt-3.5">
           <Swiper
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
-            spaceBetween={24}
+            spaceBetween={36}
             slidesPerView={1.15}
             breakpoints={{
               540: { slidesPerView: 2 },
@@ -53,20 +54,20 @@ export function PopularTreks() {
             type="button"
             aria-label="Previous treks"
             onClick={() => swiperRef.current?.slidePrev()}
-            className="absolute -left-4 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 lg:-left-5"
+            className="absolute -left-2 top-1/2 z-10 flex size-8 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 min-[1380px]:-left-11"
           >
-            <ChevronLeft aria-hidden="true" className="size-5" />
+            <ChevronLeft aria-hidden="true" className="size-4" />
           </button>
           <button
             type="button"
             aria-label="Next treks"
             onClick={() => swiperRef.current?.slideNext()}
-            className="absolute -right-4 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 lg:-right-5"
+            className="absolute -right-2 top-1/2 z-10 flex size-8 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-md transition-colors hover:bg-forest-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 min-[1380px]:-right-11"
           >
-            <ChevronRight aria-hidden="true" className="size-5" />
+            <ChevronRight aria-hidden="true" className="size-4" />
           </button>
         </FadeIn>
-      </div>
+      </Container>
     </section>
   );
 }

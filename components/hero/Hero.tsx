@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import type { Swiper as SwiperInstance } from "swiper";
 import { Button } from "@/components/ui/button";
+import { Container } from "@/components/shared/Container";
 import { WhatsAppIcon } from "@/components/shared/WhatsAppIcon";
 import { HERO_SLIDES, SITE } from "@/lib/data";
 
@@ -21,7 +22,7 @@ export function Hero() {
     <section id="home" aria-label="Featured treks" className="relative">
       <Swiper
         modules={[Autoplay, Pagination]}
-        className="hero-swiper h-[560px] md:h-[600px] lg:h-[640px]"
+        className="hero-swiper h-[440px] md:h-[500px] lg:h-[570px]"
         slidesPerView={1}
         loop
         speed={800}
@@ -47,8 +48,8 @@ export function Hero() {
                 className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/10"
               />
               <div className="absolute inset-0 flex items-center">
-                <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <div className="max-w-2xl pb-16">
+                <Container>
+                  <div className="max-w-2xl pb-10 lg:pb-14">
                     {index === 0 ? (
                       <h1 className="text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
                         {slide.titleTop}
@@ -85,7 +86,7 @@ export function Hero() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </Container>
               </div>
             </div>
           </SwiperSlide>
@@ -96,7 +97,7 @@ export function Hero() {
         type="button"
         aria-label="Previous slide"
         onClick={() => swiperRef.current?.slidePrev()}
-        className="absolute left-3 top-1/2 z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/80 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex"
+        className="absolute left-4 top-[43.5%] z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/80 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex lg:left-8"
       >
         <ChevronLeft aria-hidden="true" className="size-8" />
       </button>
@@ -104,7 +105,7 @@ export function Hero() {
         type="button"
         aria-label="Next slide"
         onClick={() => swiperRef.current?.slideNext()}
-        className="absolute right-3 top-1/2 z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/80 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex"
+        className="absolute right-4 top-[43.5%] z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/80 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex lg:right-8"
       >
         <ChevronRight aria-hidden="true" className="size-8" />
       </button>

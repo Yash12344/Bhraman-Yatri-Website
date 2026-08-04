@@ -1,4 +1,5 @@
 import { Mail, Phone } from "lucide-react";
+import { Container } from "@/components/shared/Container";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -15,7 +16,7 @@ const socialIcons = {
 export function TopBar() {
   return (
     <div className="bg-forest-800 text-white">
-      <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 text-xs sm:px-6 lg:px-8">
+      <Container className="flex h-[42px] items-center justify-between text-xs">
         <div className="flex items-center gap-5">
           <a
             href={`mailto:${SITE.email}`}
@@ -45,12 +46,12 @@ export function TopBar() {
                 aria-label={`Follow Bhraman Yatri on ${social.label}`}
                 className="transition-colors hover:text-saffron-300"
               >
-                <Icon aria-hidden="true" className="size-3.5" />
+                <Icon className="size-3.5" />
               </a>
             );
           })}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

@@ -43,8 +43,15 @@ body {
 }
 
 /* Hero slider pagination dots */
+/* Dots clear the hero buttons above and the floating search card below. */
 .hero-swiper .swiper-pagination {
-  bottom: 5.5rem !important;
+  bottom: 64px !important;
+}
+
+@media (min-width: 1024px) {
+  .hero-swiper .swiper-pagination {
+    bottom: 124px !important;
+  }
 }
 
 .hero-swiper .swiper-pagination-bullet {

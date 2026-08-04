@@ -1,19 +1,20 @@
 import Image from "next/image";
+import { Container } from "@/components/shared/Container";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { EnquiryForm } from "@/components/enquiry/EnquiryForm";
 
 export function EnquirySection() {
   return (
-    <section id="enquiry" aria-labelledby="enquiry-heading" className="pb-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="enquiry" aria-labelledby="enquiry-heading" className="pb-10">
+      <Container>
         <FadeIn>
-          <div className="grid overflow-hidden rounded-3xl bg-gray-100 shadow-[0_16px_40px_-20px_rgba(0,0,0,0.25)] lg:grid-cols-[280px_1fr]">
-            <div className="relative p-8">
+          <div className="grid overflow-hidden rounded-3xl bg-gray-100 shadow-[0_16px_40px_-20px_rgba(0,0,0,0.25)] lg:grid-cols-[333px_1fr]">
+            <div className="relative px-7 py-9">
               <Image
                 src="/images/enquiry-mountain-range.jpg"
                 alt="Faded mountain range backdrop"
                 fill
-                sizes="(max-width: 1024px) 100vw, 280px"
+                sizes="(max-width: 1024px) 100vw, 333px"
                 className="object-cover opacity-60"
               />
               <div
@@ -23,7 +24,7 @@ export function EnquirySection() {
               <div className="relative">
                 <h2
                   id="enquiry-heading"
-                  className="text-xl font-bold uppercase tracking-wide text-gray-900 md:text-2xl"
+                  className="text-xl font-bold uppercase tracking-wide text-gray-900"
                 >
                   Plan Your Adventure
                 </h2>
@@ -32,12 +33,12 @@ export function EnquirySection() {
                 </p>
               </div>
             </div>
-            <div className="bg-gray-100 p-6 md:p-8">
+            <div className="bg-gray-100 px-6 py-4">
               <EnquiryForm />
             </div>
           </div>
         </FadeIn>
-      </div>
+      </Container>
     </section>
   );
 }

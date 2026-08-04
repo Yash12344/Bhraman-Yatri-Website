@@ -85,7 +85,7 @@ export function EnquiryForm() {
       onSubmit={handleSubmit(onSubmit)}
       noValidate
       aria-label="Trek enquiry form"
-      className="grid grid-cols-1 gap-4 md:grid-cols-3"
+      className="grid grid-cols-1 items-start gap-x-6 gap-y-5 md:grid-cols-3"
     >
       <div>
         <label htmlFor="enquiry-name" className="sr-only">
@@ -176,7 +176,7 @@ export function EnquiryForm() {
         <FieldError id="enquiry-trek-error" message={errors.trek?.message} />
       </div>
 
-      <div className="md:col-span-2">
+      <div>
         <label htmlFor="enquiry-message" className="sr-only">
           Your Message
         </label>
@@ -186,14 +186,20 @@ export function EnquiryForm() {
           rows={3}
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? "enquiry-message-error" : undefined}
-          className={cn("min-h-24", errors.message && "border-red-400")}
+          className={cn("h-[66px]", errors.message && "border-red-400")}
           {...register("message")}
         />
         <FieldError id="enquiry-message-error" message={errors.message?.message} />
       </div>
 
-      <div className="flex justify-end md:col-span-3">
-        <Button type="submit" variant="primary" size="lg" disabled={isSubmitting}>
+      <div className="flex items-center">
+        <Button
+          type="submit"
+          variant="primary"
+          size="lg"
+          disabled={isSubmitting}
+          className="h-[42px] w-full"
+        >
           {isSubmitting ? "Submitting..." : "Submit Enquiry"}
         </Button>
       </div>

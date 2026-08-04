@@ -12,7 +12,7 @@ interface TrekCardProps {
 export function TrekCard({ trek }: TrekCardProps) {
   return (
     <article className="group h-full overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_10px_30px_-14px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-16px_rgba(0,0,0,0.3)]">
-      <div className="relative h-44 overflow-hidden">
+      <div className="relative h-[143px] overflow-hidden">
         <Image
           src={trek.image}
           alt={trek.imageAlt}
@@ -26,7 +26,7 @@ export function TrekCard({ trek }: TrekCardProps) {
           </span>
         )}
       </div>
-      <div className="p-4">
+      <div className="px-4 pb-3 pt-3.5">
         <h3 className="text-[15px] font-semibold text-gray-900">{trek.name}</h3>
         <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
           <span className="flex items-center gap-1">
@@ -47,8 +47,8 @@ export function TrekCard({ trek }: TrekCardProps) {
           </span>{" "}
           <span className="text-xs text-gray-400">/person</span>
         </p>
-        <Link href="#enquiry" className="mt-3 block">
-          <Button variant="dark" size="sm" className="w-full" tabIndex={-1}>
+        <Link href="#enquiry" className="mt-2.5 block">
+          <Button variant="dark" size="sm" className="h-8 w-full" tabIndex={-1}>
             View Details
             <span className="sr-only"> about {trek.name}</span>
           </Button>
