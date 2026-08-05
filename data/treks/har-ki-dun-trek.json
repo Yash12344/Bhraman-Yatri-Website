@@ -1,0 +1,305 @@
+{
+  "name": "Har Ki Dun Valley Trek",
+  "slug": "har-ki-dun-trek",
+  "duration": "6 Days",
+  "durationDays": 6,
+  "durationNights": null,
+  "price": [
+    {
+      "amount": 8999,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "From Dehradun",
+      "startingFrom": false,
+      "raw": "RS. 8,999/-"
+    },
+    {
+      "amount": 9499,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "From Haridwar/Rishikesh",
+      "startingFrom": false,
+      "raw": "RS. 9,499/-"
+    },
+    {
+      "amount": 10999,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "Delhi to Delhi",
+      "startingFrom": false,
+      "raw": "RS. 10,999/-"
+    }
+  ],
+  "region": "Uttarakhand",
+  "difficulty": "Moderate",
+  "altitude": "12,000 ft",
+  "trekDistance": "35 kms",
+  "bestSeason": "March to June & Oct to Nov",
+  "baseCamp": "Sankri",
+  "pickup": "Dehradun Railway Station",
+  "drop": "Dehradun Railway Station",
+  "nearestAirport": "Dehradun",
+  "railwayStation": "Dehradun",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    { "day": 1, "title": "Dehradun to Sankri", "detail": "195km/8-9 hrs" },
+    {
+      "day": 2,
+      "title": "Sankri to Seema via Gangad",
+      "detail": "Driver 19km/1.5hrs; Trek 5km/3-4hrs"
+    },
+    { "day": 3, "title": "Seema to Waterfall Camp", "detail": "Trek 6km/4-5hrs" },
+    {
+      "day": 4,
+      "title": "Waterfall Camp to Har Ki Dun Valley & Return",
+      "detail": "Trek : 12km / 6-7hrs"
+    },
+    {
+      "day": 5,
+      "title": "Waterfall Camp to Osla & Gangad to Sankri",
+      "detail": "Trek 10km/5-6 hrs; Drive 19km/2hrs"
+    },
+    { "day": 6, "title": "Sankri to Dehradun", "detail": "Drive 195km/9hrs" },
+    {
+      "day": 7,
+      "title": "Buffer day (if required)",
+      "detail": "Reserved for bad weather and roadblocks"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Dehradun to Sankri",
+      "altitude": "1,920 m",
+      "driveDistance": "~200 km",
+      "trekDistance": null,
+      "duration": "8-9 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Early morning departure from Dehradun. Drive via Mussoorie/Vikasnagar, Purola, and Mori, following the scenic Tons and Yamuna rivers into the Garhwal Himalayas."
+      ],
+      "notes": [
+        "Scenic mountain drive",
+        "Breakfast & lunch en route (own expense)",
+        "Arrival at Sankri by evening",
+        "Check-in at hotel/homestay",
+        "Trek briefing & equipment check",
+        "Dinner and overnight stay"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Sankri to Seema (via Gangad)",
+      "altitude": null,
+      "driveDistance": "19 km",
+      "trekDistance": "5 km",
+      "duration": "Drive ~1.5 hours; Trek 3-4 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Drive from Sankri to Gangad, then begin the trek to Seema village through forest trails and riverside paths."
+      ],
+      "notes": [
+        "Lunch en route",
+        "Arrival at Seema/Osla area",
+        "Dinner and overnight stay"
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Seema / Osla to Waterfall Camp",
+      "altitude": "~3,050 m",
+      "driveDistance": null,
+      "trekDistance": "~6 km",
+      "duration": "4–5 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "The trail follows the Har Ki Dun River, crossing wooden bridges, dense forests, and waterfalls."
+      ],
+      "notes": [
+        "Packed lunch en route",
+        "Arrival at Waterfall Camp",
+        "Evening acclimatization walk",
+        "Dinner and overnight stay in tents"
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Waterfall Camp to Har Ki Dun Valley / Maninda Tal & Return",
+      "altitude": "3,566 m",
+      "driveDistance": null,
+      "trekDistance": "12–14 km",
+      "duration": "6–7 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Early start for the most scenic day of the trek. Walk through alpine meadows and glacial streams to Har Ki Dun Valley."
+      ],
+      "notes": [
+        "Explore Har Ki Dun Valley",
+        "Optional hike to Maninda Tal (subject to weather & fitness)",
+        "Views of Swargarohini, Bandarpoonch, Black Peak & Jaundar Glacier",
+        "Packed lunch in the valley",
+        "Return trek to Waterfall Camp",
+        "Dinner and overnight stay"
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Waterfall Camp to Osla/Seema to Sankri",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": null,
+      "duration": null,
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [],
+      "notes": [
+        "Descend trek to Osla/Seema village",
+        "Drive back to Sankri",
+        "Check-in at homestay",
+        "Evening free for rest or local exploration",
+        "Dinner and overnight stay"
+      ]
+    },
+    {
+      "day": 6,
+      "title": "Sankri to Dehradun",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": null,
+      "duration": null,
+      "pickupPoint": null,
+      "dropPoint": "Dehradun",
+      "description": [],
+      "notes": [
+        "Early morning departure from Sankri",
+        "Scenic return drive via Mori & Mussoorie",
+        "Lunch en route",
+        "Arrival at Dehradun by evening (around 9:00 PM)"
+      ]
+    },
+    {
+      "day": 7,
+      "title": "Buffer Day (If Required) Reserved for bad weather and roadblocks",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": null,
+      "duration": null,
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [],
+      "notes": [
+        "Option A: Road open till Osla Village",
+        "Drive Sankri – Osla (24 km | ~2 hours)",
+        "Explore Osla village & visit Someshwar Mahadev Temple",
+        "Trek Osla – Waterfall Camp (5 km | ~3 hours)",
+        "Option B: Road open till Gangad only",
+        "Drive Sankri – Gangad (19 km)",
+        "Trek Gangad – Seema (5 km | 3–4 hours)"
+      ]
+    }
+  ],
+  "inclusions": [
+    "Transportation : Dehradun to Dehradun",
+    "Vegetarian Meals : All Meals as per menu from first day Dinner to last day Breakfast",
+    "Accomodation: Hotel, Homestay, Camping",
+    "Camping charges : Camping and forest permit fees for Indian Nationals",
+    "Trekking equipment : High quality tents (living tent– triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, Utensils",
+    "Safety equipment : First aid medical kit, oxygen cylinder, stretchers, rope",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff"
+  ],
+  "exclusions": [
+    "Food during road journey (Dehradun to Dehradun and return)",
+    "Personal clothing (jacket, shoes, winter clothes etc)",
+    "Personal trek gears (stick, poncho, headlight etc)",
+    "Taxes, travel insurance,",
+    "Any personal expense Anything apart from inclusion",
+    "Mules or Porter to carry personal luggage"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹400 to ₹500 per day per bag.",
+    "Ensure your backpack weighs up to 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [
+    "Rucksack (50-70 Ltr.)",
+    "Trekking Shoes (Ankle Shoes)",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Water Bottles",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Lunch Box",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+  ],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb.",
+    "Rental gear like jackets, shoes, trek poles, headlamps, ponchos, and more is available at Sankri basecamp market."
+  ],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Sankri to Sankri)",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own."
+    ]
+  },
+  "faqs": [],
+  "availableDates": null,
+  "source": {
+    "file": "HAR_KI_DUN_HIMALAYAN_AMBITION3.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "FAQs",
+      "Available Dates"
+    ],
+    "discrepancies": [
+      "Cover states \"5-6 DAYS\", Overview states \"6Days\", and the itinerary runs to Day 7 (a conditional buffer day). Duration recorded as the Overview value, \"6 Days\"; nights are not stated anywhere.",
+      "No price appears on the cover; the three fares are printed on the \"How to Book\" page.",
+      "Brief itinerary Day 4 gives trek as 12km/6-7hrs; the Day 4 page gives 12–14 km.",
+      "Brief itinerary Day 2 reads \"Driver 19km/1.5hrs\" (apparent typo for \"Drive\").",
+      "Day 5 and Day 6 pages give no distances or durations; the brief itinerary does.",
+      "Things to Carry note mentions \"the final day of the summit climb\", but this trek has no summit day.",
+      "Gallery page shows Kashmir Great Lakes photographs rather than Har Ki Dun."
+    ]
+  }
+}

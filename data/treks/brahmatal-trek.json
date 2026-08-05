@@ -1,0 +1,253 @@
+{
+  "name": "Brahmatal Trek",
+  "slug": "brahmatal-trek",
+  "duration": "6 Days/5 Nights",
+  "durationDays": 6,
+  "durationNights": 5,
+  "price": [
+    {
+      "amount": 6999,
+      "currency": "INR",
+      "perPerson": true,
+      "route": null,
+      "startingFrom": true,
+      "raw": "Rs. 6,999/-"
+    }
+  ],
+  "region": "Uttrakhand",
+  "difficulty": "Easy To Moderate",
+  "altitude": "12,250 Ft",
+  "trekDistance": "24 Kms",
+  "bestSeason": "Dec To March",
+  "baseCamp": "Lohajung",
+  "pickup": "Haridwar/rishikesh",
+  "drop": "Haridwar/rishikesh",
+  "nearestAirport": "Rishikesh",
+  "railwayStation": "Rishikesh",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    {
+      "day": 1,
+      "title": "Rishikesh To Lohajung",
+      "detail": "Drive 255km/9-11 hrs."
+    },
+    {
+      "day": 2,
+      "title": "Lohajung To Bekaltal",
+      "detail": "Altitude 9,690 ft (Trek 6km/4-5 hrs)"
+    },
+    {
+      "day": 3,
+      "title": "Bekaltal To Bhramatal",
+      "detail": "Altitude 10,400 ft (Trek 7km/5-6 hrs)"
+    },
+    {
+      "day": 4,
+      "title": "Bhramatal To Bharamatal Top And Descend To Khorurai",
+      "detail": "Trek 8km/7 hrs"
+    },
+    {
+      "day": 5,
+      "title": "Khorurai To Lohajung",
+      "detail": "Trek 3km/3-4 hrs"
+    },
+    {
+      "day": 6,
+      "title": "Lohajung To Rishikesh",
+      "detail": null
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Rishikesh to Lohajung",
+      "altitude": null,
+      "driveDistance": "255km",
+      "trekDistance": null,
+      "duration": "9-11 hrs.",
+      "pickupPoint": "Rishikesh",
+      "dropPoint": null,
+      "description": [
+        "You will be picked up from Rishikesh and start the journey to Lohajung. During the journey from Rishikesh to Lohajung, you will go through mountain alleyways that will connect Kumaon hills to Garhwal.",
+        "Though it will be a long journey of 9-10 hours but you will enjoy the drive because of the eye-catchy vistas of the mountains. Before reaching Lohajung, you will get an appealing view of Nanda Ghunti's peak.",
+        "We will be reaching Lohajung in the evening and then stay at night."
+      ],
+      "notes": []
+    },
+    {
+      "day": 2,
+      "title": "Lohajung to Bekaltal",
+      "altitude": "9,690 ft",
+      "driveDistance": null,
+      "trekDistance": "6km",
+      "duration": "4-5 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "The trek will begin from Lohajung central market and then move upwards to the upper region of Lohajung. After a short trek, on your left you will see Mandoli village.",
+        "After reaching Begum, it will be almost an hour hike which will take you to Bekaltal which is almost frozen at the time of winters. Bekaltal is located at an altitude of 9690ft."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Bekaltal to Bhramatal",
+      "altitude": "10,400 ft",
+      "driveDistance": null,
+      "trekDistance": "7km",
+      "duration": "5-6 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "We will start the trek early in the morning and you will go through thickets of oak and rhododendrons. After a few hours of trekking the tree line will end and you will enter the meadows.",
+        "You will also get an amazing view of Mount Trishul and Mount Nanda Ghunti. We will head towards Bhramatal, from where you will get the majestic views of mountains and valleys."
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "title": "Bhramatal to Bharamatal Top and Descend to Khorurai",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": "8km",
+      "duration": "7 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "We will start the trek early in the morning and head towards the Bharamatal top which is an uphill climb. The zigzag ascent trail will take you the Bharamatal Lake which will give you a charismatic view of nature at an altitude of 12250 ft.",
+        "You will also witness a 180-degree view of the Himalayan range and peaks. Later, we will descent to Khorurai which is located at an altitude of 9150ft."
+      ],
+      "notes": []
+    },
+    {
+      "day": 5,
+      "title": "Khorurai to Lohajung",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": "3km",
+      "duration": "3-4 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "After having breakfast in the morning, we start the trek from Khorurai to Lohajun which is almost 3km and takes almost 3 to 4 hours. The trail will go through thick forests of oak and rhododendron."
+      ],
+      "notes": []
+    },
+    {
+      "day": 6,
+      "title": "Lohajung to Rishikesh",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": null,
+      "duration": null,
+      "pickupPoint": null,
+      "dropPoint": "Rishikesh",
+      "description": [
+        "This will be the last day of your trip and we will be heading back to Rishikesh.",
+        "You will be reaching Rishikesh by 10 PM."
+      ],
+      "notes": []
+    }
+  ],
+  "inclusions": [
+    "Transportation : Rishikesh to Lohajung and return",
+    "Vegetarian Meals: All Meals as per menu from first day Dinner to last day Breakfast at Basecamp.",
+    "Accomodation: Hotel, Homestay, Camping",
+    "Camping charges: Camping and forest permit fees for Indian Nationals",
+    "Trekking equipment: High quality tents (living tent– triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, Utensils",
+    "Safety equipment: First aid medical kit, oxygen cylinder, stretchers, rope",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff"
+  ],
+  "exclusions": [
+    "Food during road journey",
+    "Personal clothing (jacket, shoes, winter clothes etc)",
+    "Personal trek gears (stick, poncho, headlight etc)",
+    "Taxes, Trek and travel insurance",
+    "Any personal expense",
+    "Mules or Porter to carry personal luggage",
+    "Anything apart from inclusion"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹300 to ₹500 per day per bag.",
+    "Ensure your backpack weighs up to 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [
+    "Rucksack (50-70 Ltr.)",
+    "Trekking Shoes (Ankle Shoes)",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Water Bottles",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+  ],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb.",
+    "Rental gear like jackets, shoes, trek poles, headlamps, ponchos, and more is available at Sankri basecamp market."
+  ],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Sankri to Sankri)",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you choose to skip any part of the scheduled itinerary, your package will be considered complete at that point. Any further stay or transportation will be at your own expense and responsibility.",
+      "Consumption of alcohol or any other harmful substances is strictly prohibited. If found in violation, your trek will be canceled immediately.",
+      "Spikes and gaiters will be provided for the summit climb during the night trek.",
+      "Balance payment will not be accepted via website or card. Please pay only through cash or UPI/bank transfer."
+    ]
+  },
+  "faqs": [],
+  "availableDates": null,
+  "source": {
+    "file": "BRAHMATAL_TREK__HIMALAYAN_AMBITION.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "FAQs",
+      "Available Dates"
+    ],
+    "discrepancies": [
+      "Overview lists Nearest Airport and Railway Station as \"Rishikesh\"; Rishikesh has no airport, and the pickup line reads \"Haridwar/rishikesh\".",
+      "Things to Carry note refers to \"Sankri basecamp market\", but this trek's base camp is Lohajung — appears copied from the Kedarkantha brochure.",
+      "Key Notes say food is served \"(Sankri to Sankri)\", but this trek runs Rishikesh–Lohajung — appears copied from the Kedarkantha brochure.",
+      "Key Notes mention spikes and gaiters \"for the summit climb during the night trek\"; this itinerary has no night summit climb.",
+      "Trek name is spelled both \"Brahmatal\" (cover) and \"Bhramatal\"/\"Bharamatal\" (itinerary pages)."
+    ]
+  }
+}

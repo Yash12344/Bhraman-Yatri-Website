@@ -1,0 +1,179 @@
+{
+  "name": "Dayara Bugyal Trek",
+  "slug": "dayara-bugyal-trek",
+  "duration": "4 Days/3 Nights",
+  "durationDays": 4,
+  "durationNights": 3,
+  "price": [
+    {
+      "amount": 6499,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "Dehradun to Dehradun",
+      "startingFrom": false,
+      "raw": "Rs. 6,499/-"
+    }
+  ],
+  "region": "Uttarakhand",
+  "difficulty": "Easy",
+  "altitude": "12,000 ft",
+  "trekDistance": "22 kms",
+  "bestSeason": "Oct to June",
+  "baseCamp": "Raithal",
+  "pickup": "Dehradun Railway station",
+  "drop": "Dehradun Railway station",
+  "nearestAirport": "Dehradun",
+  "railwayStation": "Dehradun",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    { "day": 1, "title": "Dehradun to Raithal", "detail": null },
+    { "day": 2, "title": "Raithal to Gui camp", "detail": null },
+    { "day": 3, "title": "Gui Camp to Dayara Bugyal and return", "detail": null },
+    {
+      "day": 4,
+      "title": "Gui Camp to Raithal and same day drive back to Dehradun",
+      "detail": null
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive, Dehradun to Raithal",
+      "altitude": null,
+      "driveDistance": "190 km",
+      "trekDistance": null,
+      "duration": "8-9 hours",
+      "pickupPoint": "Dehradun Railway Station",
+      "dropPoint": "Dehradun Railway Station",
+      "description": [
+        "Start your journey from Dehradun",
+        "Drive to the picturesque village of Raithal, the base camp for the trek, which is approximately an 8-9 hours journey from Dehradun.",
+        "Check-in to a guesthouse or campsite.",
+        "Acclimatize and enjoy the serene surroundings. Rest and prepare for the trek ahead. You can explore the local surroundings or interact with fellow trekkers"
+      ],
+      "notes": ["Pick up Time : 6:30 AM", "Basecamp : Raithal"]
+    },
+    {
+      "day": 2,
+      "title": "Trek from Raithal to Gui camp",
+      "altitude": "Altitude Gain : 7,150 ft to 9,600 ft",
+      "driveDistance": null,
+      "trekDistance": "6 km",
+      "duration": "4-5 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Begin your trek to Gui, a gradual ascent through dense forests. The trek offers stunning views of the Himalayas. The trek will take you through beautiful forests and scenic landscapes. Enjoy the evening in the serene wilderness. Reach Gui and stay at your camp for the night."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Trek from Gui to Dayara Bugyal and return",
+      "altitude": "Altitude Gain : 9600 ft to 12000 ft",
+      "driveDistance": null,
+      "trekDistance": "10 km Trek",
+      "duration": "7-8 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Resume your trek from Gui Camp towards Chilapada. Along the way, soak in the natural beauty and capture memorable moments",
+        "Today is an exciting day as you hike to Dayara Bugyal and Dayara Top. Start early to make the most of the day. Hike from Gui to the vast meadows of Dayara Bugyal, a high-altitude meadow renowned for its breathtaking views. Witness the breathtaking expanse of alpine meadows.",
+        "After enjoying the scenery, Spend a day exploring the Bugyal. You can hike to Bakaria Top, also known as Dayara top for panoramic views. Enjoy the tranquility and natural beauty.",
+        "Return to your Camp at Gui for another night."
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "title": "Trek from Gui to Raithal and Drive to Dehradun",
+      "altitude": "Altitude Loss : 9,600 ft to 7,150 ft",
+      "driveDistance": "190 km",
+      "trekDistance": "6 km",
+      "duration": "Trek 3-4 hours; drive 8-9 hours",
+      "pickupPoint": null,
+      "dropPoint": "Dehradun Railway Station",
+      "description": [
+        "Begin your descent from Gui Camp to Raithal. Upon reaching Raithal, you can freshen up.",
+        "Drive back to Dehradun, completing your trekking adventure.",
+        "Your journey ends as you return to Dehradun, where you can plan your next steps or departure."
+      ],
+      "notes": []
+    }
+  ],
+  "inclusions": [
+    "Transportation : Dehradun to Raithal and return.",
+    "Accommodation (Hotel, Homestay, Camping)",
+    "Meals : All Meals as per menu from first day Dinner to last day Breakfast at basecamp; Vegetarian Meal.",
+    "Camping charges : Camping and forest permit fees for Indian Nationals.",
+    "Trekking equipment : High quality tents (living tent– triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, liners, Utensils, Gaitors, Microspikes/crampons, ice axe.",
+    "Safety equipment : First aid medical kit, oxygen cylinder, stretchers, rope.",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff."
+  ],
+  "exclusions": [
+    "Meals during road journeys",
+    "Insurance",
+    "Any personal expenses",
+    "Mules or porter to carry personal luggage",
+    "Anything apart from inclusions"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹300 to ₹900 per day per bag, depending on the specific trek.",
+    "Ensure your backpack weighs less than 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [],
+  "thingsToCarryNotes": [],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Raithal to Raithal)",
+      "Accommodation at Hotel, Camping will be on Triple and quad sharing basis.",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own.",
+      "Disclose your medical conditions before arrival, do not hide any illness issues."
+    ]
+  },
+  "faqs": [],
+  "availableDates": null,
+  "source": {
+    "file": "DAYARA_BUGYAL_TREK__HIMALAYAN_AMBITION.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "Things to Carry",
+      "FAQs",
+      "Available Dates"
+    ],
+    "discrepancies": [
+      "Day 4 page labels the drive duration \"Trek Duration: 8-9 hours\", which appears to be a mislabelled drive duration."
+    ]
+  }
+}

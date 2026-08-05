@@ -1,0 +1,213 @@
+{
+  "name": "Valley of Flowers Trek with Hemkund Sahib",
+  "slug": "valley-of-flowers-trek",
+  "duration": "6 Days/5 Nights",
+  "durationDays": 6,
+  "durationNights": 5,
+  "price": [
+    {
+      "amount": 9499,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "Rishikesh to Rishikesh",
+      "startingFrom": false,
+      "raw": "Rs. 9,499/-"
+    }
+  ],
+  "region": "Uttarakhand",
+  "difficulty": "Moderate",
+  "altitude": "14,100 ft",
+  "trekDistance": "38 kms",
+  "bestSeason": "Mid July to Mid Sept",
+  "baseCamp": "Ghangaria",
+  "pickup": "Rishikesh",
+  "drop": "Rishikesh",
+  "nearestAirport": "Dehradun",
+  "railwayStation": "Haridwar",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    { "day": 1, "title": "Rishikesh to Govindghat", "detail": null },
+    {
+      "day": 2,
+      "title": "Drive from Govindghat to Poolna and Trek to Ghangaria",
+      "detail": null
+    },
+    {
+      "day": 3,
+      "title": "Ghangaria to Valley of Flowers and return",
+      "detail": null
+    },
+    {
+      "day": 4,
+      "title": "Valley of Flowers to Hemkund Sahib and return",
+      "detail": null
+    },
+    {
+      "day": 5,
+      "title": "Trek from Ghangaria to Poolna and Drive to Govindghat",
+      "detail": null
+    },
+    { "day": 6, "title": "Govindghat to Rishikesh", "detail": null }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Rishikesh to Govindghat",
+      "altitude": null,
+      "driveDistance": "265 km",
+      "trekDistance": null,
+      "duration": "9-11 hours",
+      "pickupPoint": "Rishikesh",
+      "dropPoint": null,
+      "description": [
+        "Depart from Rishikesh early in the morning. Enjoy a scenic drive to Govindghat, which takes approximately 9-11 hours. Upon arrival, check into your Hotel and rest for the night."
+      ],
+      "notes": []
+    },
+    {
+      "day": 2,
+      "title": "Drive from Govindghat to Poolna and Trek to Ghangaria",
+      "altitude": "10,500 ft",
+      "driveDistance": "5km",
+      "trekDistance": "9km",
+      "duration": "Drive 20 min; Trek 5-6 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "After breakfast, drive from Govindghat to Poolna (about 20 minutes). Begin your trek from Poolna to Ghangaria, a picturesque place nestled in the mountains. The trek takes around 5-6 hours, depending on your pace and stops along the way. Arrive in Ghangaria, check into your accommodation, and relax for the evening."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Ghangaria to Valley of Flowers and return",
+      "altitude": "11,550 ft",
+      "driveDistance": null,
+      "trekDistance": "4 km each way",
+      "duration": "5-6 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Today, embark on a memorable trek to the enchanting Valley of Flowers. Spend the day exploring the vibrant meadows, blooming flowers, and serene landscapes. Take your time to admire the biodiversity and capture breathtaking views. Return to Ghangaria in the evening, where you can unwind and reminisce about the day's adventures."
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "title": "Ghangaria to Hemkund Sahib and return",
+      "altitude": "14,100 ft",
+      "driveDistance": null,
+      "trekDistance": "6 km each way",
+      "duration": "8-9 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Start your day early and trek to Hemkund Sahib, a sacred Sikh pilgrimage site located at an altitude of over 4,298 meters. The trek is challenging but rewarding, offering panoramic views of the surrounding mountains. Upon reaching Hemkund Sahib, pay your respects at the gurudwara and soak in the peaceful atmosphere. Descend back to Ghangaria in the afternoon and relax after the long trek."
+      ],
+      "notes": []
+    },
+    {
+      "day": 5,
+      "title": "Trek from Ghangaria to Poolna and Drive to Govindghat",
+      "altitude": null,
+      "driveDistance": "5 km",
+      "trekDistance": "9 km",
+      "duration": "Trek 4-5 hours; Drive 20 min.",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Bid farewell to Ghangaria and begin your descent towards Poolna. Enjoy the trek downhill, taking in the pristine scenery and fresh mountain air. Once you reach Poolna, drive back to Govindghat. Spend the evening relaxing and reflecting on your trekking experiences."
+      ],
+      "notes": []
+    },
+    {
+      "day": 6,
+      "title": "Govindghat to Rishikesh",
+      "altitude": null,
+      "driveDistance": "265 km",
+      "trekDistance": null,
+      "duration": "9-11 hours",
+      "pickupPoint": null,
+      "dropPoint": "Rishikesh",
+      "description": [
+        "After breakfast, depart from Govindghat and embark on the journey back to Rishikesh. Take breaks along the way to stretch your legs and enjoy the scenic vistas. Arrive in Rishikesh by late afternoon or evening, concluding your memorable adventure in the Himalayas"
+      ],
+      "notes": []
+    }
+  ],
+  "inclusions": [
+    "Transportation : Rishikesh to Rishikesh",
+    "Vegetarian Meals : All Meals as per menu from first day Dinner to last day Breakfast",
+    "Accomodation: Hotel, Homestay, Camping",
+    "Forest permit fees for Indian Nationals.",
+    "Safety equipment : First aid medical kit, oxygen cylinder, stretchers, rope",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff"
+  ],
+  "exclusions": [
+    "Food during road journey (Rishikesh to Rishikesh and return)",
+    "Personal clothing (jacket, shoes, winter clothes etc)",
+    "Personal trek gears (stick, poncho, headlight etc)",
+    "Taxes, travel insurance,",
+    "Any personal expense Anything apart from inclusion",
+    "Mules or Porter to carry personal luggage"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹400 to ₹500 per day per bag.",
+    "Ensure your backpack weighs up to 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [],
+  "thingsToCarryNotes": [],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Govindghat to Govindghat)",
+      "Accommodation at Hotel, Camping will be on Triple and quad sharing basis.",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own.",
+      "Disclose your medical conditions before arrival, do not hide any illness issues."
+    ]
+  },
+  "faqs": [],
+  "availableDates": null,
+  "source": {
+    "file": "Valley_Of_Flower__HIMALAYAN_AMBITION.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "Things to Carry",
+      "FAQs",
+      "Available Dates"
+    ],
+    "discrepancies": [
+      "Brief itinerary calls Day 4 \"Valley of Flowers to Hemkund Sahib and return\"; the Day 4 page is titled \"Ghangaria to Hemkund Sahib and return\". The day page title has been used here.",
+      "Day 4 states Hemkund Sahib is \"over 4,298 meters\" (≈14,100 ft), matching the Overview altitude."
+    ]
+  }
+}

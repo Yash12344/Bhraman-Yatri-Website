@@ -1,0 +1,249 @@
+{
+  "name": "Kedarkantha Trek",
+  "slug": "kedarkantha-trek",
+  "duration": "5 Days/4 Nights",
+  "durationDays": 5,
+  "durationNights": 4,
+  "price": [
+    {
+      "amount": 5499,
+      "currency": "INR",
+      "perPerson": true,
+      "route": null,
+      "startingFrom": true,
+      "raw": "Rs. 5,499/-"
+    }
+  ],
+  "region": "Uttrakhand",
+  "difficulty": "Easy to Moderate",
+  "altitude": "12,500 ft",
+  "trekDistance": "20 kms",
+  "bestSeason": "Nov To April",
+  "baseCamp": "Sankri",
+  "pickup": "Dehradun Railway Station",
+  "drop": "Dehradun Railway Station",
+  "nearestAirport": "Dehradun",
+  "railwayStation": "Dehradun",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    {
+      "day": 1,
+      "title": "Dehradun to Sankri",
+      "detail": "Drive – 198 km/8-9 Hrs"
+    },
+    {
+      "day": 2,
+      "title": "Sankri to Juda-ka-talab",
+      "detail": "Trek - 3.5 km/ 4-5 Hrs"
+    },
+    {
+      "day": 3,
+      "title": "Juda-ka-talab to Kedarkantha Base Camp",
+      "detail": "Trek : 3 km/4-5 Hrs"
+    },
+    {
+      "day": 4,
+      "title": "Kedarkantha Base to Summit Descend to Juda-ka-talaab",
+      "detail": "Night Trek : 3.5km, Base camp to Summit : 3-4 hrs"
+    },
+    {
+      "day": 5,
+      "title": "Juda Ka Talaab to Sankri | Back to Dehradun",
+      "detail": "Trek : 3 Hrs, Drive - 8-9 Hrs"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Dehradun to Sankri",
+      "altitude": "6300ft/1920m",
+      "driveDistance": "198 km",
+      "trekDistance": null,
+      "duration": "8-9 Hrs",
+      "pickupPoint": "Dehradun railway station",
+      "dropPoint": null,
+      "description": [
+        "Trekkers will be picked up from Dehradun railway station at 7 AM. The journey will start from Dehradun to Sankri village.",
+        "You will drive along the Yamuna and other rivers along with beautiful pine forests that will surround your way. The drive to Sankri is going to be memorable because of the captivating sights.",
+        "By 5 PM in the evening, you will reach Sankri and after freshening up, you will get the time to explore this beautiful village. The night stay of all the trekkers will be arranged in a hotel or homestay."
+      ],
+      "notes": ["Note – Only Jio and BSNL newtwork will be available"]
+    },
+    {
+      "day": 2,
+      "title": "Sankri - Juda Ka Talab",
+      "altitude": "9,100 ft",
+      "driveDistance": null,
+      "trekDistance": "3.5 km",
+      "duration": "4-5 Hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "In the early morning, we will start our mesmerizing trek from Sankri to Juda-Ka-Talab which is about 4km.",
+        "You will enjoy really amazing views of nature from Juda-Ka-Talab as it is located at a height of 9,100ft. The dense forest and carpet of maple leaves during the trek will surely startle you.",
+        "The trek going to Juda-Ka-Talab passes through riveting forests of deodar, oak, and birch trees. Night stay will be scheduled in tents at Juda Lake, giving you chance to spend some quality time in nature's lap."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Juda Ka Talab - Kedarkantha Base Camp",
+      "altitude": "11,250 ft",
+      "driveDistance": null,
+      "trekDistance": "3 km",
+      "duration": "4-5 Hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "From Juda-Ka-Talab, your trek will start towards Kedarkantha base early in the morning which is nestled at an altitude of 11,250ft.",
+        "In order to reach Kedarkantha base, you will go through the forest of Pine and Oak trees which will later lead to breathtaking meadows.",
+        "Also get ready to experience the splendid views of well-known Himalayan peaks such as Swargarohini, Kala Nag, and Bandarpoonch. Night stay will be planned at base camp, giving you outstanding views of nature."
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "title": "Kedarkantha Base to Summit & Descend to Juda-Ka-Talaab",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": "3.5km (night trek)",
+      "duration": "Base camp to Summit : 3-4 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "On this day, we will trek from Kedarkantha base to Kedarkantha summit which is located at a height of 12,500ft. On the same day, we will return back to base camp as well as descend to Juda-ka-Talaab camp.",
+        "While trekking, you will go through crystal clear streams and oak trees. You will also be served with delicious and healthy breakfast.",
+        "At night, all the trekkers will stay in tents right under the open sky filled with sparkling stars."
+      ],
+      "notes": []
+    },
+    {
+      "day": 5,
+      "title": "Juda-Ka-Talaab to Sankri, Same Day Drive Back to Dehradun",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": null,
+      "duration": "Trek almost 3 hours; drive almost 8-9 hours",
+      "pickupPoint": null,
+      "dropPoint": "Dehradun railway station",
+      "description": [
+        "On day 5, we will trek back from Juda-Ka-Talaab to Sankri via Hargaon which is almost 3 hours trek.",
+        "After reaching Sankri, we will drive back to Dehradun along with some beautiful and life-long memories. It will take almost 8-9 hours to reach back to Dehradun.",
+        "At Dehradun railway station, we will drop you off by 11 pm. Say goodbye to the most exciting treks that will give you some unique experiences to cherish throughout your life."
+      ],
+      "notes": []
+    }
+  ],
+  "inclusions": [
+    "Transportation: Dehradun to Sankri and return",
+    "Vegetarian Meals: All Meals as per menu from first day Dinner to last day Breakfast at Basecamp.",
+    "Accomodation: Hotel, Homestay, Camping",
+    "Camping charges: Camping and forest permit fees for Indian Nationals",
+    "Trekking equipment: High quality tents (living tent– triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, Utensils",
+    "Safety equipment: First aid medical kit, oxygen cylinder, stretchers, rope",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff"
+  ],
+  "exclusions": [
+    "Food during road journey (Dehradun to Sankri and return)",
+    "Personal clothing (jacket, shoes, winter clothes etc)",
+    "Personal trek gears (stick, poncho, headlight etc)",
+    "Taxes, Trek and travel insurance",
+    "Any personal expense",
+    "Mules or Porter to carry personal luggage",
+    "Anything apart from inclusion"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹300 to ₹500 per day per bag.",
+    "Ensure your backpack weighs up to 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [
+    "Rucksack (50-70 Ltr.)",
+    "Trekking Shoes (Ankle Shoes)",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Water Bottles",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+  ],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb.",
+    "Rental gear like jackets, shoes, trek poles, headlamps, ponchos, and more is available at Sankri basecamp market."
+  ],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Sankri to Sankri)",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you choose to skip any part of the scheduled itinerary, your package will be considered complete at that point. Any further stay or transportation will be at your own expense and responsibility.",
+      "Consumption of alcohol or any other harmful substances is strictly prohibited. If found in violation, your trek will be canceled immediately.",
+      "Spikes and gaiters will be provided for the summit climb during the night trek.",
+      "Balance payment will not be accepted via website or card. Please pay only through cash or UPI/bank transfer."
+    ]
+  },
+  "faqs": [],
+  "availableDates": {
+    "months": [
+      { "month": "November", "departures": "Everyday" },
+      { "month": "December", "departures": "Everyday" },
+      { "month": "January", "departures": "Everyday" },
+      { "month": "February", "departures": "Everyday" },
+      { "month": "March", "departures": "Everyday" }
+    ],
+    "notes": [
+      "Kedarkantha Trek – Daily Departures from Dehradun!",
+      "We are excited to announce daily departures for the Kedarkantha Trek starting from 01 NOVEMBER TO 31 MARCH",
+      "Pick your preferred date between : 01 NOVEMBER TO 31 MARCH",
+      "Book any day within this period and join us for an unforgettable trek!",
+      "The reporting time at Dehradun railway station is 7:00 AM.",
+      "For bookings and inquiries: 9719715444"
+    ]
+  },
+  "source": {
+    "file": "KEDARKANTHA_TREK__HIMALAYAN_AMBITION.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "FAQs"
+    ],
+    "discrepancies": [
+      "Brief itinerary gives Day 2 trek as 3.5 km; the Day 2 page text says \"about 4km\"."
+    ]
+  }
+}
