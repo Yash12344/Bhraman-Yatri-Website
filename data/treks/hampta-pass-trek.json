@@ -1,0 +1,241 @@
+{
+  "name": "Hampta Pass Trek with Chandratal",
+  "slug": "hampta-pass-trek",
+  "duration": "5 Days/4 Nights",
+  "durationDays": 5,
+  "durationNights": 4,
+  "price": [
+    {
+      "amount": 5999,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "Manali to Manali",
+      "startingFrom": true,
+      "raw": "Rs. 5,999/- + 5% GST"
+    }
+  ],
+  "region": "Himachal",
+  "difficulty": "Moderate",
+  "altitude": "14,100 ft",
+  "trekDistance": "25 kms",
+  "bestSeason": "June to September",
+  "baseCamp": "Manali",
+  "pickup": "Manali",
+  "drop": "Manali",
+  "nearestAirport": "Bhuntar & Chandigarh",
+  "railwayStation": "Chandigarh",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    {
+      "day": 1,
+      "title": "Manali to Chika via Jobra",
+      "detail": "Drive : 16km/1hr , Trek : 2km/2hrs"
+    },
+    {
+      "day": 2,
+      "title": "Chika to Balu Ka Ghera",
+      "detail": "Trek : 9km/5-6hrs"
+    },
+    {
+      "day": 3,
+      "title": "Balu Ka Ghera to Shea Goru via Hampta Pass",
+      "detail": "Trek : 7km/8-9hrs"
+    },
+    {
+      "day": 4,
+      "title": "Shea Goru to Chatru and Drive to Chandratal",
+      "detail": "Trek : 7km/4-5hrs , Drive : 50km/4-5hr"
+    },
+    { "day": 5, "title": "Chatru to Manali", "detail": "Drive : 65km/3-4hr" }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Manali to Chika via Jobra",
+      "altitude": "Chika 10,100 ft.",
+      "driveDistance": "16 km",
+      "trekDistance": "2 km",
+      "duration": "Drive 1 hour; Trek 1 hours",
+      "pickupPoint": "Manali",
+      "dropPoint": null,
+      "description": [
+        "Begin your adventure with a scenic drive from Manali to Jobra. This 16 km drive takes approximately an hour and offers stunning views of the lush green valleys and snow-capped peaks. Upon reaching Jobra, the trekking journey commences. The trek from Jobra to Chika is relatively short, covering 2 km and taking around 1 hour. This gentle trek leads you through picturesque meadows and forests, eventually arriving at the Chika campsite situated at an altitude of 10,100 ft. Spend the night camping under the stars, surrounded by the serene beauty of nature."
+      ],
+      "notes": ["Reporting Time : 10:00 AM"]
+    },
+    {
+      "day": 2,
+      "title": "Chika to Balu Ka Ghera",
+      "altitude": "12,400 ft",
+      "driveDistance": null,
+      "trekDistance": "9 km",
+      "duration": "5-6 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "After breakfast, set off on a 9 km trek from Chika to Balu Ka Ghera, a journey that takes about 5 to 6 hours. The trail meanders through beautiful alpine meadows and streams, providing stunning views of the Dhauladhar range. As you gain altitude, the landscape becomes more rugged and the air crisper. Balu Ka Ghera, situated at 12,400 ft, is a vast expanse of sand and rocks, resembling a riverbed. It serves as an ideal camping spot, offering breathtaking views of the surrounding mountains."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Balu Ka Ghera to Shea Goru via Hampta Pass",
+      "altitude": "14,100 ft",
+      "driveDistance": null,
+      "trekDistance": "7 km",
+      "duration": "8-9 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "This day is the highlight of the trek, as you cross the Hampta Pass. The trek from Balu Ka Ghera to Shea Goru covers 7 km and takes around 8 to 9 hours. The ascent to Hampta Pass at 14,100 ft is challenging but rewarding, with panoramic views of the towering peaks and glaciers. After crossing the pass, descend towards Shea Goru. The descent is steep and requires careful navigation. Shea Goru, nestled in a valley, is a tranquil campsite with a river flowing beside it. Rest here and soak in the natural beauty after a long day of trekking."
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "title": "Shea Goru to Chatru and Drive to Chandratal",
+      "altitude": "Chatru 11,000 ft.; Chandratal 14,100 ft",
+      "driveDistance": "50 km",
+      "trekDistance": "7 km",
+      "duration": "Trek 4-5 hours; Drive 4-5 hours",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Begin the day with a 7 km trek from Shea Goru to Chatru, which takes about 4 to 5 hours. The trail descends further, passing through rocky terrains and scenic landscapes. Upon reaching Chatru, you will be greeted by the stunning views of the Chandra Valley. From Chatru, embark on a 50 km drive to the mesmerizing Chandratal Lake, which takes around 3 hours to reach and 2 hours to return. Chandratal, also known as the Moon Lake, is a high-altitude lake located at 14,100 ft. Spend some time exploring the lake's pristine beauty before heading back to Chatru for the night."
+      ],
+      "notes": []
+    },
+    {
+      "day": 5,
+      "title": "Chatru to Manali",
+      "altitude": null,
+      "driveDistance": "65 km",
+      "trekDistance": null,
+      "duration": "3-4 hours",
+      "pickupPoint": null,
+      "dropPoint": "Manali",
+      "description": [
+        "On the final day, drive from Chatru back to Manali, covering a distance of 65 km. The drive takes approximately 3 to 4 hours, passing through the scenic landscapes of the Spiti Valley and the Rohtang Pass. Reflect on the incredible journey as you make your way back to the bustling town of Manali. Upon arrival in Manali, the trek concludes with memories of breathtaking views, challenging trails, and the serene beauty of the Himalayas."
+      ],
+      "notes": [
+        "Note : You can visit Chandratal if road and weather conditions permit us. Drive from Chatru to Chandratal and back to the campsite, either on day 4 or day 5 (depending on road and weather conditions)"
+      ]
+    }
+  ],
+  "inclusions": [
+    "Transportation: Manali to Manali",
+    "Vegetarian Meals: All Meals as per menu from first day Dinner to last day Breakfast",
+    "Accomodation: Camping tents",
+    "Camping charges: Camping and forest permit fees for Indian Nationals",
+    "Trekking equipment: High quality tents (living tent– triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, Utensils",
+    "Safety equipment: First aid medical kit, oxygen cylinder, stretchers, rope",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff"
+  ],
+  "exclusions": [
+    "Food during road journey (Manali to Manali and return)",
+    "Personal clothing (jacket, shoes, winter clothes etc)",
+    "Personal trek gears (stick, poncho, headlight etc)",
+    "Taxes, travel insurance,",
+    "Any personal expense",
+    "Anything apart from inclusion",
+    "Mules or Porter to carry personal luggage"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹400 to ₹600 per day per bag.",
+    "Ensure your backpack weighs up to 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [
+    "Rucksack (50-70 Ltr.)",
+    "Trekking Shoes (Ankle Shoes)",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Water Bottles",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Tiffen Box",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+  ],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb."
+  ],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Chika to Chatru)",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own.",
+      "Consumption of alcohol or any other harmful substances is strictly prohibited. If found in violation, your trek will be canceled immediately."
+    ]
+  },
+  "faqs": [],
+  "availableDates": {
+    "months": [
+      { "month": "MAY", "departures": "25 , 26, 27, 28, 29, 30, 31" },
+      { "month": "JUNE", "departures": "EVERYDAY" },
+      { "month": "JULY", "departures": "EVERYDAY" },
+      { "month": "AUGUST", "departures": "EVERYDAY" },
+      { "month": "SEPT", "departures": "EVERYDAY" },
+      { "month": "OCT", "departures": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10" }
+    ],
+    "notes": [
+      "Hampta Pass Trek – Daily Departures from Manali!",
+      "We are excited to announce daily departures for the Hampta Pass Trek starting from 25th May 2025 to 10th October 2025.",
+      "Pick your preferred date between : 25th May 2025 to 10th October 2025",
+      "Book any day within this period and join us for an unforgettable trek!",
+      "THE REPORTING TIME AT MANALI IS 10:00 AM.",
+      "FOR BOOKINGS AND INQUIRIES: 9719715444"
+    ]
+  },
+  "source": {
+    "file": "HAMPTA_PASS_WITH_CHANDRATAL__HIMALAYAN_AMBITION1.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "FAQs"
+    ],
+    "discrepancies": [
+      "This is the only brochure quoting GST separately: \"Rs. 5,999/- PP + 5% GST\".",
+      "Day 1 header says \"Trek : 2 km, 1 hours\" while the brief itinerary says 2km/2hrs.",
+      "Overview altitude (14,100 ft) is given both as the Hampta Pass height (Day 3) and Chandratal's height (Day 4).",
+      "Day 4 header gives the drive as 4-5 hours; the body says 3 hours to reach and 2 hours to return.",
+      "Available Dates are for the 2025 season and will need refreshing.",
+      "Chandratal is conditional: the Day 5 note says the visit happens on day 4 or day 5 only if road and weather permit."
+    ]
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "Kuari Pass Trek",
+  "slug": "kuari-pass-trek",
+  "duration": "6 Days/5 Nights",
+  "durationDays": 6,
+  "durationNights": 5,
+  "price": [
+    {
+      "amount": 7999,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "Rishikesh to Rishikesh",
+      "startingFrom": false,
+      "raw": "Rs. 7,999/-"
+    }
+  ],
+  "region": "Uttarakhand",
+  "difficulty": "Easy To Moderate",
+  "altitude": "12,750 ft",
+  "trekDistance": "31 Kms",
+  "bestSeason": "Oct to April",
+  "baseCamp": "Joshimath",
+  "pickup": "Rishikesh",
+  "drop": "Rishikesh",
+  "nearestAirport": "Dehradun",
+  "railwayStation": "Haridwar",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    { "day": 1, "title": "Rishikesh to Joshimath via Devprayag", "detail": null },
+    {
+      "day": 2,
+      "title": "Drive from Joshimath to Tugashi Village and trek to Gulling top",
+      "detail": null
+    },
+    { "day": 3, "title": "Gulling top to Tali forest camp", "detail": null },
+    {
+      "day": 4,
+      "title": "Tali forest camp to Kuari pass summit and return",
+      "detail": null
+    },
+    {
+      "day": 5,
+      "title": "Tali forest camp to Auli and drive to Joshimath",
+      "detail": null
+    },
+    { "day": 6, "title": "Joshimath to Rishikesh", "detail": null }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Rishikesh to Joshimath via Devprayag",
+      "altitude": null,
+      "driveDistance": "247km",
+      "trekDistance": null,
+      "duration": "10-11 hrs",
+      "pickupPoint": "Rishikesh railway station",
+      "dropPoint": null,
+      "description": [
+        "Transport from the Rishikesh railway station will be arranged by Himalayan Ambition. Breakfast and lunch will be offered on the way. While going from Rishikesh to Joshimath you will through some famous places like Rishikesh, Dhari Devi, Karnapray, and Chamoli that are known for their beauty and religious significance.",
+        "Make sure that you keep your cameras ready to capture the eye-catchy views of nature.",
+        "On reaching the Joshimath, you will be welcomed by a host of ice peaks."
+      ],
+      "notes": []
+    },
+    {
+      "day": 2,
+      "title": "Drive from Joshimath to Tugashi village (6950 ft) and Trek from Tugashi to Gulling top (9700 ft)",
+      "altitude": "Tugashi 6950 ft; Gulling top 9700 ft",
+      "driveDistance": "15km",
+      "trekDistance": "3km",
+      "duration": "Drive 1 hr; Trek 4-5 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "After having the morning breakfast, we will leave for Tugashi village which is located in the Joshimath tehsil. It is going to be a rocky drive. From here we will start the trek. This trek will begin with a rising and dirt path away from the main road, towards Gulling.",
+        "From Upper Tugasi, you will reach Gulling top in almost 2-4 hours. Here you will find the trail a combination of steep & moderate climbs. Don't miss the mesmerizing views of sunrise from your camp early in the morning."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Gulling Top to Tali forest camp (11050 ft)",
+      "altitude": "11050 ft",
+      "driveDistance": null,
+      "trekDistance": "4km",
+      "duration": "4-5 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Wake up early in the morning because you will start the trek deep into the forest of Tali. You will have a perfect hike because the slope of ascent is quite even. After a few minutes of trek, you will enter into a little stream and enter into the mixed forest of oaks and rhododendrons. The stay will be scheduled at Tali forest camp."
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "title": "Tali forest camp to Kuari pass summit (12750 ft) and return",
+      "altitude": "12750 ft",
+      "driveDistance": null,
+      "trekDistance": "6 km each way",
+      "duration": null,
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "On the fourth day, get prepared for some high snow & squalling wind on the ridges. We will head towards Khullara top which is a trek of almost 3.5km. You will be offered lunch at the base of the Kuari high pass. You will get the opportunity to explore some eye-catchy views of Garhwal peaks."
+      ],
+      "notes": []
+    },
+    {
+      "day": 5,
+      "title": "Trek from Tali forest Camp to Auli (9200 ft) via Gurson Bughyal and Drive to Joshimath",
+      "altitude": "Auli 9200 ft",
+      "driveDistance": "12km",
+      "trekDistance": "8km",
+      "duration": "Trek 5-6 hrs; Drive 1 hr",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Trek from Tali Forest Camp to Auli via Gurson Bugyal is a spectacular finale. Starting early, the trail takes you through dense forest before opening up to the vast green expanse of Gurson Bugyal. This meadow offers panoramic views of Himalayan peaks like Nanda Devi and Trishul. Walking through the bugyal, with its gentle slopes and cool breeze, is a serene experience. The trail eventually leads to Auli, famous for its skiing slopes, where your trek ends. From Auli, a short drive will take you to Joshimath, marking the conclusion of your adventure."
+      ],
+      "notes": []
+    },
+    {
+      "day": 6,
+      "title": "Joshimath to Rishikesh",
+      "altitude": null,
+      "driveDistance": "275km",
+      "trekDistance": null,
+      "duration": "10-11 hrs",
+      "pickupPoint": null,
+      "dropPoint": "Rishikesh",
+      "description": [
+        "After breakfast in Joshimath, you embark on a scenic 10-11 hour drive to Rishikesh, covering 247 km. The route winds through picturesque landscapes, following the Alaknanda River and passing towns like Chamoli, Rudraprayag, and Devprayag, where the Alaknanda meets the Bhagirathi to form the holy Ganga. As you descend, the cooler mountain air gives way to a warmer, subtropical climate. By evening, you reach the spiritual town of Rishikesh, marking the end of your journey."
+      ],
+      "notes": []
+    }
+  ],
+  "inclusions": [
+    "Transportation : Rishikesh to Joshimath and return.",
+    "Accommodation (Hotel, Homestay, Camping)",
+    "Meals : All Meals as per menu from first day Dinner to last day Breakfast at basecamp; Vegetarian Meal.",
+    "Camping charges : Camping and forest permit fees for Indian Nationals.",
+    "Trekking equipment : High quality tents (living tent– triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, liners, Utensils, Gaitors, Microspikes/crampons, ice axe.",
+    "Safety equipment : First aid medical kit, oxygen cylinder, stretchers, rope.",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff."
+  ],
+  "exclusions": [
+    "Meals during road journeys",
+    "Insurance",
+    "Any personal expenses",
+    "Mules or porter to carry personal luggage",
+    "Anything apart from inclusions"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹300 to ₹900 per day per bag, depending on the specific trek.",
+    "Ensure your backpack weighs less than 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [
+    "Rucksack (50-70 Ltr.)",
+    "Trekking Shoes (Ankle Shoes)",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Water Bottles",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+  ],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb.",
+    "Rental gear like jackets, shoes, trek poles, headlamps, ponchos, and more is available at Sankri basecamp market."
+  ],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Joshimath to Joshimath)",
+      "Accommodation at Hotel, Camping will be on Triple and quad sharing basis.",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own.",
+      "Disclose your medical conditions before arrival, do not hide any illness issues."
+    ]
+  },
+  "faqs": [],
+  "availableDates": null,
+  "source": {
+    "file": "Kuari_Pass_Trek__HA.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "FAQs",
+      "Available Dates"
+    ],
+    "discrepancies": [
+      "Day 6 header gives the drive as 275km while the same page's text says 247 km; Day 1 gives 247km for the same route.",
+      "Things to Carry note refers to \"Sankri basecamp market\", but this trek's base camp is Joshimath — appears copied from the Kedarkantha brochure.",
+      "Day 2 spells the village both \"Tugashi\" (heading) and \"Tugasi\" (body text)."
+    ]
+  }
+}

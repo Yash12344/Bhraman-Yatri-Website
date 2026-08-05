@@ -1,0 +1,168 @@
+{
+  "name": "Chopta Tungnath with Chandrashilla Trek",
+  "slug": "chopta-tungnath-trek",
+  "duration": "3 Days/2 Nights",
+  "durationDays": 3,
+  "durationNights": 2,
+  "price": [
+    {
+      "amount": 5499,
+      "currency": "INR",
+      "perPerson": false,
+      "route": "From Rishikesh",
+      "startingFrom": false,
+      "raw": "Rs. 5,499/-"
+    },
+    {
+      "amount": 6499,
+      "currency": "INR",
+      "perPerson": false,
+      "route": "From Delhi",
+      "startingFrom": false,
+      "raw": "Rs. 6,499/-"
+    }
+  ],
+  "region": "Uttarakhand",
+  "difficulty": "Easy",
+  "altitude": "12,110 Ft",
+  "trekDistance": "14 Kms",
+  "bestSeason": "Round The Year",
+  "baseCamp": "Sari, Chopta",
+  "pickup": "Rishikesh/Delhi",
+  "drop": "Rishikesh/Delhi",
+  "nearestAirport": "Dehradun",
+  "railwayStation": "Haridwar/Rishkesh",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    {
+      "day": 1,
+      "title": "Overnight Journey from Delhi to Sari Village via Rishikesh | Enroute Sightseeing & Trek to Deoriatal",
+      "detail": "Drive: 430 km | Duration: 14-15 hrs"
+    },
+    {
+      "day": 2,
+      "title": "Sari Village to Chopta | Trek to Tungnath Temple & Chandrashila Peak",
+      "detail": "Trek: 9 km (round trip) | Duration: 5-6 hrs"
+    },
+    {
+      "day": 3,
+      "title": "Sari Village to Delhi | Return Journey via Rishikesh",
+      "detail": "Distance : 450km, duration 14-15 hrs"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Overnight Journey from Delhi to Sari Village via Rishikesh | Enroute Sightseeing & Trek to Deoriatal",
+      "altitude": null,
+      "driveDistance": "430 km",
+      "trekDistance": "2 km",
+      "duration": "14-15 hrs",
+      "pickupPoint": "Botanical Garden Metro Station (Delhi NCR) around 10:00 PM; Rishikesh around 5:00 AM",
+      "dropPoint": null,
+      "description": [
+        "Your journey begins at around 10:00 PM from Botanical Garden Metro Station (Delhi NCR). For travelers joining from Rishikesh, pickup will be scheduled early morning around 5:00 AM from Rishikesh. Continue the drive towards the mountains, witnessing the sacred confluence at Devprayag Sangam and taking an optional halt at Dhari Devi Temple. The journey further proceeds through Ukhimath before reaching Sari Village by afternoon. After check-in and lunch, rest for a while. If time permits, trek 2 km to Deoriatal Lake, known for its crystal-clear reflections of Himalayan peaks. Return to Sari by evening for dinner and overnight stay."
+      ],
+      "notes": []
+    },
+    {
+      "day": 2,
+      "title": "Sari Village To Chopta | Trek To Tungnath Temple & Chandrashila Peak",
+      "altitude": null,
+      "driveDistance": null,
+      "trekDistance": "9 km (round trip)",
+      "duration": "5-6 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "After an early breakfast, drive towards Chopta, passing through dense forests and panoramic Himalayan landscapes. Upon arrival, begin your trek to Tungnath Temple (3.5 km), the highest Shiva temple in the world. The well-defined trail offers stunning views throughout. After darshan, continue the 1.5 km ascent to Chandrashila Peak, the summit point offering breathtaking 360° views of peaks like Chaukhamba and Nanda Devi. Spend quality time at the top before descending back to Chopta. Later, drive back to Sari Village by evening for dinner and overnight stay."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Sari Village to Delhi | Return Journey via Rishikesh",
+      "altitude": null,
+      "driveDistance": "450 km",
+      "trekDistance": null,
+      "duration": "14-15 hours",
+      "pickupPoint": null,
+      "dropPoint": "Delhi",
+      "description": [
+        "After breakfast, check out and begin your return journey to Delhi. The drive covers approximately 450 km and takes around 14-15 hours, following the same scenic route via Rudraprayag and Rishikesh. Enjoy the final glimpses of river valleys, mountain roads, and peaceful landscapes along the way. Short refreshment breaks can be taken en route. You will reach Delhi by late evening, marking the end of a memorable Himalayan trip covering Sari Village, Deoriatal, Chopta, Tungnath, Chandrashila, and key spiritual sites."
+      ],
+      "notes": []
+    }
+  ],
+  "inclusions": [
+    "Transportation: From Rishikesh/Delhi to Chopta/Sari and return.",
+    "Meals: Breakfast and Dinner, Vegetarian Meals.",
+    "Stay: Hotel, Homestay, Camping",
+    "Driver expenses and toll fees",
+    "Experienced trek guide"
+  ],
+  "exclusions": [
+    "Meals during road journeys & Lunch",
+    "Any personal expenses",
+    "Personal clothing gears (jacket, shoes, winter clothes, spikes etc)",
+    "GST Taxes & Forest permit fee",
+    "Anything apart from Inclusion"
+  ],
+  "backpackOffloading": [],
+  "thingsToCarry": [],
+  "thingsToCarryNotes": [],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Chopta to Chopta)",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own.",
+      "Balance payment will not be accepted via website or card. Please pay only through cash or UPI/bank transfer."
+    ]
+  },
+  "faqs": [],
+  "availableDates": null,
+  "source": {
+    "file": "Chopta_Tungnath_Trek__Himalayan_Ambition5.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "Things to Carry",
+      "Backpack Offloading Charges",
+      "FAQs",
+      "Available Dates"
+    ],
+    "discrepancies": [
+      "Cover prices are labelled only \"FROM RISHIKESH\" and \"FROM DELHI\" without a per-person marker, unlike the other brochures; perPerson is therefore recorded as false rather than assumed.",
+      "Overview spells the railway station \"Haridwar/Rishkesh\" (missing an 'i'), reproduced verbatim.",
+      "Overview gives trek distance as 14 kms; the itinerary totals 2 km (Deoriatal) + 9 km round trip = 11 km.",
+      "Key Notes say food runs \"(Chopta to Chopta)\", but stays are at Sari Village.",
+      "This is the only brochure in the set with combined Inclusions and Exclusions on a single page."
+    ]
+  }
+}

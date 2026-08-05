@@ -1,0 +1,198 @@
+{
+  "name": "Sar Pass Trek",
+  "slug": "sar-pass-trek",
+  "duration": "5 Days/4 Nights",
+  "durationDays": 5,
+  "durationNights": 4,
+  "price": [
+    {
+      "amount": 5999,
+      "currency": "INR",
+      "perPerson": true,
+      "route": "Kasol to Kasol",
+      "startingFrom": false,
+      "raw": "Rs. 5,999/-"
+    }
+  ],
+  "region": "Himachal",
+  "difficulty": "Moderate",
+  "altitude": "4,200 meters",
+  "trekDistance": "33 Kms",
+  "bestSeason": "April to Jun & Oct.",
+  "baseCamp": "Kasol",
+  "pickup": "Kasol",
+  "drop": "Kasol",
+  "nearestAirport": "Bhuntar",
+  "railwayStation": "Chandigarh",
+  "shortOverview": null,
+  "fullOverview": null,
+  "highlights": [],
+  "briefItinerary": [
+    {
+      "day": 1,
+      "title": "Kasol to Grahan Village",
+      "detail": "Drive : 8km | 1hr, Trek : 2km | 1hr"
+    },
+    { "day": 2, "title": "Grahan to Min Thach", "detail": "Trek : 8km | 5-6hr" },
+    { "day": 3, "title": "Min Thach to Nagaru", "detail": "Trek : 5km | 4-5 hr" },
+    {
+      "day": 4,
+      "title": "Nagaru to Biskeri Thach via Sar Pass",
+      "detail": "Trek : 12 km | 7-8 hrs"
+    },
+    {
+      "day": 5,
+      "title": "Biskeri Thach - Pulga/Barshaini to Kasol",
+      "detail": "Trek : 6-7km | 4-5 hrs, Drive : 14km | 1 hr"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Kasol to Grahan Village",
+      "altitude": "Kasol 1,700 meters; Grahan Village 2,350 meters",
+      "driveDistance": "8km",
+      "trekDistance": "2km",
+      "duration": "Drive 1hr; Trek 1hr",
+      "pickupPoint": "Kasol",
+      "dropPoint": null,
+      "description": [
+        "Arrive in Kasol, a charming town situated at an altitude of 1,700 meters in theParvati Valley. After an early breakfast, commence the trek to Grahan Village.Trekking distance covers 10 kilometers, taking approximately 4-6 hours.Traverse through dense forests adorned with Rhododendrons, Pine trees, andGolden oak. Enjoy the gradual ascent, soaking in the serene natural beautysurrounding the trail. Upon reaching Grahan Village, situated at an altitude of2,350 meters, set up camp and relish the peaceful mountain ambiance. Spendthe evening around a bonfire, sharing stories with fellow trekkers, andmarveling at the starlit sky."
+      ],
+      "notes": []
+    },
+    {
+      "day": 2,
+      "title": "Grahan to Min Thach",
+      "altitude": "Min Thach 3,400 meters; altitude gain 1,050 meters",
+      "driveDistance": null,
+      "trekDistance": "8km",
+      "duration": "5-6hr",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Embark on the trek to Min Thach after breakfast, covering a distance of 8kilometers with an altitude gain of 1,050 meters. The trail consists of achallenging ascent for the first 9 kilometers followed by a steep descent forthe final 1 kilometer. Trek through picturesque landscapes featuring lushmeadows and towering trees. Arrive at Min Thach, located at an altitude of3,400 meters, and set up camp amidst the expansive meadows. Take inbreathtaking views of snow-capped peaks and verdant valleys while enjoyinga well-deserved rest."
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "title": "Min Thach to Nagaru",
+      "altitude": "Nagaru 3,800 meters",
+      "driveDistance": null,
+      "trekDistance": "5km",
+      "duration": "4-5 hr",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Begin the day's trek to Nagaru, covering 6 kilometers. Navigate throughrugged terrain with continuous ascent, passing above the tree line into awindswept landscape. Note the absence of water sources along the way,ensuring to carry an adequate supply. Arrive at Nagaru, situated at an altitudeof 3,800 meters, offering panoramic vistas of snow-clad mountains and vastmeadows. Set up camp and experience the tranquility of the high-altitudewilderness."
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "title": "Nagaru to Biskeri Thach via Sar Pass",
+      "altitude": "Sar Pass summit 4,200 meters; Biskeri Thach 3,350 meters",
+      "driveDistance": null,
+      "trekDistance": "12 km",
+      "duration": "7-8 hrs",
+      "pickupPoint": null,
+      "dropPoint": null,
+      "description": [
+        "Depart Nagaru for Biskeri Thach via Sar Pass, covering a distance of 14kilometers. Trek through challenging terrain, including a steep ascent on snowuntil reaching the majestic Sar Pass summit at an altitude of 4,200 meters.Marvel at the awe-inspiring sunrise and panoramic views of the Parvati Valleyand surrounding peaks. Enjoy a packed lunch amidst the breathtaking scenerybefore descending towards Biskeri Thach, situated at an altitude of 3,350meters. Settle into the final campsite on a picturesque meadow, savoring thelast night of the trek under the star-studded sky."
+      ],
+      "notes": []
+    },
+    {
+      "day": 5,
+      "title": "Biskeri Thach - Pulga/Barshaini to Kasol",
+      "altitude": null,
+      "driveDistance": "14 km",
+      "trekDistance": "6-7 km",
+      "duration": "Trek 4-5 hrs; Drive 1 hr",
+      "pickupPoint": null,
+      "dropPoint": "Kasol",
+      "description": [
+        "Bid farewell to Biskeri Thach and begin the descent towards Barshaini, covering a distance of 10 kilometers. Trek through lush forests and scenic trails. Arrive at Barshaini and conclude the trek, where transportation awaits for the journey back to Kasol. Reach Kasol by evening, concluding the memorable trekking expedition amidst the stunning landscapes of the Parvati Valley."
+      ],
+      "notes": []
+    }
+  ],
+  "inclusions": [
+    "Transportation : Kasol to Kasol",
+    "Vegetarian Meals : All Meals as per menu from first day Dinner to last day Breakfast",
+    "Accomodation: Hotel, Homestay, Camping",
+    "Camping charges : Camping and forest permit fees for Indian Nationals",
+    "Trekking equipment : High quality tents (living tent– triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, Utensils",
+    "Safety equipment : First aid medical kit, oxygen cylinder, stretchers, rope",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff"
+  ],
+  "exclusions": [
+    "Food during road journey (Kasol to Kasol and return)",
+    "Personal clothing (jacket, shoes, winter clothes etc)",
+    "Personal trek gears (stick, poncho, headlight etc)",
+    "Taxes, travel insurance,",
+    "Any personal expense Anything apart from inclusion",
+    "Mules or Porter to carry personal luggage"
+  ],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹400 to ₹600 per day per bag.",
+    "Ensure your backpack weighs up to 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
+  "thingsToCarry": [],
+  "thingsToCarryNotes": [],
+  "cancellationPolicy": {
+    "rules": [
+      {
+        "window": "Cancellation 20 days before the starting date of the Trek",
+        "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
+      }
+    ],
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
+  },
+  "termsAndConditions": {
+    "bookingConfirmation": "The customer receives a Booking confirmation receipt promptly via Email and whatsapp of successful booking.",
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from day 1 dinner to last day breakfast (Grahan Village to Barshaini)",
+      "Accommodation at Hotel, Camping will be on Triple and quad sharing basis.",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own.",
+      "Disclose your medical conditions before arrival, do not hide any illness issues."
+    ]
+  },
+  "faqs": [],
+  "availableDates": null,
+  "source": {
+    "file": "SAR_PASS_TREK__HIMALAYAN_AMBITION_2.pdf",
+    "brand": "Himalayan Ambition",
+    "website": "himalayanambition.in",
+    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "missingSections": [
+      "Highlights",
+      "Short Overview (prose)",
+      "Full Overview (prose)",
+      "Things to Carry",
+      "FAQs",
+      "Available Dates"
+    ],
+    "discrepancies": [
+      "Day distances in the headers and body text disagree throughout: Day 1 header says 2 km trek, body says 10 km; Day 3 header says 5 km, body says 6 km; Day 4 header says 12 km, body says 14 km; Day 5 header says 6-7 km, body says 10 km. Header values are used for the trekDistance fields and body values retained in description.",
+      "Day 2 body says \"a challenging ascent for the first 9 kilometers\" within an 8 km day.",
+      "Day 1 body says the trek takes \"approximately 4-6 hours\"; the header says 1 hr.",
+      "Several body paragraphs have missing spaces between words (e.g. \"theParvati Valley\", \"3,400 meters\"), reproduced verbatim from the brochure."
+    ]
+  }
+}
