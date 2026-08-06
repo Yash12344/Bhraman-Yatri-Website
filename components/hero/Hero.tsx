@@ -69,7 +69,7 @@ export function Hero() {
                       {slide.subtitle}
                     </p>
                     <div className="mt-8 flex flex-wrap items-center gap-4">
-                      <Link href="#popular-treks">
+                      <Link href="/treks">
                         <Button variant="primary" size="lg" tabIndex={-1}>
                           Explore Treks
                         </Button>

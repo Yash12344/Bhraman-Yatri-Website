@@ -1,29 +1,24 @@
-import { TopBar } from "@/components/navbar/TopBar";
-import { Navbar } from "@/components/navbar/Navbar";
 import { Hero } from "@/components/hero/Hero";
 import { SearchBar } from "@/components/search/SearchBar";
 import { PopularTreks } from "@/components/treks/PopularTreks";
 import { TreksBySeason } from "@/components/seasons/TreksBySeason";
 import { WhyChoose } from "@/components/whychoose/WhyChoose";
+import { Testimonials } from "@/components/testimonials/Testimonials";
+import { GalleryPreview } from "@/components/gallery/GalleryPreview";
 import { EnquirySection } from "@/components/enquiry/EnquirySection";
-import { Footer } from "@/components/footer/Footer";
-import { FloatingWhatsApp } from "@/components/shared/FloatingWhatsApp";
+import { getDifficulties } from "@/lib/treks";
 
 export default function HomePage() {
   return (
     <>
-      <TopBar />
-      <Navbar />
-      <main>
-        <Hero />
-        <SearchBar />
-        <PopularTreks />
-        <TreksBySeason />
-        <WhyChoose />
-        <EnquirySection />
-      </main>
-      <Footer />
-      <FloatingWhatsApp />
+      <Hero />
+      <SearchBar difficulties={getDifficulties()} />
+      <PopularTreks />
+      <TreksBySeason />
+      <WhyChoose />
+      <Testimonials />
+      <GalleryPreview />
+      <EnquirySection />
     </>
   );
 }

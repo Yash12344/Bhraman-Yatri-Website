@@ -2,8 +2,12 @@ import Image from "next/image";
 import { Container } from "@/components/shared/Container";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { EnquiryForm } from "@/components/enquiry/EnquiryForm";
+import { ENQUIRY_BACKGROUND } from "@/lib/images";
+import { TREKS } from "@/lib/treks";
 
 export function EnquirySection() {
+  const trekOptions = TREKS.map((trek) => ({ slug: trek.slug, name: trek.name }));
+
   return (
     <section id="enquiry" aria-labelledby="enquiry-heading" className="pb-10">
       <Container>
@@ -11,7 +15,7 @@ export function EnquirySection() {
           <div className="grid overflow-hidden rounded-3xl bg-neutral-100 shadow-[0_16px_40px_-20px_rgba(0,0,0,0.25)] lg:grid-cols-[333px_1fr]">
             <div className="relative px-7 py-9">
               <Image
-                src="/site-images/general/enquiry-form-background.jpg"
+                src={ENQUIRY_BACKGROUND}
                 alt="Faded mountain range backdrop"
                 fill
                 sizes="(max-width: 1024px) 100vw, 333px"
@@ -34,7 +38,7 @@ export function EnquirySection() {
               </div>
             </div>
             <div className="bg-neutral-100 px-6 py-4">
-              <EnquiryForm />
+              <EnquiryForm treks={trekOptions} />
             </div>
           </div>
         </FadeIn>

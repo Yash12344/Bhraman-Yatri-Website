@@ -1,3 +1,9 @@
+/**
+ * Site-level configuration: branding, navigation, features and footer links.
+ *
+ * Trek content is NOT here — it comes from `data/treks/*.json` via
+ * `lib/treks.ts`, which is the single source of truth for treks.
+ */
 import {
   BadgeIndianRupee,
   Headset,
@@ -6,19 +12,22 @@ import {
   Users,
 } from "lucide-react";
 import type {
+  BlogPost,
   Feature,
   FooterLink,
   HeroSlide,
   NavLink,
-  SeasonSection,
   SelectOption,
   SocialLink,
-  Trek,
+  Testimonial,
 } from "@/lib/types";
+import testimonialsData from "@/data/testimonials.json";
+import blogPostsData from "@/data/blog/posts.json";
 
 export const SITE = {
   name: "Bhraman Yatri",
   tagline: "Explore Beyond Limits",
+  url: "https://bhramanyatri.com",
   email: "info@bhramanyatri.com",
   phone: "+91 98765 43210",
   phoneHref: "tel:+919876543210",
@@ -28,115 +37,6 @@ export const SITE = {
     "Bhraman Yatri is a travel community for explorers and adventure seekers. We organize treks and tours across the Himalayas.",
   copyright: "© 2024 Bhraman Yatri. All Rights Reserved.",
 };
-
-export const TREKS: Trek[] = [
-  {
-    id: "hampta-pass",
-    name: "Hampta Pass Trek",
-    days: 5,
-    difficulty: "Moderate",
-    price: 5499,
-    image: "/site-images/treks/hampta-pass-trek.jpg",
-    imageAlt: "Trekkers walking through the snow-covered Hampta Pass valley",
-    badge: "Bestseller",
-    popular: true,
-  },
-  {
-    id: "kedarkantha",
-    name: "Kedarkantha Trek",
-    days: 6,
-    difficulty: "Moderate",
-    price: 5999,
-    image: "/site-images/treks/kedarkantha-trek.jpg",
-    imageAlt: "Snow-laden pine forest and campsites on the Kedarkantha trail",
-    popular: true,
-  },
-  {
-    id: "valley-of-flowers",
-    name: "Valley of Flowers Trek",
-    days: 6,
-    difficulty: "Easy",
-    price: 6499,
-    image: "/site-images/treks/valley-of-flowers-trek.jpg",
-    imageAlt: "Blooming alpine meadows in the Valley of Flowers national park",
-    popular: true,
-  },
-  {
-    id: "kuari-pass",
-    name: "Kuari Pass Trek",
-    days: 6,
-    difficulty: "Moderate",
-    price: 5999,
-    image: "/site-images/treks/kuari-pass-trek.jpg",
-    imageAlt: "A lone trekker facing the snowy peaks of Kuari Pass",
-    popular: true,
-  },
-  {
-    id: "chopta-tungnath",
-    name: "Chopta Tungnath Trek",
-    days: 4,
-    difficulty: "Easy",
-    price: 4499,
-    image: "/site-images/treks/chopta-tungnath-trek.jpg",
-    imageAlt: "The ancient Tungnath temple against Himalayan peaks at Chopta",
-    popular: true,
-  },
-  {
-    id: "brahmatal",
-    name: "Brahmatal Trek",
-    days: 6,
-    difficulty: "Moderate",
-    price: 5750,
-    image: "/site-images/treks/brahmatal-trek.jpg",
-    imageAlt: "Frozen Brahmatal lake surrounded by snow-covered ridges",
-    popular: true,
-  },
-  {
-    id: "dayara-bugyal",
-    name: "Dayara Bugyal Trek",
-    days: 4,
-    difficulty: "Easy",
-    price: 4999,
-    image: "/site-images/treks/dayara-bugyal-trek.jpg",
-    imageAlt: "Rolling high-altitude meadows of Dayara Bugyal",
-  },
-  {
-    id: "bhrigu-lake",
-    name: "Bhrigu Lake Trek",
-    days: 4,
-    difficulty: "Moderate",
-    price: 6999,
-    image: "/site-images/treks/bhrigu-lake-trek.jpg",
-    imageAlt: "The glacial Bhrigu lake nestled between grassy ridgelines",
-  },
-  {
-    id: "sar-pass",
-    name: "Sar Pass Trek",
-    days: 6,
-    difficulty: "Moderate",
-    price: 7499,
-    image: "/site-images/treks/sar-pass-trek.jpg",
-    imageAlt: "Snow fields leading up to the Sar Pass crossing",
-  },
-  {
-    id: "har-ki-dun",
-    name: "Har Ki Dun Trek",
-    days: 6,
-    difficulty: "Moderate",
-    price: 8999,
-    image: "/site-images/treks/har-ki-dun-trek.jpg",
-    imageAlt: "The cradle-shaped Har Ki Dun valley in golden light",
-    popular: true,
-  },
-];
-
-export const POPULAR_TREKS: Trek[] = TREKS.filter((trek) => trek.popular);
-
-export function getTrekById(id: string): Trek {
-  const trek = TREKS.find((item) => item.id === id);
-  if (!trek) throw new Error(`Unknown trek id: ${id}`);
-  return trek;
-}
 
 export const HERO_SLIDES: HeroSlide[] = [
   {
@@ -167,50 +67,12 @@ export const HERO_SLIDES: HeroSlide[] = [
 ];
 
 export const NAV_LINKS: NavLink[] = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#why-choose-us" },
-  {
-    label: "All Treks",
-    href: "#popular-treks",
-    children: [
-      { label: "Hampta Pass Trek", href: "#popular-treks" },
-      { label: "Kedarkantha Trek", href: "#popular-treks" },
-      { label: "Valley of Flowers Trek", href: "#popular-treks" },
-      { label: "Kuari Pass Trek", href: "#popular-treks" },
-      { label: "Chopta Tungnath Trek", href: "#popular-treks" },
-    ],
-  },
-  { label: "Contact Us", href: "#enquiry" },
-];
-
-export const SEASONS: SeasonSection[] = [
-  {
-    id: "winter",
-    title: "Winter Treks",
-    viewAllLabel: "View All Winter Treks",
-    viewAllHref: "#popular-treks",
-    trekIds: [
-      "kedarkantha",
-      "dayara-bugyal",
-      "brahmatal",
-      "chopta-tungnath",
-      "kuari-pass",
-    ],
-  },
-  {
-    id: "summer",
-    title: "Summer Treks",
-    viewAllLabel: "View All Summer Treks",
-    viewAllHref: "#popular-treks",
-    trekIds: [
-      "hampta-pass",
-      "bhrigu-lake",
-      "valley-of-flowers",
-      "sar-pass",
-      "bhrigu-lake",
-      "har-ki-dun",
-    ],
-  },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "All Treks", href: "/treks" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const FEATURES: Feature[] = [
@@ -247,25 +109,17 @@ export const FEATURES: Feature[] = [
 ];
 
 export const QUICK_LINKS: FooterLink[] = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#why-choose-us" },
-  { label: "All Treks", href: "#popular-treks" },
-  { label: "Gallery", href: "#home" },
-  { label: "Blog", href: "#home" },
-  { label: "Contact Us", href: "#enquiry" },
-];
-
-export const FOOTER_TREK_LINKS: FooterLink[] = [
-  { label: "Hampta Pass Trek", href: "#popular-treks" },
-  { label: "Kedarkantha Trek", href: "#popular-treks" },
-  { label: "Valley of Flowers Trek", href: "#popular-treks" },
-  { label: "Kuari Pass Trek", href: "#popular-treks" },
-  { label: "Chopta Tungnath Trek", href: "#popular-treks" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "All Treks", href: "/treks" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const LEGAL_LINKS: FooterLink[] = [
-  { label: "Privacy Policy", href: "#home" },
-  { label: "Terms & Conditions", href: "#home" },
+  { label: "Privacy Policy", href: "/contact" },
+  { label: "Terms & Conditions", href: "/contact" },
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -276,23 +130,25 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const MONTH_OPTIONS: SelectOption[] = [
   { label: "Any Month", value: "any" },
-  { label: "January", value: "january" },
-  { label: "February", value: "february" },
-  { label: "March", value: "march" },
-  { label: "April", value: "april" },
-  { label: "May", value: "may" },
-  { label: "June", value: "june" },
-  { label: "July", value: "july" },
-  { label: "August", value: "august" },
-  { label: "September", value: "september" },
-  { label: "October", value: "october" },
-  { label: "November", value: "november" },
-  { label: "December", value: "december" },
+  { label: "January", value: "1" },
+  { label: "February", value: "2" },
+  { label: "March", value: "3" },
+  { label: "April", value: "4" },
+  { label: "May", value: "5" },
+  { label: "June", value: "6" },
+  { label: "July", value: "7" },
+  { label: "August", value: "8" },
+  { label: "September", value: "9" },
+  { label: "October", value: "10" },
+  { label: "November", value: "11" },
+  { label: "December", value: "12" },
 ];
 
-export const DIFFICULTY_OPTIONS: SelectOption[] = [
-  { label: "Any Level", value: "any" },
-  { label: "Easy", value: "easy" },
-  { label: "Moderate", value: "moderate" },
-  { label: "Difficult", value: "difficult" },
-];
+/**
+ * Customer reviews. Ships empty on purpose — testimonials must be real, so the
+ * homepage section stays hidden until the operator adds entries here.
+ */
+export const TESTIMONIALS = testimonialsData as Testimonial[];
+
+/** Blog posts. Ships empty; the blog route renders an empty state until filled. */
+export const BLOG_POSTS = blogPostsData as BlogPost[];

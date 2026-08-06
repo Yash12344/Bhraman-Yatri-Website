@@ -1,18 +1,9 @@
 import type { LucideIcon } from "lucide-react";
 
-export type Difficulty = "Easy" | "Moderate" | "Difficult";
-
-export interface Trek {
-  id: string;
-  name: string;
-  days: number;
-  difficulty: Difficulty;
-  price: number;
-  image: string;
-  imageAlt: string;
-  badge?: string;
-  popular?: boolean;
-}
+/**
+ * UI-level types. Trek content types live in `types/trek.ts` and the derived
+ * view model in `lib/treks.ts` — this file covers only presentational data.
+ */
 
 export interface HeroSlide {
   id: string;
@@ -36,14 +27,6 @@ export interface Feature {
   description: string;
 }
 
-export interface SeasonSection {
-  id: "winter" | "summer";
-  title: string;
-  viewAllLabel: string;
-  viewAllHref: string;
-  trekIds: string[];
-}
-
 export interface FooterLink {
   label: string;
   href: string;
@@ -58,4 +41,28 @@ export interface SocialLink {
 export interface SelectOption {
   label: string;
   value: string;
+}
+
+/**
+ * Customer testimonial. Populated from `data/testimonials.json`, which ships
+ * empty — the section is hidden until the operator supplies real reviews.
+ */
+export interface Testimonial {
+  id: string;
+  name: string;
+  location: string;
+  trek: string;
+  rating: number;
+  quote: string;
+}
+
+/** Blog post metadata, loaded from `data/blog/posts.json`. */
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  image: string | null;
+  tags: string[];
 }

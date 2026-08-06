@@ -1,12 +1,13 @@
 "use client";
 
-import type { FormEvent } from "react";
+import { useRouter } from "next/navigation";
+import { useState, type FormEvent } from "react";
 import { BarChart3, Calendar, ChevronDown, MapPin } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/shared/Container";
-import { DIFFICULTY_OPTIONS, MONTH_OPTIONS } from "@/lib/data";
+import { MONTH_OPTIONS } from "@/lib/data";
 import type { SelectOption } from "@/lib/types";
-import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface SearchSelectFieldProps {
@@ -14,6 +15,8 @@ interface SearchSelectFieldProps {
   icon: LucideIcon;
   label: string;
   options: SelectOption[];
+  value: string;
+  onChange: (value: string) => void;
   className?: string;
 }
 
@@ -22,6 +25,8 @@ function SearchSelectField({
   icon: Icon,
   label,
   options,
+  value,
+  onChange,
   className,
 }: SearchSelectFieldProps) {
   return (
@@ -39,6 +44,8 @@ function SearchSelectField({
         <select
           id={id}
           name={id}
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
           className="w-full cursor-pointer appearance-none bg-transparent pr-6 text-sm text-gray-500 focus-visible:outline-none"
         >
           {options.map((option) => (
@@ -56,12 +63,33 @@ function SearchSelectField({
   );
 }
 
-export function SearchBar() {
+interface SearchBarProps {
+  difficulties: string[];
+}
+
+/**
+ * Floating hero search. Submits into /treks as query params so results are
+ * shareable and the listing page owns all filtering logic.
+ */
+export function SearchBar({ difficulties }: SearchBarProps) {
+  const router = useRouter();
+  const [query, setQuery] = useState("");
+  const [month, setMonth] = useState("any");
+  const [difficulty, setDifficulty] = useState("any");
+
+  const difficultyOptions: SelectOption[] = [
+    { label: "Any Level", value: "any" },
+    ...difficulties.map((level) => ({ label: level, value: level })),
+  ];
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    document
-      .getElementById("popular-treks")
-      ?.scrollIntoView({ behavior: "smooth" });
+    const params = new URLSearchParams();
+    if (query.trim()) params.set("q", query.trim());
+    if (month !== "any") params.set("month", month);
+    if (difficulty !== "any") params.set("difficulty", difficulty);
+    const search = params.toString();
+    router.push(search ? `/treks?${search}` : "/treks");
   };
 
   return (
@@ -86,6 +114,8 @@ export function SearchBar() {
               id="search-destination"
               name="destination"
               type="text"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
               placeholder="Search treks..."
               className="w-full bg-transparent text-sm text-gray-700 placeholder:text-gray-400 focus-visible:outline-none"
             />
@@ -97,13 +127,17 @@ export function SearchBar() {
           icon={Calendar}
           label="Select Month"
           options={MONTH_OPTIONS}
+          value={month}
+          onChange={setMonth}
           className="flex-[1.18]"
         />
         <SearchSelectField
           id="search-difficulty"
           icon={BarChart3}
           label="Difficulty"
-          options={DIFFICULTY_OPTIONS}
+          options={difficultyOptions}
+          value={difficulty}
+          onChange={setDifficulty}
           className="flex-1"
         />
 

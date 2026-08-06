@@ -4,38 +4,25 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle2, Mail, Mountain, Phone, User } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select } from "@/components/ui/select";
-import { TREKS } from "@/lib/data";
+import { FieldError, FieldIcon } from "@/components/forms/FormField";
 import { enquirySchema, type EnquiryFormValues } from "@/lib/validations";
 import { cn } from "@/lib/utils";
 
-interface FieldIconProps {
-  icon: LucideIcon;
+export interface TrekOption {
+  slug: string;
+  name: string;
 }
 
-function FieldIcon({ icon: Icon }: FieldIconProps) {
-  return (
-    <Icon
-      aria-hidden="true"
-      className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-gray-400"
-    />
-  );
+interface EnquiryFormProps {
+  /** Passed from a server component so trek JSON never reaches the client bundle. */
+  treks: TrekOption[];
 }
 
-function FieldError({ id, message }: { id: string; message?: string }) {
-  if (!message) return null;
-  return (
-    <p id={id} role="alert" className="mt-1 text-xs text-red-500">
-      {message}
-    </p>
-  );
-}
-
-export function EnquiryForm() {
+export function EnquiryForm({ treks }: EnquiryFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const {
     register,
@@ -166,8 +153,8 @@ export function EnquiryForm() {
             <option value="" disabled>
               Select Trek
             </option>
-            {TREKS.map((trek) => (
-              <option key={trek.id} value={trek.id}>
+            {treks.map((trek) => (
+              <option key={trek.slug} value={trek.slug}>
                 {trek.name}
               </option>
             ))}

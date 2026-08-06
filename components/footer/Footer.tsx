@@ -9,12 +9,12 @@ import {
 } from "@/components/shared/SocialIcons";
 import { NewsletterForm } from "@/components/footer/NewsletterForm";
 import {
-  FOOTER_TREK_LINKS,
   LEGAL_LINKS,
   QUICK_LINKS,
   SITE,
   SOCIAL_LINKS,
 } from "@/lib/data";
+import { TREKS } from "@/lib/treks";
 
 const socialIcons = {
   instagram: InstagramIcon,
@@ -89,13 +89,13 @@ export function Footer() {
         <nav aria-label="Popular treks">
           <FooterHeading>Popular Treks</FooterHeading>
           <ul className="space-y-2 text-sm">
-            {FOOTER_TREK_LINKS.map((link) => (
-              <li key={link.label}>
+            {TREKS.slice(0, 5).map((trek) => (
+              <li key={trek.slug}>
                 <Link
-                  href={link.href}
+                  href={`/treks/${trek.slug}`}
                   className="transition-colors hover:text-saffron-400"
                 >
-                  {link.label}
+                  {trek.name}
                 </Link>
               </li>
             ))}
