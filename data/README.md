@@ -37,27 +37,39 @@ A trek's seasons are read from its `bestSeason` text (e.g. `"Nov To April"`,
 
 ---
 
-## Fields the brochures did not contain
+## Overview and highlights copy
 
-These are intentionally empty across all nine treks, because the source PDFs
-had no such content. **The website hides each section until it is filled in** —
-nothing was invented to pad them out.
+`shortOverview`, `fullOverview` and `highlights` are website copy written by
+rewriting each brochure's own facts — the overview table, the day-wise
+itinerary, the inclusions and the key notes. No destination, activity,
+facility, viewpoint or peak appears that the brochure did not state.
 
-| Field in the trek JSON | What it powers |
+Two scripts maintain this:
+
+```bash
+node scripts/write-trek-copy.mjs    # writes the copy into the JSON
+node scripts/verify-trek-copy.mjs   # fails if any claim is unsupported
+```
+
+`verify-trek-copy.mjs` extracts every proper noun and figure from the copy and
+asserts it also appears in that trek's source fields. It runs clean today, and
+it earns its keep — it caught a first draft of the Hampta Pass overview that
+described the crossing as running "from Kullu into Lahaul". Both are
+geographically true, but neither word appears anywhere in that brochure, so the
+wording was changed to the Chandra Valley, which the itinerary does name.
+
+Editing the copy by hand in the JSON is fine. Re-run the verifier afterwards.
+
+### Still empty: FAQs
+
+| Field | What it powers |
 |---|---|
-| `shortOverview`, `fullOverview` | The "Overview" section on the trek page |
-| `highlights` | The "Highlights" section |
-| `faqs` | The FAQ accordion |
+| `faqs` | The FAQ accordion on the trek page |
 
-To fill them, edit the trek's JSON:
+No brochure contained a FAQ section, so nothing was written. The accordion stays
+hidden until entries are added:
 
 ```jsonc
-"shortOverview": "One or two sentences that sell the trek.",
-"fullOverview": "A longer paragraph with more detail.",
-"highlights": [
-  "Summit views of Swargarohini and Bandarpoonch",
-  "Camping beside a frozen alpine lake"
-],
 "faqs": [
   { "question": "How fit do I need to be?", "answer": "..." }
 ]

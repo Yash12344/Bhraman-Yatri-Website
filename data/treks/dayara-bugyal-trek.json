@@ -24,13 +24,34 @@
   "drop": "Dehradun Railway station",
   "nearestAirport": "Dehradun",
   "railwayStation": "Dehradun",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "One of Uttarakhand's broadest high-altitude meadows, reached in four days on an easy forest trail from Raithal.",
+  "fullOverview": "Dayara Bugyal is a meadow trek in the truest sense — a gentle four-day walk that opens onto one of the broadest alpine grasslands in Uttarakhand. Graded Easy and covering 22 kilometres, it suits beginners and anyone wanting real Himalayan scenery without technical ground. The trek starts from the picturesque village of Raithal, an eight to nine hour drive from Dehradun railway station. From there the trail climbs steadily through dense forest to the camp at Gui, gaining height from 7,150 ft to 9,600 ft. The following day is the highlight: a hike from Gui up to Dayara Bugyal at 12,000 ft, where the meadows spread out in every direction, with the option of continuing to Bakaria Top — also known as Dayara Top — for a wider panorama. With a long season running October to June, Dayara Bugyal can be walked as green summer meadow or under winter snow.",
+  "highlights": [
+    "The vast high-altitude meadows of Dayara Bugyal at 12,000 ft",
+    "Optional climb to Bakaria Top, also known as Dayara Top",
+    "Steady forest ascent from Raithal to the camp at Gui",
+    "Altitude gain from 7,150 ft to 12,000 ft across the trek",
+    "22 km across 4 days, graded Easy",
+    "A long season, October right through to June",
+    "Camping at Gui, with hotel or homestay at base",
+    "Pickup from Dehradun railway station"
+  ],
   "briefItinerary": [
-    { "day": 1, "title": "Dehradun to Raithal", "detail": null },
-    { "day": 2, "title": "Raithal to Gui camp", "detail": null },
-    { "day": 3, "title": "Gui Camp to Dayara Bugyal and return", "detail": null },
+    {
+      "day": 1,
+      "title": "Dehradun to Raithal",
+      "detail": null
+    },
+    {
+      "day": 2,
+      "title": "Raithal to Gui camp",
+      "detail": null
+    },
+    {
+      "day": 3,
+      "title": "Gui Camp to Dayara Bugyal and return",
+      "detail": null
+    },
     {
       "day": 4,
       "title": "Gui Camp to Raithal and same day drive back to Dehradun",
@@ -53,7 +74,10 @@
         "Check-in to a guesthouse or campsite.",
         "Acclimatize and enjoy the serene surroundings. Rest and prepare for the trek ahead. You can explore the local surroundings or interact with fellow trekkers"
       ],
-      "notes": ["Pick up Time : 6:30 AM", "Basecamp : Raithal"]
+      "notes": [
+        "Pick up Time : 6:30 AM",
+        "Basecamp : Raithal"
+      ]
     },
     {
       "day": 2,
@@ -163,7 +187,11 @@
     "file": "DAYARA_BUGYAL_TREK__HIMALAYAN_AMBITION.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9536332828"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

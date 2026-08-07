@@ -24,17 +24,34 @@
   "drop": "Kasol",
   "nearestAirport": "Bhuntar",
   "railwayStation": "Chandigarh",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "A snow crossing above the Parvati Valley at 4,200 m, with a sunrise summit and a forest descent to Barshaini.",
+  "fullOverview": "Sar Pass is the best-known trek out of the Parvati Valley, and at 4,200 m it offers a genuine snow crossing on a five-day, 33-kilometre route graded Moderate. The trail starts at Kasol, 1,700 m, climbing through dense forest of rhododendron, pine and golden oak to Grahan Village at 2,350 m. From there it gains over a thousand metres through lush meadows and towering trees to camp at Min Thach, 3,400 m. The route then turns rugged, rising above the tree line into windswept terrain at Nagaru, 3,800 m — a stretch with no water sources along the way, so carrying an adequate supply matters. Crossing day begins early for a steep ascent on snow to the Sar Pass summit, where sunrise opens panoramic views over the Parvati Valley and the surrounding peaks, before a long descent to the meadow camp at Biskeri Thach. The trek closes with a forest walk to Barshaini and a drive back to Kasol.",
+  "highlights": [
+    "A snow crossing at the Sar Pass summit, 4,200 m",
+    "Sunrise and panoramic views over the Parvati Valley",
+    "Rhododendron, pine and golden oak forest above Kasol",
+    "Meadow camps at Min Thach (3,400 m) and Biskeri Thach (3,350 m)",
+    "Windswept high camp at Nagaru, above the tree line",
+    "33 km across 5 days, graded Moderate",
+    "Seasons: April to June, and October",
+    "Starts and finishes at Kasol in the Parvati Valley"
+  ],
   "briefItinerary": [
     {
       "day": 1,
       "title": "Kasol to Grahan Village",
       "detail": "Drive : 8km | 1hr, Trek : 2km | 1hr"
     },
-    { "day": 2, "title": "Grahan to Min Thach", "detail": "Trek : 8km | 5-6hr" },
-    { "day": 3, "title": "Min Thach to Nagaru", "detail": "Trek : 5km | 4-5 hr" },
+    {
+      "day": 2,
+      "title": "Grahan to Min Thach",
+      "detail": "Trek : 8km | 5-6hr"
+    },
+    {
+      "day": 3,
+      "title": "Min Thach to Nagaru",
+      "detail": "Trek : 5km | 4-5 hr"
+    },
     {
       "day": 4,
       "title": "Nagaru to Biskeri Thach via Sar Pass",
@@ -179,7 +196,11 @@
     "file": "SAR_PASS_TREK__HIMALAYAN_AMBITION_2.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9536332828"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

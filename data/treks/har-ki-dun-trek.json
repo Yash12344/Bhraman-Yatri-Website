@@ -40,17 +40,34 @@
   "drop": "Dehradun Railway Station",
   "nearestAirport": "Dehradun",
   "railwayStation": "Dehradun",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "A cradle of a valley below Swargarohini, reached along river trails, wooden bridges and waterfalls.",
+  "fullOverview": "Har Ki Dun is a valley trek rather than a summit push, and its appeal is the approach: 35 kilometres of river trails, wooden bridges, dense forest and waterfalls leading into one of Garhwal's most storied valleys. The drive from Dehradun follows the Tons and Yamuna rivers through Purola and Mori to the base at Sankri. From there the route runs to Seema via Gangad on forest trails and riverside paths, then climbs beside the Har Ki Dun River to the Waterfall Camp at around 3,050 m. The finest day walks through alpine meadows and glacial streams into Har Ki Dun Valley at 3,566 m, with Swargarohini, Bandarpoonch, Black Peak and the Jaundar Glacier in view, and an optional hike to Maninda Tal for those with the weather and the legs for it. A buffer day is held in reserve against bad weather, which may take in Osla village and the Someshwar Mahadev Temple.",
+  "highlights": [
+    "Har Ki Dun Valley at 3,566 m, beneath Swargarohini",
+    "Views of Swargarohini, Bandarpoonch, Black Peak and the Jaundar Glacier",
+    "Optional hike to Maninda Tal, weather and fitness permitting",
+    "River trails, wooden bridges and waterfalls along the Har Ki Dun River",
+    "Alpine meadows and glacial streams on the valley day",
+    "Drive in along the Tons and Yamuna rivers via Purola and Mori",
+    "35 km across 6 days, graded Moderate",
+    "A buffer day held in reserve for bad weather and roadblocks"
+  ],
   "briefItinerary": [
-    { "day": 1, "title": "Dehradun to Sankri", "detail": "195km/8-9 hrs" },
+    {
+      "day": 1,
+      "title": "Dehradun to Sankri",
+      "detail": "195km/8-9 hrs"
+    },
     {
       "day": 2,
       "title": "Sankri to Seema via Gangad",
       "detail": "Driver 19km/1.5hrs; Trek 5km/3-4hrs"
     },
-    { "day": 3, "title": "Seema to Waterfall Camp", "detail": "Trek 6km/4-5hrs" },
+    {
+      "day": 3,
+      "title": "Seema to Waterfall Camp",
+      "detail": "Trek 6km/4-5hrs"
+    },
     {
       "day": 4,
       "title": "Waterfall Camp to Har Ki Dun Valley & Return",
@@ -61,7 +78,11 @@
       "title": "Waterfall Camp to Osla & Gangad to Sankri",
       "detail": "Trek 10km/5-6 hrs; Drive 19km/2hrs"
     },
-    { "day": 6, "title": "Sankri to Dehradun", "detail": "Drive 195km/9hrs" },
+    {
+      "day": 6,
+      "title": "Sankri to Dehradun",
+      "detail": "Drive 195km/9hrs"
+    },
     {
       "day": 7,
       "title": "Buffer day (if required)",
@@ -284,7 +305,11 @@
     "file": "HAR_KI_DUN_HIMALAYAN_AMBITION3.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9627036555"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

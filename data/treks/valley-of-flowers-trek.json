@@ -24,11 +24,24 @@
   "drop": "Rishikesh",
   "nearestAirport": "Dehradun",
   "railwayStation": "Haridwar",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "A monsoon-season trek into a valley in full bloom, paired with the high gurudwara and lake at Hemkund Sahib.",
+  "fullOverview": "The Valley of Flowers is a monsoon trek — in the one season when most Himalayan routes close, this one comes into its own. Across six days and 38 kilometres it pairs the flowering valley with the sacred lake and gurudwara at Hemkund Sahib. The journey opens with a long drive from Rishikesh to Govindghat, then a short transfer to Poolna and a nine-kilometre climb to Ghangaria at 10,500 ft, the base for both walks. From there a four-kilometre trail each way leads into the Valley of Flowers at 11,550 ft, a full day given over to vibrant meadows, blooming flowers and the valley's remarkable biodiversity. The following day climbs to Hemkund Sahib at 14,100 ft, a Sikh pilgrimage site above 4,298 m where the gurudwara stands beside the lake, with panoramic views of the surrounding mountains. Graded Moderate, the season runs mid-July to mid-September, when the flowers are at their best.",
+  "highlights": [
+    "The Valley of Flowers in bloom at 11,550 ft",
+    "Hemkund Sahib and its gurudwara at 14,100 ft",
+    "A rare monsoon-season Himalayan trek",
+    "Vibrant meadows and the valley's remarkable biodiversity",
+    "Base camp at Ghangaria, 10,500 ft",
+    "38 km across 6 days, graded Moderate",
+    "Season of mid-July to mid-September, at peak bloom",
+    "Pickup and drop at Rishikesh"
+  ],
   "briefItinerary": [
-    { "day": 1, "title": "Rishikesh to Govindghat", "detail": null },
+    {
+      "day": 1,
+      "title": "Rishikesh to Govindghat",
+      "detail": null
+    },
     {
       "day": 2,
       "title": "Drive from Govindghat to Poolna and Trek to Ghangaria",
@@ -49,7 +62,11 @@
       "title": "Trek from Ghangaria to Poolna and Drive to Govindghat",
       "detail": null
     },
-    { "day": 6, "title": "Govindghat to Rishikesh", "detail": null }
+    {
+      "day": 6,
+      "title": "Govindghat to Rishikesh",
+      "detail": null
+    }
   ],
   "itinerary": [
     {
@@ -196,7 +213,11 @@
     "file": "Valley_Of_Flower__HIMALAYAN_AMBITION.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9536332828"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

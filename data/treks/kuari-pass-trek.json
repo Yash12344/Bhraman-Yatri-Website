@@ -24,17 +24,34 @@
   "drop": "Rishikesh",
   "nearestAirport": "Dehradun",
   "railwayStation": "Haridwar",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "Ridge walking at 12,750 ft with Nanda Devi and Trishul across the valley, finishing through the meadows of Gurson Bugyal.",
+  "fullOverview": "Kuari Pass is a ridge-and-forest trek with some of the finest peak views in Garhwal, and its long October-to-April season means it can be walked in autumn colour or in deep winter snow. From Rishikesh the drive climbs past Devprayag and Chamoli to Joshimath. The walking begins above Tugashi village, rising through a mix of steep and moderate climbs to the camp at Gulling Top, 9,700 ft, known for its sunrises. Day three enters the mixed oak and rhododendron forest of Tali, camping at 11,050 ft. Summit day crosses Khullara Top to the Kuari Pass at 12,750 ft, where high snow and squalling wind on the ridges are part of the experience and the Garhwal peaks open up. The finale descends through dense forest into Gurson Bugyal, a vast green meadow with panoramic views of Nanda Devi and Trishul, ending at Auli — better known for its ski slopes.",
+  "highlights": [
+    "Kuari Pass at 12,750 ft, reached by way of Khullara Top",
+    "Panoramic views of Nanda Devi and Trishul from Gurson Bugyal",
+    "Sunrise from the Gulling Top camp at 9,700 ft",
+    "Mixed oak and rhododendron forest camp at Tali, 11,050 ft",
+    "Finish at Auli, known for its skiing slopes",
+    "Drive in past Devprayag and Chamoli",
+    "31 km across 6 days, graded Easy to Moderate",
+    "A long season from October to April"
+  ],
   "briefItinerary": [
-    { "day": 1, "title": "Rishikesh to Joshimath via Devprayag", "detail": null },
+    {
+      "day": 1,
+      "title": "Rishikesh to Joshimath via Devprayag",
+      "detail": null
+    },
     {
       "day": 2,
       "title": "Drive from Joshimath to Tugashi Village and trek to Gulling top",
       "detail": null
     },
-    { "day": 3, "title": "Gulling top to Tali forest camp", "detail": null },
+    {
+      "day": 3,
+      "title": "Gulling top to Tali forest camp",
+      "detail": null
+    },
     {
       "day": 4,
       "title": "Tali forest camp to Kuari pass summit and return",
@@ -45,7 +62,11 @@
       "title": "Tali forest camp to Auli and drive to Joshimath",
       "detail": null
     },
-    { "day": 6, "title": "Joshimath to Rishikesh", "detail": null }
+    {
+      "day": 6,
+      "title": "Joshimath to Rishikesh",
+      "detail": null
+    }
   ],
   "itinerary": [
     {
@@ -216,7 +237,11 @@
     "file": "Kuari_Pass_Trek__HA.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9627036555"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

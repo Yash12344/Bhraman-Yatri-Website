@@ -24,9 +24,18 @@
   "drop": "Dehradun Railway Station",
   "nearestAirport": "Dehradun",
   "railwayStation": "Dehradun",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "India's best-known winter summit — deodar forest, a lake camp and a 12,500 ft top with Swargarohini on the skyline.",
+  "fullOverview": "Kedarkantha is the winter trek most people in India start with, and for good reason: at Easy to Moderate grade and 20 kilometres across five days, it delivers a genuine 12,500 ft summit without demanding prior experience. The drive from Dehradun runs alongside the Yamuna and other rivers through pine forest to the base village of Sankri. Day two climbs through deodar, oak and birch to Juda Ka Talab at 9,100 ft, a lake camp reached on a trail carpeted in maple leaves. The next stage passes through pine and oak into open meadows at the base camp, 11,250 ft, with Swargarohini, Kala Nag and Bandarpoonch on the skyline. Summit day climbs to 12,500 ft and returns, descending past crystal-clear streams to camp beneath an open, star-filled sky. Spikes and gaiters are provided for the summit climb, and the season runs November to April.",
+  "highlights": [
+    "The Kedarkantha summit at 12,500 ft",
+    "Skyline views of Swargarohini, Kala Nag and Bandarpoonch",
+    "Camp beside the Juda Ka Talab lake at 9,100 ft",
+    "Deodar, oak and birch forest trails above Sankri",
+    "Open meadows at the 11,250 ft base camp",
+    "Spikes and gaiters provided for the summit climb",
+    "20 km across 5 days, graded Easy to Moderate",
+    "A winter season, November to April"
+  ],
   "briefItinerary": [
     {
       "day": 1,
@@ -69,7 +78,9 @@
         "You will drive along the Yamuna and other rivers along with beautiful pine forests that will surround your way. The drive to Sankri is going to be memorable because of the captivating sights.",
         "By 5 PM in the evening, you will reach Sankri and after freshening up, you will get the time to explore this beautiful village. The night stay of all the trekkers will be arranged in a hotel or homestay."
       ],
-      "notes": ["Note – Only Jio and BSNL newtwork will be available"]
+      "notes": [
+        "Note – Only Jio and BSNL newtwork will be available"
+      ]
     },
     {
       "day": 2,
@@ -216,11 +227,26 @@
   "faqs": [],
   "availableDates": {
     "months": [
-      { "month": "November", "departures": "Everyday" },
-      { "month": "December", "departures": "Everyday" },
-      { "month": "January", "departures": "Everyday" },
-      { "month": "February", "departures": "Everyday" },
-      { "month": "March", "departures": "Everyday" }
+      {
+        "month": "November",
+        "departures": "Everyday"
+      },
+      {
+        "month": "December",
+        "departures": "Everyday"
+      },
+      {
+        "month": "January",
+        "departures": "Everyday"
+      },
+      {
+        "month": "February",
+        "departures": "Everyday"
+      },
+      {
+        "month": "March",
+        "departures": "Everyday"
+      }
     ],
     "notes": [
       "Kedarkantha Trek – Daily Departures from Dehradun!",
@@ -235,7 +261,11 @@
     "file": "KEDARKANTHA_TREK__HIMALAYAN_AMBITION.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9536332828"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9536332828"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

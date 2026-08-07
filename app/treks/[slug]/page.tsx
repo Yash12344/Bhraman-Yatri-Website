@@ -45,7 +45,10 @@ export async function generateMetadata({
   if (!trek) return { title: "Trek not found" };
 
   const title = `${trek.name} — ${trek.duration} | ${trek.difficultyLabel}`;
-  const description = `${trek.name} in ${trek.regionLabel}: ${trek.duration}, max altitude ${trek.altitude}, ${trek.trekDistance} of trekking. Best season ${trek.bestSeason}. Starting from ${formatPrice(trek.startingPrice)} per person.`;
+  // Prefer the written hook; fall back to the facts when none is supplied.
+  const description = trek.shortOverview
+    ? `${trek.shortOverview} ${trek.duration}, ${trek.trekDistance}, from ${formatPrice(trek.startingPrice)} per person.`
+    : `${trek.name} in ${trek.regionLabel}: ${trek.duration}, max altitude ${trek.altitude}, ${trek.trekDistance} of trekking. Best season ${trek.bestSeason}. Starting from ${formatPrice(trek.startingPrice)} per person.`;
   const url = `${SITE.url}/treks/${trek.slug}`;
 
   return {

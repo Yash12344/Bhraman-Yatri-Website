@@ -24,9 +24,18 @@
   "drop": "Manali",
   "nearestAirport": "Bhuntar & Chandigarh",
   "railwayStation": "Chandigarh",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "A crossover trek from the green valleys above Manali into the rocky Chandra Valley, with an optional drive to Chandratal, the Moon Lake.",
+  "fullOverview": "Hampta Pass is the classic crossover trek — in five days it carries you from the lush green valleys above Manali over a 14,100 ft pass into the rugged, rocky landscape of the Chandra Valley, and the contrast between the two sides is what makes it memorable. The route begins with a short drive from Manali to Jobra, then an easy two-kilometre walk to the Chika campsite at 10,100 ft. From there it follows alpine meadows and streams beneath the Dhauladhar range to Balu Ka Ghera at 12,400 ft, a broad expanse of sand and rock. The crossing itself is the hardest and finest day: a climb to Hampta Pass with panoramic views of towering peaks and glaciers, followed by a steep descent to Shea Goru. After dropping to Chatru and the Chandra Valley, road and weather conditions permitting, a drive reaches Chandratal — the Moon Lake — at 14,100 ft. Graded Moderate, 25 kilometres, June to September.",
+  "highlights": [
+    "Cross the 14,100 ft Hampta Pass into the Chandra Valley",
+    "Panoramic views of towering peaks and glaciers from the pass",
+    "Alpine meadows and streams beneath the Dhauladhar range",
+    "Camp at Balu Ka Ghera, an expanse of sand and rock at 12,400 ft",
+    "Optional drive to Chandratal, the Moon Lake, at 14,100 ft",
+    "Return drive through the Spiti Valley and over Rohtang Pass",
+    "25 km across 5 days, graded Moderate",
+    "A summer season trek, June to September"
+  ],
   "briefItinerary": [
     {
       "day": 1,
@@ -48,7 +57,11 @@
       "title": "Shea Goru to Chatru and Drive to Chandratal",
       "detail": "Trek : 7km/4-5hrs , Drive : 50km/4-5hr"
     },
-    { "day": 5, "title": "Chatru to Manali", "detail": "Drive : 65km/3-4hr" }
+    {
+      "day": 5,
+      "title": "Chatru to Manali",
+      "detail": "Drive : 65km/3-4hr"
+    }
   ],
   "itinerary": [
     {
@@ -63,7 +76,9 @@
       "description": [
         "Begin your adventure with a scenic drive from Manali to Jobra. This 16 km drive takes approximately an hour and offers stunning views of the lush green valleys and snow-capped peaks. Upon reaching Jobra, the trekking journey commences. The trek from Jobra to Chika is relatively short, covering 2 km and taking around 1 hour. This gentle trek leads you through picturesque meadows and forests, eventually arriving at the Chika campsite situated at an altitude of 10,100 ft. Spend the night camping under the stars, surrounded by the serene beauty of nature."
       ],
-      "notes": ["Reporting Time : 10:00 AM"]
+      "notes": [
+        "Reporting Time : 10:00 AM"
+      ]
     },
     {
       "day": 2,
@@ -202,12 +217,30 @@
   "faqs": [],
   "availableDates": {
     "months": [
-      { "month": "MAY", "departures": "25 , 26, 27, 28, 29, 30, 31" },
-      { "month": "JUNE", "departures": "EVERYDAY" },
-      { "month": "JULY", "departures": "EVERYDAY" },
-      { "month": "AUGUST", "departures": "EVERYDAY" },
-      { "month": "SEPT", "departures": "EVERYDAY" },
-      { "month": "OCT", "departures": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10" }
+      {
+        "month": "MAY",
+        "departures": "25 , 26, 27, 28, 29, 30, 31"
+      },
+      {
+        "month": "JUNE",
+        "departures": "EVERYDAY"
+      },
+      {
+        "month": "JULY",
+        "departures": "EVERYDAY"
+      },
+      {
+        "month": "AUGUST",
+        "departures": "EVERYDAY"
+      },
+      {
+        "month": "SEPT",
+        "departures": "EVERYDAY"
+      },
+      {
+        "month": "OCT",
+        "departures": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+      }
     ],
     "notes": [
       "Hampta Pass Trek – Daily Departures from Manali!",
@@ -222,7 +255,11 @@
     "file": "HAMPTA_PASS_WITH_CHANDRATAL__HIMALAYAN_AMBITION1.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9627036555"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

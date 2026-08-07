@@ -24,9 +24,18 @@
   "drop": "Haridwar/rishikesh",
   "nearestAirport": "Rishikesh",
   "railwayStation": "Rishikesh",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "A winter classic in Garhwal — near-frozen alpine lakes, oak and rhododendron forest, and a 180-degree Himalayan skyline from 12,250 ft.",
+  "fullOverview": "Brahmatal is one of Uttarakhand's most rewarding winter treks, and at Easy to Moderate grade it suits trekkers stepping up to their first snow route. The journey begins at Haridwar or Rishikesh and follows mountain roads linking the Kumaon hills to Garhwal, with Nanda Ghunti's peak appearing before you reach the base camp at Lohajung. Over 24 kilometres the trail climbs from Lohajung market, past Mandoli village, to Bekaltal — a lake at 9,690 ft that lies almost frozen through winter. Beyond it, thickets of oak and rhododendron give way to open meadows as the tree line ends, opening views of Mount Trishul and Nanda Ghunti. The zigzag ascent to Brahmatal Top reaches 12,250 ft, where a 180-degree sweep of the Himalayan range unfolds around Brahmatal Lake, before the descent to Khorurai at 9,150 ft. Running December to March, this six-day trek combines hotel, homestay and camp nights.",
+  "highlights": [
+    "Brahmatal Top at 12,250 ft, with a 180-degree view of the Himalayan range",
+    "Near-frozen alpine lakes at Bekaltal (9,690 ft) and Brahmatal",
+    "Views of Mount Trishul and Nanda Ghunti from the meadows",
+    "Oak and rhododendron forest trails above Lohajung",
+    "Open meadows beyond the tree line",
+    "24 km of trekking across 6 days, graded Easy to Moderate",
+    "A December-to-March winter season",
+    "Hotel, homestay and camping nights included"
+  ],
   "briefItinerary": [
     {
       "day": 1,
@@ -234,7 +243,11 @@
     "file": "BRAHMATAL_TREK__HIMALAYAN_AMBITION.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9627036555"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",

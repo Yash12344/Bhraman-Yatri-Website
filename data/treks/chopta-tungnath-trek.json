@@ -32,9 +32,18 @@
   "drop": "Rishikesh/Delhi",
   "nearestAirport": "Dehradun",
   "railwayStation": "Haridwar/Rishkesh",
-  "shortOverview": null,
-  "fullOverview": null,
-  "highlights": [],
+  "shortOverview": "Three days to the world's highest Shiva temple and a 360-degree summit — the most accessible high-altitude trek we run.",
+  "fullOverview": "Chopta Tungnath with Chandrashila packs an extraordinary amount into three days, and at Easy grade with just 14 kilometres of walking it is the most accessible high-altitude trek in our range. Departures leave overnight from Delhi or early morning from Rishikesh, driving past the sacred confluence at Devprayag Sangam and on through Ukhimath to Sari Village. If time allows on arrival, a two-kilometre walk leads to Deoriatal, a lake known for its crystal-clear reflections of the Himalayan peaks. The main day opens with a drive through dense forest to Chopta, then a 3.5 kilometre climb to Tungnath Temple — the highest Shiva temple in the world. A further 1.5 kilometre ascent gains Chandrashila Peak at 12,110 ft, where a 360-degree panorama takes in Chaukhamba and Nanda Devi. Because the route runs round the year, it suits first-time trekkers and anyone short on time.",
+  "highlights": [
+    "Tungnath Temple — the highest Shiva temple in the world",
+    "360-degree summit views from Chandrashila Peak at 12,110 ft",
+    "Panoramas taking in Chaukhamba and Nanda Devi",
+    "Deoriatal and its crystal-clear reflections of the Himalayan peaks",
+    "The sacred confluence at Devprayag Sangam en route",
+    "Just 14 km of trekking, graded Easy",
+    "Runs round the year",
+    "Pickup from either Rishikesh or Delhi"
+  ],
   "briefItinerary": [
     {
       "day": 1,
@@ -147,7 +156,11 @@
     "file": "Chopta_Tungnath_Trek__Himalayan_Ambition5.pdf",
     "brand": "Himalayan Ambition",
     "website": "himalayanambition.in",
-    "phones": ["+91 971 971 5444", "9719715444", "9627036555"],
+    "phones": [
+      "+91 971 971 5444",
+      "9719715444",
+      "9627036555"
+    ],
     "missingSections": [
       "Highlights",
       "Short Overview (prose)",
