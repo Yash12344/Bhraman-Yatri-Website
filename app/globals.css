@@ -45,14 +45,14 @@ body {
 }
 
 /* Hero slider pagination dots */
-/* Dots clear the hero buttons above and the floating search card below. */
+/* Dots sit just inside the bottom edge of the hero. */
 .hero-swiper .swiper-pagination {
-  bottom: 64px !important;
+  bottom: 22px !important;
 }
 
 @media (min-width: 1024px) {
   .hero-swiper .swiper-pagination {
-    bottom: 124px !important;
+    bottom: 28px !important;
   }
 }
 

@@ -13,6 +13,7 @@ import {
   DURATION_BUCKETS,
   EMPTY_FILTERS,
   filterTreks,
+  type RegionOption,
   type TrekFilters,
   type TrekView,
 } from "@/lib/treks";
@@ -21,7 +22,7 @@ import { formatPrice } from "@/lib/utils";
 
 interface TrekExplorerProps {
   treks: TrekView[];
-  regions: string[];
+  regions: RegionOption[];
   difficulties: string[];
   priceBounds: { min: number; max: number };
 }
@@ -120,8 +121,8 @@ export function TrekExplorer({
               >
                 <option value="any">All Destinations</option>
                 {regions.map((region) => (
-                  <option key={region} value={region}>
-                    {region}
+                  <option key={region.slug} value={region.slug}>
+                    {region.label} ({region.count})
                   </option>
                 ))}
               </Select>

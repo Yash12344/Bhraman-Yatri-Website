@@ -49,7 +49,7 @@ export function Hero() {
               />
               <div className="absolute inset-0 flex items-center">
                 <Container>
-                  <div className="max-w-2xl pb-10 lg:pb-14">
+                  <div className="max-w-2xl pb-6 lg:pb-8">
                     {index === 0 ? (
                       <h1 className="text-5xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-6xl lg:text-7xl">
                         {slide.titleTop}
@@ -97,7 +97,7 @@ export function Hero() {
         type="button"
         aria-label="Previous slide"
         onClick={() => swiperRef.current?.slidePrev()}
-        className="absolute left-4 top-[43.5%] z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.55)] transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex lg:left-8"
+        className="absolute left-4 top-1/2 z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.55)] transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex lg:left-8"
       >
         <ChevronLeft aria-hidden="true" className="size-8" />
       </button>
@@ -105,7 +105,7 @@ export function Hero() {
         type="button"
         aria-label="Next slide"
         onClick={() => swiperRef.current?.slideNext()}
-        className="absolute right-4 top-[43.5%] z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.55)] transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex lg:right-8"
+        className="absolute right-4 top-1/2 z-10 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.55)] transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:flex lg:right-8"
       >
         <ChevronRight aria-hidden="true" className="size-8" />
       </button>

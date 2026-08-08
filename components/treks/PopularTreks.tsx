@@ -11,7 +11,7 @@ export function PopularTreks() {
     <section
       id="popular-treks"
       aria-labelledby="popular-treks-heading"
-      className="pb-9 pt-11"
+      className="pb-9 pt-14 lg:pt-16"
     >
       <Container>
         <FadeIn>

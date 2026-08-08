@@ -42,6 +42,8 @@ export interface TrekView extends Trek {
   startingPriceEntry: Trek["price"][number];
   /** Region with the brochures' spelling inconsistencies reconciled. */
   regionLabel: string;
+  /** URL-safe region key, e.g. "uttarakhand" — used by /treks?region=… */
+  regionSlug: string;
   /** Difficulty with capitalisation reconciled. */
   difficultyLabel: string;
   /** Season buckets parsed from `bestSeason`. */
@@ -61,8 +63,13 @@ export interface TrekView extends Trek {
 function normalizeRegion(region: string): string {
   const key = region.trim().toLowerCase().replace(/\s+/g, " ");
   if (key.startsWith("uttra") || key.startsWith("uttara")) return "Uttarakhand";
-  if (key.startsWith("himachal")) return "Himachal Pradesh";
+  if (key.startsWith("himachal")) return "Himachal";
   return region.trim();
+}
+
+/** "Himachal" -> "himachal". Keeps dropdown links and filters in sync. */
+export function toRegionSlug(region: string): string {
+  return region.trim().toLowerCase().replace(/\s+/g, "-");
 }
 
 /** "Easy To Moderate" and "Easy to Moderate" are the same grade. */
@@ -85,6 +92,7 @@ function toView(trek: Trek): TrekView {
     startingPrice: startingPriceEntry.amount,
     startingPriceEntry,
     regionLabel: normalizeRegion(trek.region),
+    regionSlug: toRegionSlug(normalizeRegion(trek.region)),
     difficultyLabel: normalizeDifficulty(trek.difficulty),
     seasons: seasonsFor(trek.bestSeason),
     months: parseSeasonMonths(trek.bestSeason),
@@ -180,8 +188,26 @@ export const DURATION_BUCKETS = [
   { value: "long", label: "7 Days & above", test: (d: number) => d >= 7 },
 ] as const;
 
-export function getRegions(): string[] {
-  return [...new Set(TREKS.map((t) => t.regionLabel))].sort();
+export interface RegionOption {
+  label: string;
+  slug: string;
+  count: number;
+}
+
+/** Regions present in the data, for the navbar dropdown and the filter select. */
+export function getRegions(): RegionOption[] {
+  const byLabel = new Map<string, RegionOption>();
+  for (const trek of TREKS) {
+    const existing = byLabel.get(trek.regionLabel);
+    if (existing) existing.count += 1;
+    else
+      byLabel.set(trek.regionLabel, {
+        label: trek.regionLabel,
+        slug: trek.regionSlug,
+        count: 1,
+      });
+  }
+  return [...byLabel.values()].sort((a, b) => a.label.localeCompare(b.label));
 }
 
 export function getDifficulties(): string[] {
@@ -211,7 +237,14 @@ export function filterTreks(treks: TrekView[], filters: TrekFilters): TrekView[]
         .toLowerCase();
       if (!haystack.includes(query)) return false;
     }
-    if (filters.region !== "any" && trek.regionLabel !== filters.region) return false;
+    // Accepts either the display label or the URL slug, so /treks?region=himachal
+    // and the filter dropdown resolve to the same set.
+    if (filters.region !== "any") {
+      const wanted = filters.region.trim().toLowerCase();
+      if (trek.regionSlug !== wanted && trek.regionLabel.toLowerCase() !== wanted) {
+        return false;
+      }
+    }
     if (filters.difficulty !== "any" && trek.difficultyLabel !== filters.difficulty) {
       return false;
     }

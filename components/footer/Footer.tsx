@@ -7,13 +7,7 @@ import {
   InstagramIcon,
   YoutubeIcon,
 } from "@/components/shared/SocialIcons";
-import { NewsletterForm } from "@/components/footer/NewsletterForm";
-import {
-  LEGAL_LINKS,
-  QUICK_LINKS,
-  SITE,
-  SOCIAL_LINKS,
-} from "@/lib/data";
+import { LEGAL_LINKS, QUICK_LINKS, SITE, SOCIAL_LINKS } from "@/lib/data";
 import { TREKS } from "@/lib/treks";
 
 const socialIcons = {
@@ -33,13 +27,14 @@ function FooterHeading({ children }: { children: React.ReactNode }) {
 export function Footer() {
   return (
     <footer className="bg-forest-800 text-white/80">
-      <div className="mx-auto grid max-w-7xl gap-x-6 gap-y-10 px-4 pb-4 pt-6 sm:grid-cols-2 sm:px-6 lg:grid-cols-[1.6fr_0.87fr_1fr_1.1fr_1fr] lg:px-8 xl:px-4">
+      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-10 px-4 pb-6 pt-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-[1.5fr_1fr_1.2fr_1.3fr] lg:px-8 xl:px-4">
+        {/* Brand */}
         <div>
           <Logo variant="light" size="sm" />
-          <p className="mt-4 max-w-xs text-sm leading-normal">
+          <p className="mt-4 max-w-xs text-sm leading-relaxed">
             {SITE.description}
           </p>
-          <ul className="mt-4 flex items-center gap-3">
+          <ul className="mt-5 flex items-center gap-3">
             {SOCIAL_LINKS.map((social) => {
               const Icon = socialIcons[social.id as keyof typeof socialIcons];
               return (
@@ -48,8 +43,8 @@ export function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Follow Bhraman Yatri on ${social.label}`}
-                    className="flex size-8 items-center justify-center rounded-full border border-white/20 transition-colors hover:border-saffron-500 hover:bg-saffron-500 hover:text-white"
+                    aria-label={`Follow ${SITE.name} on ${social.label}`}
+                    className="flex size-9 items-center justify-center rounded-full border border-white/20 transition-colors hover:border-saffron-500 hover:bg-saffron-500 hover:text-white"
                   >
                     <Icon aria-hidden="true" className="size-4" />
                   </a>
@@ -61,8 +56,8 @@ export function Footer() {
                 href={SITE.whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chat with Bhraman Yatri on WhatsApp"
-                className="flex size-8 items-center justify-center rounded-full border border-white/20 transition-colors hover:border-saffron-500 hover:bg-saffron-500 hover:text-white"
+                aria-label={`Chat with ${SITE.name} on WhatsApp`}
+                className="flex size-9 items-center justify-center rounded-full border border-white/20 transition-colors hover:border-saffron-500 hover:bg-saffron-500 hover:text-white"
               >
                 <WhatsAppIcon className="size-4" />
               </a>
@@ -72,9 +67,9 @@ export function Footer() {
 
         <nav aria-label="Quick links">
           <FooterHeading>Quick Links</FooterHeading>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2.5 text-sm">
             {QUICK_LINKS.map((link) => (
-              <li key={link.label}>
+              <li key={link.href}>
                 <Link
                   href={link.href}
                   className="transition-colors hover:text-saffron-400"
@@ -88,8 +83,8 @@ export function Footer() {
 
         <nav aria-label="Popular treks">
           <FooterHeading>Popular Treks</FooterHeading>
-          <ul className="space-y-2 text-sm">
-            {TREKS.slice(0, 5).map((trek) => (
+          <ul className="space-y-2.5 text-sm">
+            {TREKS.slice(0, 6).map((trek) => (
               <li key={trek.slug}>
                 <Link
                   href={`/treks/${trek.slug}`}
@@ -104,7 +99,7 @@ export function Footer() {
 
         <div>
           <FooterHeading>Contact Us</FooterHeading>
-          <ul className="space-y-3 text-sm">
+          <ul className="space-y-3.5 text-sm">
             <li className="flex items-start gap-2.5">
               <MapPin aria-hidden="true" className="mt-0.5 size-4 shrink-0" />
               <span>{SITE.address}</span>
@@ -128,14 +123,16 @@ export function Footer() {
               </a>
             </li>
           </ul>
-        </div>
 
-        <div>
-          <FooterHeading>Newsletter</FooterHeading>
-          <p className="mb-4 text-sm leading-relaxed">
-            Subscribe to get updates and offers.
-          </p>
-          <NewsletterForm />
+          <a
+            href={SITE.whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-2 rounded-lg bg-whatsapp px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#1eb455] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-whatsapp focus-visible:ring-offset-2 focus-visible:ring-offset-forest-800"
+          >
+            <WhatsAppIcon className="size-4" />
+            Chat On WhatsApp
+          </a>
         </div>
       </div>
 

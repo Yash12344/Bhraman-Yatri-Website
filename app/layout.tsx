@@ -5,7 +5,7 @@ import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { FloatingWhatsApp } from "@/components/shared/FloatingWhatsApp";
 import { SITE } from "@/lib/data";
-import { TREKS } from "@/lib/treks";
+import { getRegions } from "@/lib/treks";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -67,10 +67,12 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // Trek links are resolved server-side so the JSON never ships to the client.
-  const trekLinks = TREKS.map((trek) => ({
-    label: trek.name,
-    href: `/treks/${trek.slug}`,
+  // Regions are derived server-side so the trek JSON never ships to the client.
+  // A new region in the data appears in the navbar automatically.
+  const regions = getRegions().map((region) => ({
+    label: region.label,
+    href: `/treks?region=${region.slug}`,
+    count: region.count,
   }));
 
   const organizationSchema = {
@@ -103,7 +105,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <TopBar />
-        <Navbar trekLinks={trekLinks} />
+        <Navbar regions={regions} />
         <main id="main-content">{children}</main>
         <Footer />
         <FloatingWhatsApp />

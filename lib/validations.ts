@@ -50,7 +50,3 @@ export const contactSchema = z.object({
 });
 
 export type ContactFormValues = z.infer<typeof contactSchema>;
-
-export const newsletterSchema = z.object({ email });
-
-export type NewsletterFormValues = z.infer<typeof newsletterSchema>;
