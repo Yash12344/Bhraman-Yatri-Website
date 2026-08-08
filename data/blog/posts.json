@@ -1,1 +1,319 @@
-[]
+[
+  {
+    "slug": "how-to-choose-your-first-himalayan-trek",
+    "title": "How to Choose Your First Himalayan Trek",
+    "excerpt": "Grade, altitude, distance and season matter more than the photographs. Here is how to read them, and which of our routes suit a first Himalayan trip.",
+    "date": "2025-01-12",
+    "author": "Bhraman Yatri Team",
+    "image": "/site-images/treks/kedarkantha-trek.jpg",
+    "tags": ["Beginners", "Planning"],
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Every trek page on this site lists the same handful of numbers: a grade, a maximum altitude, a total distance and a best season. Those four figures tell you more about whether a trek suits you than any photograph does. If you are choosing a first Himalayan route, read them in that order."
+      },
+      {
+        "type": "heading",
+        "text": "Start with the grade, not the altitude"
+      },
+      {
+        "type": "paragraph",
+        "text": "Altitude is the number people fixate on, but grade is what describes the walking. Our routes run from Easy through Easy to Moderate to Moderate. An Easy trek keeps daily distances short and the ascent gradual; a Moderate one adds longer days, steeper ground and, on some routes, snow underfoot. A first-timer with reasonable general fitness is well served by anything graded Easy."
+      },
+      {
+        "type": "treks",
+        "filter": { "difficulty": "Easy" },
+        "caption": "Our Easy-graded treks — the most forgiving introductions."
+      },
+      {
+        "type": "heading",
+        "text": "Then look at the number of days"
+      },
+      {
+        "type": "paragraph",
+        "text": "A shorter trek is not simply an easier one, but it does lower the commitment: fewer consecutive days of walking, fewer nights at altitude, and less time away from work. Our shortest routes run three to four days including the drive in and out, which is enough to reach a genuine high point without a week of leave."
+      },
+      {
+        "type": "treks",
+        "filter": { "maxDays": 4 },
+        "caption": "Treks of four days or fewer."
+      },
+      {
+        "type": "heading",
+        "text": "Read the itinerary for the drive, not just the walk"
+      },
+      {
+        "type": "paragraph",
+        "text": "On most Himalayan treks the first and last days are long road journeys — often eight to eleven hours each way — and they are part of the trip whether you enjoy them or not. Check the pickup point on the trek page and plan your travel around it. Several of our routes leave from Dehradun railway station; others start from Rishikesh, Kasol or Manali."
+      },
+      {
+        "type": "heading",
+        "text": "Match the season to what you want to see"
+      },
+      {
+        "type": "paragraph",
+        "text": "The same trail is a different trek in different months. Snow routes run through winter; meadow routes are at their greenest after the monsoon breaks; the flowering valleys need the monsoon itself. Every trek page states its best season, and our season guide breaks the year down month by month."
+      },
+      {
+        "type": "quote",
+        "text": "If you are unsure between two routes, pick the one whose season you can actually travel in. A trek in the right month beats a better trek in the wrong one."
+      },
+      {
+        "type": "heading",
+        "text": "A note on fitness"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Build up to walking continuously for four to five hours before you travel.",
+          "Practise on gradients if you can; flat mileage prepares you less than you would think.",
+          "Carry your loaded backpack on at least a few of those training walks.",
+          "Tell us about any medical condition before you book — every one of our treks asks for this, and it is there for your safety."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Beyond that, arrive rested. The first day of most itineraries is a long drive, and starting it tired is the most common reason a good trek begins badly."
+      }
+    ]
+  },
+  {
+    "slug": "himalayan-trekking-season-guide",
+    "title": "When to Go: A Season-by-Season Trekking Guide",
+    "excerpt": "Winter snow, spring rhododendrons, summer passes, monsoon flowers, autumn clarity. What each season offers in the Himalayas, and which treks run when.",
+    "date": "2025-02-08",
+    "author": "Bhraman Yatri Team",
+    "image": "/site-images/hero/slide-2-walk-the-himalayas.jpg",
+    "tags": ["Planning", "Seasons"],
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "There is no single trekking season in the Himalayas. There are five, and each one closes some trails while opening others. Every trek we run states its own window; the lists below are generated from those windows, so they stay accurate as our range changes."
+      },
+      {
+        "type": "heading",
+        "text": "Winter — December to February"
+      },
+      {
+        "type": "paragraph",
+        "text": "The snow season. Trails through Garhwal hold deep snow, lakes freeze over, and the forests are quiet. Winter treks are cold but not technical: the routes we run at this time are graded Easy to Moderate, and equipment such as spikes and gaiters is provided where the terrain calls for it. Expect short daylight and long evenings in camp."
+      },
+      {
+        "type": "treks",
+        "filter": { "season": "winter" },
+        "caption": "Treks running through the winter months."
+      },
+      {
+        "type": "heading",
+        "text": "Spring — March and April"
+      },
+      {
+        "type": "paragraph",
+        "text": "Snow lingers high while the forests below come back to life. This is the crossover season: you can still reach snow on the upper sections of several routes, but the oak and rhododendron woods lower down are in leaf and flower."
+      },
+      {
+        "type": "treks",
+        "filter": { "season": "spring" },
+        "caption": "Treks running in spring."
+      },
+      {
+        "type": "heading",
+        "text": "Summer — May and June"
+      },
+      {
+        "type": "paragraph",
+        "text": "The high passes open. Routes that spend days above the tree line become viable, and the meadows are at their broadest and greenest. This is the window for the bigger crossings in our range."
+      },
+      {
+        "type": "treks",
+        "filter": { "season": "summer" },
+        "caption": "Treks running in early summer."
+      },
+      {
+        "type": "heading",
+        "text": "Monsoon — July to September"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most Himalayan trails are best avoided in the monsoon. The exceptions are worth the rain: the flowering valleys reach their peak precisely when everything else shuts, and the rain shadow beyond the main range stays comparatively dry."
+      },
+      {
+        "type": "treks",
+        "filter": { "season": "monsoon" },
+        "caption": "Treks that run through the monsoon."
+      },
+      {
+        "type": "heading",
+        "text": "Autumn — October and November"
+      },
+      {
+        "type": "paragraph",
+        "text": "For many trekkers, the best of the year. The monsoon has washed the air clear, so distant peaks are visible in a way they rarely are in summer, and the temperature is comfortable for walking. Trails are firm and the meadows have turned gold."
+      },
+      {
+        "type": "treks",
+        "filter": { "season": "autumn" },
+        "caption": "Treks running in autumn."
+      },
+      {
+        "type": "heading",
+        "text": "Booking around the weather"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Seasons shift year to year — an early or late snowfall moves the window by weeks.",
+          "Some of our itineraries hold a buffer day in reserve for bad weather and roadblocks.",
+          "Where a side trip depends on conditions, our itineraries say so rather than promising it.",
+          "If a trek matters more than a specific date, ask us which departures have the most reliable weather."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "what-to-pack-for-a-himalayan-trek",
+    "title": "What to Pack for a Himalayan Trek",
+    "excerpt": "A practical list drawn from our own trek briefings — what to bring, what we provide, and what to leave at home.",
+    "date": "2025-03-04",
+    "author": "Bhraman Yatri Team",
+    "image": "/site-images/treks/brahmatal-trek.jpg",
+    "tags": ["Gear", "Planning"],
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Packing for a Himalayan trek is mostly an exercise in restraint. You need less than you think, but the few things you do need matter enormously. This list is the one we send with our trek briefings."
+      },
+      {
+        "type": "heading",
+        "text": "The essentials"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Rucksack, 50–70 litres, with a waterproof cover",
+          "Trekking shoes with ankle support — not running shoes",
+          "An insulated jacket, plus fleece or woollen layers",
+          "Thermal inner wear, upper and lower",
+          "Trek pants and trousers; gloves, cap and neck cover",
+          "Sunglasses, sunscreen and moisturiser",
+          "Water bottles, a personal toiletries kit and a basic medical kit",
+          "Raincoat or poncho, a power bank, toilet paper and sanitiser",
+          "Government photo ID — passport, Aadhaar card, driving licence or voter ID"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What we provide"
+      },
+      {
+        "type": "paragraph",
+        "text": "You do not need to buy camping equipment. Our treks include high-quality tents — separate living, kitchen, dining and toilet tents — along with sleeping bags, mattresses and utensils. Safety equipment travels with every group: a first aid kit, an oxygen cylinder, stretchers and rope. On the routes that need them, spikes and gaiters are provided for the summit sections."
+      },
+      {
+        "type": "heading",
+        "text": "The small bag question"
+      },
+      {
+        "type": "paragraph",
+        "text": "Bring a small daypack only if you plan to offload your main bag to a mule or porter, or if the itinerary has a summit day. On those days you carry water, snacks and a layer while the rest stays in camp."
+      },
+      {
+        "type": "heading",
+        "text": "Offloading your backpack"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Offloading to a mule or porter is available on most treks and is charged per bag per day.",
+          "Rates vary by route — the exact range is listed on each trek page.",
+          "Your bag must weigh no more than about 11 kg and needs a waterproof cover.",
+          "Suitcases, trolleys and duffel bags are not accepted."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What to leave behind"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wheeled luggage of any kind, more than one change of trekking clothes, and anything you are carrying purely in case. Weight you do not need is weight you will regret on the third climb of the day."
+      },
+      {
+        "type": "quote",
+        "text": "Rental gear — jackets, shoes, trek poles, headlamps and ponchos — is available at the base camp market on several of our routes, so a one-off trek need not mean a wardrobe of new kit."
+      }
+    ]
+  },
+  {
+    "slug": "understanding-trek-grades",
+    "title": "Easy, Moderate and What Trek Grades Actually Mean",
+    "excerpt": "A grade is not a verdict on your fitness. Here is what each one implies about distance, terrain and daily effort — and how altitude fits in.",
+    "date": "2025-04-01",
+    "author": "Bhraman Yatri Team",
+    "image": "/site-images/treks/kuari-pass-trek.jpg",
+    "tags": ["Beginners", "Planning"],
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Trek grades are the shorthand every operator uses and almost nobody explains. Ours run Easy, Easy to Moderate and Moderate. The grade describes the walking — how far, how steep, how sustained — and deliberately says nothing about how fit you are."
+      },
+      {
+        "type": "heading",
+        "text": "Easy"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short daily distances on well-defined trails, with a gradual profile and time to acclimatise. Our Easy routes are also our shortest, which compounds the effect: fewer days, fewer hours on your feet each day. Suitable if you walk occasionally and are willing to train a little beforehand."
+      },
+      {
+        "type": "treks",
+        "filter": { "difficulty": "Easy" }
+      },
+      {
+        "type": "heading",
+        "text": "Easy to Moderate"
+      },
+      {
+        "type": "paragraph",
+        "text": "The middle band, and where most of our winter treks sit. Expect a mix of steady and steeper climbs, longer days than an Easy route, and — in season — snow underfoot on the upper sections. A summit day may start before dawn."
+      },
+      {
+        "type": "treks",
+        "filter": { "difficulty": "Easy to Moderate" }
+      },
+      {
+        "type": "heading",
+        "text": "Moderate"
+      },
+      {
+        "type": "paragraph",
+        "text": "Longer routes with sustained ascent, more days at altitude and at least one demanding day — typically a pass crossing or a long out-and-back into a valley. Some sections cross snow or rough ground and need careful footing. Come with hill-walking experience or a serious training block behind you."
+      },
+      {
+        "type": "treks",
+        "filter": { "difficulty": "Moderate" }
+      },
+      {
+        "type": "heading",
+        "text": "Where altitude fits in"
+      },
+      {
+        "type": "paragraph",
+        "text": "Altitude is graded separately in your head. A short Easy trek can still finish above 12,000 ft, and thin air affects people regardless of fitness. What protects you is the shape of the itinerary — gaining height gradually, sleeping lower than your high point where possible, and building in an acclimatisation walk. Our itineraries are laid out with that in mind, which is why the summit is rarely on day one."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Drink more water than feels necessary, throughout the day.",
+          "Tell your trek leader early if you feel unwell — headaches and nausea are worth mentioning, not enduring.",
+          "Every group carries an oxygen cylinder and a first aid kit.",
+          "Declare medical conditions before arrival rather than on the trail."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Read the grade together with the distance, the number of days and the maximum altitude on each trek page. Those four numbers, taken together, describe the trek far better than any single one of them alone."
+      }
+    ]
+  }
+]

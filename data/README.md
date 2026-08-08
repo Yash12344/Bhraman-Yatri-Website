@@ -97,7 +97,12 @@ Add real reviews only — these are shown to customers as genuine feedback.
 
 ## `blog/posts.json`
 
-Ships empty, so `/blog` shows a "coming soon" state.
+Four articles ship with the site. Each one is written from the trek data
+itself — grades, seasons, durations, inclusions and the "things to carry"
+lists — so nothing in them contradicts a brochure. They contain no reviews,
+ratings or personal accounts, because those must come from real people.
+
+A post's `body` is a list of blocks:
 
 ```jsonc
 [
@@ -108,10 +113,49 @@ Ships empty, so `/blog` shows a "coming soon" state.
     "date": "2025-01-15",
     "author": "Bhraman Yatri Team",
     "image": "/site-images/treks/kedarkantha-trek.jpg",
-    "tags": ["Gear", "Winter"]
+    "tags": ["Gear", "Winter"],
+    "body": [
+      { "type": "heading", "text": "Layers" },
+      { "type": "paragraph", "text": "..." },
+      { "type": "list", "items": ["...", "..."] },
+      { "type": "quote", "text": "..." },
+      { "type": "treks", "filter": { "season": "winter" }, "caption": "Our winter treks." }
+    ]
   }
 ]
 ```
+
+The `treks` block is the useful one: instead of naming treks in prose that
+goes stale, it renders live trek cards from a filter. `filter` accepts any
+combination of `season` (`winter` | `spring` | `summer` | `monsoon` |
+`autumn`), `difficulty`, `region`, `maxDays` and an explicit `slugs` list. Add
+a trek and the articles that match it pick it up on the next build; a block
+that matches nothing renders nothing rather than an empty box.
+
+Posts are sorted newest-first by `date`, get their own page at
+`/blog/{slug}`, and are added to `sitemap.xml` automatically.
+
+### Article pictures
+
+`image` is the fallback. The client can override any article's picture without
+touching this file by dropping an image named after the post's slug into
+`public/site-images/blog/` — see the README there.
+
+---
+
+## The gallery page
+
+`/gallery` is built by listing directories, not from a data file, so there is
+no cap on how many photographs the client adds and no code to change:
+
+1. `public/site-images/gallery/` — the drop folder. Any filenames, any
+   number, sub-folders welcome.
+2. `public/site-images/treks/gallery/{slug}/` — per-trek folders.
+3. Each trek's main image, so the page is never empty.
+
+Alt text is derived from filenames (`kedarkantha-summit-sunrise.jpg` becomes
+"Kedarkantha summit sunrise"); untouched camera names like `IMG_4821.jpg` fall
+back to a generic description.
 
 ---
 

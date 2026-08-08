@@ -56,7 +56,30 @@ export interface Testimonial {
   quote: string;
 }
 
-/** Blog post metadata, loaded from `data/blog/posts.json`. */
+/**
+ * An article body is a list of blocks. Alongside prose there is a `treks`
+ * block, which renders live trek cards from a filter — so a guide that says
+ * "our easy treks" stays correct when the trek data changes.
+ */
+export type BlogBlock =
+  | { type: "heading"; text: string }
+  | { type: "paragraph"; text: string }
+  | { type: "list"; items: string[] }
+  | { type: "quote"; text: string }
+  | {
+      type: "treks";
+      /** Any subset — matched against the derived trek view. */
+      filter: {
+        season?: string;
+        difficulty?: string;
+        region?: string;
+        maxDays?: number;
+        slugs?: string[];
+      };
+      caption?: string;
+    };
+
+/** Blog post, loaded from `data/blog/posts.json`. */
 export interface BlogPost {
   slug: string;
   title: string;
@@ -65,4 +88,5 @@ export interface BlogPost {
   author: string;
   image: string | null;
   tags: string[];
+  body: BlogBlock[];
 }

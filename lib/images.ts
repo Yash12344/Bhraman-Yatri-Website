@@ -10,6 +10,12 @@
 export const TREK_IMAGE_DIR = "/site-images/treks";
 export const HERO_IMAGE_DIR = "/site-images/hero";
 export const GENERAL_IMAGE_DIR = "/site-images/general";
+/**
+ * The client's drop folder. Any number of images, any filenames, nested
+ * folders welcome — everything here appears on the gallery page.
+ */
+export const GALLERY_DIR = "/site-images/gallery";
+export const BLOG_IMAGE_DIR = "/site-images/blog";
 
 /** Card and banner image for a trek: /site-images/treks/{slug}.jpg */
 export function trekCardImage(slug: string): string {

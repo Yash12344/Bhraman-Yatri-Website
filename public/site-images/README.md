@@ -18,6 +18,14 @@ The website will then show your new picture in that spot.
 
 That's it. Same name, same folder — the website does the rest.
 
+> **Two folders work differently — you can add as many new pictures as you
+> like there, and nothing needs to be renamed:**
+>
+> - **`gallery/`** — everything you drop in here shows up on the Gallery page.
+>   No limit, any file name, sub-folders welcome. See `gallery/README.md`.
+> - **`blog/`** — the big picture at the top of a blog article. See
+>   `blog/README.md`.
+
 ---
 
 ## Which file is which picture?
@@ -57,6 +65,21 @@ appear on the "Popular Treks" cards and as the small thumbnails in the
 
 Best size: **1200 × 900** (a landscape photo). The card shows a wide strip
 from the middle of the photo, so keep the main subject centred.
+
+Want more than one photo for a trek? Make a folder at
+`treks/gallery/<trek name>/` — for example `treks/gallery/kedarkantha-trek/` —
+and drop in as many pictures as you like. They appear in that trek's photo
+section and on the Gallery page.
+
+### `gallery/` — your photo album
+
+Drop photographs here and they appear on the Gallery page. There is no limit
+and no naming rule. Full instructions are in `gallery/README.md`.
+
+### `blog/` — blog article pictures
+
+One picture per article, named after the article's web address. Full
+instructions are in `blog/README.md`.
 
 ### `general/` — everything else
 

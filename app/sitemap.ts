@@ -1,8 +1,12 @@
 import type { MetadataRoute } from "next";
 import { TREKS } from "@/lib/treks";
+import { getBlogPosts } from "@/lib/blog";
 import { SITE } from "@/lib/data";
 
-/** Static routes plus one entry per trek JSON — new treks appear automatically. */
+/**
+ * Static routes plus one entry per trek JSON and per blog post — new treks and
+ * articles appear automatically, with no edit here.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
@@ -22,5 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticRoutes, ...trekRoutes];
+  const blogRoutes = getBlogPosts().map((post) => ({
+    url: `${SITE.url}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "yearly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...trekRoutes, ...blogRoutes];
 }

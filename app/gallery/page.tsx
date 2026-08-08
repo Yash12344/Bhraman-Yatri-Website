@@ -34,7 +34,12 @@ export default function GalleryPage() {
       <section className="py-12">
         <Container>
           {images.length > 0 ? (
-            <Gallery images={images} columns={4} />
+            <>
+              <p className="mb-6 text-sm text-gray-500">
+                {images.length} photograph{images.length === 1 ? "" : "s"}
+              </p>
+              <Gallery images={images} columns={4} />
+            </>
           ) : (
             <p className="py-16 text-center text-sm text-gray-500">
               Photographs will appear here soon.

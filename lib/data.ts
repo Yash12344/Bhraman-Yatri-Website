@@ -12,7 +12,6 @@ import {
   Users,
 } from "lucide-react";
 import type {
-  BlogPost,
   Feature,
   FooterLink,
   HeroSlide,
@@ -22,7 +21,6 @@ import type {
   Testimonial,
 } from "@/lib/types";
 import testimonialsData from "@/data/testimonials.json";
-import blogPostsData from "@/data/blog/posts.json";
 
 export const SITE = {
   name: "Bhraman Yatri",
@@ -149,6 +147,3 @@ export const MONTH_OPTIONS: SelectOption[] = [
  * homepage section stays hidden until the operator adds entries here.
  */
 export const TESTIMONIALS = testimonialsData as Testimonial[];
-
-/** Blog posts. Ships empty; the blog route renders an empty state until filled. */
-export const BLOG_POSTS = blogPostsData as BlogPost[];
