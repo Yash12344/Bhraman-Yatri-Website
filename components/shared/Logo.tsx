@@ -16,9 +16,13 @@ export function Logo({ variant = "dark", size = "md", className }: LogoProps) {
 
   return (
     <Link
-      href="#home"
+      href="/"
       aria-label={`${SITE.name} — ${SITE.tagline}, go to homepage`}
-      className={cn("flex items-center gap-2.5", className)}
+      // The whole mark and wordmark is one hit area, with a subtle lift on hover.
+      className={cn(
+        "flex cursor-pointer items-center gap-2.5 rounded-lg transition-all duration-300 hover:opacity-90 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-500 focus-visible:ring-offset-4",
+        className
+      )}
     >
       <svg
         viewBox="0 0 52 44"

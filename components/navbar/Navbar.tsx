@@ -3,21 +3,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowRight, ChevronDown, Menu, MountainSnow, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/shared/Logo";
+import { TreksMegaMenu } from "@/components/navbar/TreksMegaMenu";
+import { MobileTreksAccordion } from "@/components/navbar/MobileTreksAccordion";
 import { NAV_LINKS } from "@/lib/data";
+import type { RegionWithTreks } from "@/lib/treks";
 import { cn } from "@/lib/utils";
 
-export interface RegionLink {
-  label: string;
-  href: string;
-  count: number;
-}
-
 interface NavbarProps {
-  /** Regions derived from the trek JSON, passed in from the server layout. */
-  regions: RegionLink[];
+  /** Regions and their treks, grouped from the JSON in the server layout. */
+  regions: RegionWithTreks[];
 }
 
 const TREKS_HREF = "/treks";
@@ -44,6 +41,8 @@ export function Navbar({ regions }: NavbarProps) {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  const hasMegaMenu = regions.length > 0;
+
   return (
     <header
       className={cn(
@@ -60,19 +59,20 @@ export function Navbar({ regions }: NavbarProps) {
         {/* Desktop menu */}
         <ul className="hidden items-center gap-8 lg:flex">
           {NAV_LINKS.map((link) => {
-            const hasDropdown = link.href === TREKS_HREF && regions.length > 0;
+            const showMega = link.href === TREKS_HREF && hasMegaMenu;
             return (
-              <li key={link.href} className={cn(hasDropdown && "group relative")}>
+              <li key={link.href} className={cn(showMega && "group relative")}>
                 <Link
                   href={link.href}
                   aria-current={isActive(link.href) ? "page" : undefined}
+                  aria-haspopup={showMega ? "true" : undefined}
                   className={cn(
                     "flex items-center gap-1 text-base font-medium transition-colors hover:text-saffron-500",
                     isActive(link.href) ? "text-saffron-600" : "text-gray-800"
                   )}
                 >
                   {link.label}
-                  {hasDropdown && (
+                  {showMega && (
                     <ChevronDown
                       aria-hidden="true"
                       className="size-4 transition-transform duration-300 group-hover:rotate-180"
@@ -80,39 +80,8 @@ export function Navbar({ regions }: NavbarProps) {
                   )}
                 </Link>
 
-                {hasDropdown && (
-                  <div className="invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                    <ul className="translate-y-1 rounded-2xl border border-neutral-100 bg-white p-2 shadow-[0_20px_45px_-20px_rgba(0,0,0,0.35)] transition-transform duration-200 group-hover:translate-y-0 group-focus-within:translate-y-0">
-                      {regions.map((region) => (
-                        <li key={region.href}>
-                          <Link
-                            href={region.href}
-                            className="flex items-center justify-between gap-3 rounded-xl px-4 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-forest-50 hover:text-forest-800"
-                          >
-                            <span className="flex items-center gap-2.5">
-                              <MountainSnow
-                                aria-hidden="true"
-                                className="size-4 text-saffron-500"
-                              />
-                              {region.label}
-                            </span>
-                            <span className="text-xs text-gray-400">
-                              {region.count}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-                      <li className="mt-1 border-t border-neutral-100 pt-1">
-                        <Link
-                          href={TREKS_HREF}
-                          className="flex items-center justify-between gap-3 rounded-xl px-4 py-3 text-sm font-semibold text-saffron-600 transition-colors hover:bg-saffron-50"
-                        >
-                          View All Treks
-                          <ArrowRight aria-hidden="true" className="size-4" />
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                {showMega && (
+                  <TreksMegaMenu regions={regions} treksHref={TREKS_HREF} />
                 )}
               </li>
             );
@@ -142,19 +111,19 @@ export function Navbar({ regions }: NavbarProps) {
         </div>
       </nav>
 
-      {/* Mobile menu — the treks entry is an accordion, never a hover target. */}
+      {/* Mobile menu — nested accordion, never a hover target. */}
       <div
         id="mobile-menu"
         className={cn(
-          "overflow-hidden border-t border-neutral-100 bg-white transition-all duration-300 lg:hidden",
-          isMobileOpen ? "max-h-[640px]" : "max-h-0 border-t-0"
+          "overflow-y-auto border-t border-neutral-100 bg-white transition-all duration-300 lg:hidden",
+          isMobileOpen ? "max-h-[75vh]" : "max-h-0 border-t-0"
         )}
       >
         <ul className="space-y-1 px-4 py-4">
           {NAV_LINKS.map((link) => {
-            const hasAccordion = link.href === TREKS_HREF && regions.length > 0;
+            const showAccordion = link.href === TREKS_HREF && hasMegaMenu;
 
-            if (!hasAccordion) {
+            if (!showAccordion) {
               return (
                 <li key={link.href}>
                   <Link
@@ -192,38 +161,9 @@ export function Navbar({ regions }: NavbarProps) {
                     )}
                   />
                 </button>
-                <ul
-                  id="mobile-treks-panel"
-                  hidden={!isTreksExpanded}
-                  className="mt-1 space-y-1 border-l-2 border-neutral-100 pl-3"
-                >
-                  {regions.map((region) => (
-                    <li key={region.href}>
-                      <Link
-                        href={region.href}
-                        className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm text-gray-700 transition-colors hover:bg-forest-50 hover:text-forest-700"
-                      >
-                        <span className="flex items-center gap-2.5">
-                          <MountainSnow
-                            aria-hidden="true"
-                            className="size-4 text-saffron-500"
-                          />
-                          {region.label}
-                        </span>
-                        <span className="text-xs text-gray-400">{region.count}</span>
-                      </Link>
-                    </li>
-                  ))}
-                  <li>
-                    <Link
-                      href={TREKS_HREF}
-                      className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-semibold text-saffron-600 transition-colors hover:bg-saffron-50"
-                    >
-                      View All Treks
-                      <ArrowRight aria-hidden="true" className="size-4" />
-                    </Link>
-                  </li>
-                </ul>
+                <div id="mobile-treks-panel" hidden={!isTreksExpanded}>
+                  <MobileTreksAccordion regions={regions} treksHref={TREKS_HREF} />
+                </div>
               </li>
             );
           })}

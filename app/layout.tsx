@@ -5,7 +5,7 @@ import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { FloatingWhatsApp } from "@/components/shared/FloatingWhatsApp";
 import { SITE } from "@/lib/data";
-import { getRegions } from "@/lib/treks";
+import { getRegionsWithTreks } from "@/lib/treks";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -67,13 +67,9 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // Regions are derived server-side so the trek JSON never ships to the client.
-  // A new region in the data appears in the navbar automatically.
-  const regions = getRegions().map((region) => ({
-    label: region.label,
-    href: `/treks?region=${region.slug}`,
-    count: region.count,
-  }));
+  // Grouped server-side so only the navigation slice of each trek — not the
+  // full JSON — reaches the client. New treks and regions appear on their own.
+  const regions = getRegionsWithTreks();
 
   const organizationSchema = {
     "@context": "https://schema.org",

@@ -194,6 +194,34 @@ export interface RegionOption {
   count: number;
 }
 
+/** The slice of a trek the navigation needs — keeps the nav payload small. */
+export interface TrekNavItem {
+  slug: string;
+  name: string;
+  durationDays: number | null;
+  difficultyLabel: string;
+}
+
+export interface RegionWithTreks extends RegionOption {
+  treks: TrekNavItem[];
+}
+
+/**
+ * Regions with their treks, for the navbar mega menu. Grouped from the JSON,
+ * so a new trek or a new region shows up without touching the navigation.
+ */
+export function getRegionsWithTreks(): RegionWithTreks[] {
+  return getRegions().map((region) => ({
+    ...region,
+    treks: TREKS.filter((trek) => trek.regionSlug === region.slug).map((trek) => ({
+      slug: trek.slug,
+      name: trek.name,
+      durationDays: trek.durationDays,
+      difficultyLabel: trek.difficultyLabel,
+    })),
+  }));
+}
+
 /** Regions present in the data, for the navbar dropdown and the filter select. */
 export function getRegions(): RegionOption[] {
   const byLabel = new Map<string, RegionOption>();
