@@ -9,6 +9,7 @@ import type { Trek } from "@/types/trek";
 import { parseSeasonMonths, seasonsFor, type SeasonId } from "@/lib/seasons";
 import { trekCardImage } from "@/lib/images";
 
+import bhriguLake from "@/data/treks/bhrigu-lake.json";
 import brahmatal from "@/data/treks/brahmatal-trek.json";
 import chopta from "@/data/treks/chopta-tungnath-trek.json";
 import dayara from "@/data/treks/dayara-bugyal-trek.json";
@@ -20,6 +21,7 @@ import sarPass from "@/data/treks/sar-pass-trek.json";
 import valleyOfFlowers from "@/data/treks/valley-of-flowers-trek.json";
 
 const RAW_TREKS = [
+  bhriguLake,
   brahmatal,
   chopta,
   dayara,

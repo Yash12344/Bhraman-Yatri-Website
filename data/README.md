@@ -165,6 +165,19 @@ Recorded per trek under `source.discrepancies`. Worth resolving with the
 operator before launch — the Sar Pass day distances contradict themselves on
 every day, and several treks carry copy-pasted notes from other brochures.
 
+### Bhrigu Lake is thinner than the rest
+
+Nine treks came from PDF brochures. Bhrigu Lake came from the operator's web
+page, where several sections sit behind "READ MORE" toggles and collapsed
+accordions that a page capture does not expand. So its Inclusions, Exclusions,
+Things to Carry and Policy lists are **truncated**, its Day 02 and Day 03
+itinerary entries have titles but no descriptions, and its departure dates and
+railway station are absent. Every gap is itemised in that file's
+`source.missingSections`, and nothing was filled in from guesswork.
+
+The page also states "4 days" while listing a three-day itinerary. Both are
+recorded as-is; ask the operator which is right before launch.
+
 ## Contact details
 
 Site-wide branding, phone, email and address live in `lib/data.ts` under

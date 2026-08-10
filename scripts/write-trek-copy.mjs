@@ -17,6 +17,23 @@ import { fileURLToPath } from "node:url";
 const treksDir = join(dirname(fileURLToPath(import.meta.url)), "..", "data", "treks");
 
 const COPY = {
+  "bhrigu-lake": {
+    shortOverview:
+      "A four-day alpine lake above Manali — oak and pine forest, a meadow camp at Rola Kholi, and a lake at 14,000 ft.",
+    fullOverview:
+      "Bhrigu Lake sits at 14,000 ft in Himachal, and at Easy to Moderate grade across four days it is one of the shorter routes we run to a high-altitude lake. The trek begins at Manali, where trekkers report by 9 in the morning for the briefing, and a two-hour drive climbs to Gulaba past golden apple trees and greenery on both sides of the road. From Gulaba the trail proper starts, threading moist leaves and forests of oak and pine before the grassland opens out in shifting colour on the approach to Rola Kholi. Rola Kholi is both the base camp and the first night's campsite, and the view from it takes in the seven sister peaks, Hanuman Tibba and the Beas Kund valley, with stars and stardust overhead after dark. The second day climbs to the lake and returns to camp; the third descends to Gulaba. Across 25 km the package covers transport from Manali and back, hotel, homestay and camping nights, vegetarian meals, camping and forest permits, and high-quality tents. The season runs April to November.",
+    highlights: [
+      "Bhrigu Lake at 14,000 ft, reached and returned in a single day from camp",
+      "Meadow base camp at Rola Kholi, in view of the seven sister peaks, Hanuman Tibba and the Beas Kund valley",
+      "Forests of oak and pine on the climb out of Gulaba",
+      "Grassland flowers shifting colour on the approach to Rola Kholi",
+      "Stars and stardust overhead from the campsite",
+      "25 km across 4 days, graded Easy to Moderate",
+      "A long April to November season",
+      "Starts and finishes at Manali, with transport to base camp included",
+    ],
+  },
+
   "brahmatal-trek": {
     shortOverview:
       "A winter classic in Garhwal — near-frozen alpine lakes, oak and rhododendron forest, and a 180-degree Himalayan skyline from 12,250 ft.",

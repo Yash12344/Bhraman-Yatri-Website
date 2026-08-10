@@ -465,23 +465,8 @@ const images = [
     ],
     extras: `<rect x="0" y="740" width="1200" height="160" fill="#74b163"/>`,
   },
-  {
-    name: "treks/bhrigu-lake-trek",
-    w: 1200,
-    h: 900,
-    seed: 149,
-    sky: ["#1b64b8", "#6ba0d0", "#c2d9ea"],
-    sun: { x: 0.56, y: 0.15, color: "#fdf9ec", disc: 0.03 },
-    cloud: { coverage: 1.2, horizon: 60, seed: 143 },
-    layers: [
-      { base: 0.56, amp: 0.4, rock: "#7c9bb7", snow: "#f1f7fc", snowDepth: 0.28, haze: "#d1e1ef", hazeOpacity: 0.42 },
-      { base: 0.74, amp: 0.3, rock: "#4d6d78", texture: 0.11 },
-      { base: 1.04, amp: 0.22, rock: "#3f6455", texture: 0.16 },
-    ],
-    extras: `<ellipse cx="600" cy="800" rx="300" ry="62" fill="#1f6b86"/>
-             <ellipse cx="600" cy="792" rx="270" ry="48" fill="#3f97ad" opacity="0.85"/>
-             <ellipse cx="560" cy="784" rx="150" ry="20" fill="#bfe0e8" opacity="0.4"/>`,
-  },
+  // Bhrigu Lake is not listed here: it ships with real photographs taken from
+  // the operator's own page, so there is no placeholder to generate.
   {
     name: "treks/sar-pass-trek",
     w: 1200,

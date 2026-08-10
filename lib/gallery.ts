@@ -26,9 +26,12 @@ export interface GalleryImage {
 
 const GENERIC_ALT = "Bhraman Yatri trek photograph";
 
-/** What phones and cameras name files when nobody has renamed them. */
+/**
+ * Filenames that describe nothing: what phones and cameras produce when nobody
+ * has renamed them, plus the generic counters people reach for by hand.
+ */
 const CAMERA_FILENAME =
-  /^(img|dsc|dscn|dscf|pxl|gopr|p|photo|image|picture|screenshot|whatsapp image|received)$/i;
+  /^(img|dsc|dscn|dscf|pxl|gopr|p|photo|photos|image|images|picture|pictures|screenshot|whatsapp image|received|gallery|untitled)$/i;
 
 /**
  * Turns a filename into readable alt text: "kedarkantha-summit-01.jpg"
@@ -96,7 +99,9 @@ export function getSiteGallery(): GalleryImage[] {
   const perTrek = TREKS.flatMap((trek) =>
     listImagesRecursive(trekGalleryDir(trek.slug)).map((image) => ({
       src: image.src,
-      alt: `${trek.name} — ${image.alt}`,
+      // An undescriptive filename should read as the trek alone, not as
+      // "Bhrigu Lake Trek — Bhraman Yatri trek photograph".
+      alt: image.alt === GENERIC_ALT ? trek.name : `${trek.name} — ${image.alt}`,
     }))
   );
 

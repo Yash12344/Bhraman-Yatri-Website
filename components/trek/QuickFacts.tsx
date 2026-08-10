@@ -18,7 +18,11 @@ interface Fact {
   value: string;
 }
 
-/** The brochure's Overview table, rendered as a scannable grid. */
+/**
+ * The brochure's Overview table, rendered as a scannable grid. Facts the
+ * source never stated are dropped rather than shown as an empty row — not
+ * every brochure prints every line.
+ */
 export function QuickFacts({ trek }: { trek: TrekView }) {
   const facts: Fact[] = [
     { icon: MapPin, label: "Region", value: trek.regionLabel },
@@ -30,7 +34,7 @@ export function QuickFacts({ trek }: { trek: TrekView }) {
     { icon: Tent, label: "Base Camp", value: trek.baseCamp },
     { icon: Plane, label: "Nearest Airport", value: trek.nearestAirport },
     { icon: TrainFront, label: "Railway Station", value: trek.railwayStation },
-  ];
+  ].filter((fact) => fact.value.trim() !== "");
 
   return (
     <dl className="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
