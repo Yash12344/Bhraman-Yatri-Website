@@ -181,5 +181,21 @@ recorded as-is; ask the operator which is right before launch.
 ## Contact details
 
 Site-wide branding, phone, email and address live in `lib/data.ts` under
-`SITE`. The values there are placeholders and must be replaced with the real
-business details before launch.
+`SITE`, and the social profiles under `SOCIAL_LINKS`.
+
+Real and confirmed:
+
+| Value | |
+|---|---|
+| Phone / WhatsApp | `+91 92587 18441` — drives the top bar, the footer, the floating WhatsApp button and the hero CTA |
+| Instagram | `instagram.com/bhramanyatri` |
+| Facebook | `facebook.com/share/1J84ZmC9Ah/` |
+| YouTube | `youtube.com/@bhramanyatri` |
+
+**Still placeholders — replace before launch:** `email`
+(`info@bhramanyatri.com`), `address` (`Dehradun, Uttarakhand, India - 248001`,
+which also feeds the `PostalAddress` in the homepage structured data), `url`
+(`https://bhramanyatri.com`) and the `copyright` year.
+
+The Facebook entry is a share link rather than a page vanity URL. It works,
+but if the page has a proper handle it would be tidier to use it.

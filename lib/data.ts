@@ -27,9 +27,9 @@ export const SITE = {
   tagline: "Explore Beyond Limits",
   url: "https://bhramanyatri.com",
   email: "info@bhramanyatri.com",
-  phone: "+91 98765 43210",
-  phoneHref: "tel:+919876543210",
-  whatsappHref: "https://wa.me/919876543210",
+  phone: "+91 92587 18441",
+  phoneHref: "tel:+919258718441",
+  whatsappHref: "https://wa.me/919258718441",
   address: "Dehradun, Uttarakhand, India - 248001",
   description:
     "Bhraman Yatri is a travel community for explorers and adventure seekers. We organize treks and tours across the Himalayas.",
@@ -120,10 +120,27 @@ export const LEGAL_LINKS: FooterLink[] = [
   { label: "Terms & Conditions", href: "/contact" },
 ];
 
+/**
+ * The operator's real profiles. Tracking parameters that came from the shared
+ * links (`utm_source=qr`, `mibextid`, `si`) are stripped — they identify where
+ * a one-off share came from and mean nothing on a permanent site link.
+ */
 export const SOCIAL_LINKS: SocialLink[] = [
-  { id: "instagram", label: "Instagram", href: "https://instagram.com" },
-  { id: "facebook", label: "Facebook", href: "https://facebook.com" },
-  { id: "youtube", label: "YouTube", href: "https://youtube.com" },
+  {
+    id: "instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/bhramanyatri",
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    href: "https://www.facebook.com/share/1J84ZmC9Ah/",
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    href: "https://www.youtube.com/@bhramanyatri",
+  },
 ];
 
 export const MONTH_OPTIONS: SelectOption[] = [

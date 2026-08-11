@@ -4,8 +4,9 @@ import { TopBar } from "@/components/navbar/TopBar";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { FloatingWhatsApp } from "@/components/shared/FloatingWhatsApp";
-import { SITE } from "@/lib/data";
+import { SITE, SOCIAL_LINKS } from "@/lib/data";
 import { getRegionsWithTreks } from "@/lib/treks";
+import { getLogo } from "@/lib/branding";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -71,6 +72,11 @@ export default function RootLayout({
   // full JSON — reaches the client. New treks and regions appear on their own.
   const regions = getRegionsWithTreks();
 
+  // Read off disk here, in the one server component both the navbar and the
+  // footer sit inside, so the client components never touch the filesystem.
+  const logo = getLogo("dark");
+  const footerLogo = getLogo("light");
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
@@ -79,6 +85,8 @@ export default function RootLayout({
     url: SITE.url,
     email: SITE.email,
     telephone: SITE.phone,
+    ...(logo ? { logo: `${SITE.url}${logo.src}` } : {}),
+    sameAs: SOCIAL_LINKS.map((social) => social.href),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Dehradun",
@@ -101,9 +109,9 @@ export default function RootLayout({
           Skip to content
         </a>
         <TopBar />
-        <Navbar regions={regions} />
+        <Navbar regions={regions} logo={logo} />
         <main id="main-content">{children}</main>
-        <Footer />
+        <Footer logo={footerLogo} />
         <FloatingWhatsApp />
       </body>
     </html>

@@ -18,9 +18,11 @@ The website will then show your new picture in that spot.
 
 That's it. Same name, same folder — the website does the rest.
 
-> **Two folders work differently — you can add as many new pictures as you
-> like there, and nothing needs to be renamed:**
+> **Three folders work differently — you add new files rather than replacing
+> existing ones:**
 >
+> - **`logo/`** — your business logo. Name it `logo.png` and the website uses
+>   it instead of the built-in one. See `logo/README.md`.
 > - **`gallery/`** — everything you drop in here shows up on the Gallery page.
 >   No limit, any file name, sub-folders welcome. See `gallery/README.md`.
 > - **`blog/`** — the big picture at the top of a blog article. See
@@ -70,6 +72,12 @@ Want more than one photo for a trek? Make a folder at
 `treks/gallery/<trek name>/` — for example `treks/gallery/kedarkantha-trek/` —
 and drop in as many pictures as you like. They appear in that trek's photo
 section and on the Gallery page.
+
+### `logo/` — your business logo
+
+Name your file `logo.png` and drop it in. It replaces the built-in mountain
+logo and the "BHRAMAN YATRI" text beside it, in both the top bar and the
+footer. Full instructions are in `logo/README.md`.
 
 ### `gallery/` — your photo album
 

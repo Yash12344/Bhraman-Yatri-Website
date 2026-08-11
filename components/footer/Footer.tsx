@@ -9,6 +9,7 @@ import {
 } from "@/components/shared/SocialIcons";
 import { LEGAL_LINKS, QUICK_LINKS, SITE, SOCIAL_LINKS } from "@/lib/data";
 import { TREKS } from "@/lib/treks";
+import type { LogoAsset } from "@/lib/branding";
 
 const socialIcons = {
   instagram: InstagramIcon,
@@ -24,13 +25,18 @@ function FooterHeading({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function Footer() {
+interface FooterProps {
+  /** Uploaded logo, resolved on disk in the server layout. */
+  logo?: LogoAsset | null;
+}
+
+export function Footer({ logo = null }: FooterProps) {
   return (
     <footer className="bg-forest-800 text-white/80">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-10 px-4 pb-6 pt-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-[1.5fr_1fr_1.2fr_1.3fr] lg:px-8 xl:px-4">
         {/* Brand */}
         <div>
-          <Logo variant="light" size="sm" />
+          <Logo variant="light" size="sm" logo={logo} />
           <p className="mt-4 max-w-xs text-sm leading-relaxed">
             {SITE.description}
           </p>

@@ -10,16 +10,19 @@ import { TreksMegaMenu } from "@/components/navbar/TreksMegaMenu";
 import { MobileTreksAccordion } from "@/components/navbar/MobileTreksAccordion";
 import { NAV_LINKS } from "@/lib/data";
 import type { RegionWithTreks } from "@/lib/treks";
+import type { LogoAsset } from "@/lib/branding";
 import { cn } from "@/lib/utils";
 
 interface NavbarProps {
   /** Regions and their treks, grouped from the JSON in the server layout. */
   regions: RegionWithTreks[];
+  /** Uploaded logo, resolved on disk in the server layout. */
+  logo?: LogoAsset | null;
 }
 
 const TREKS_HREF = "/treks";
 
-export function Navbar({ regions }: NavbarProps) {
+export function Navbar({ regions, logo = null }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isTreksExpanded, setIsTreksExpanded] = useState(false);
@@ -54,7 +57,7 @@ export function Navbar({ regions }: NavbarProps) {
         aria-label="Main navigation"
         className="mx-auto flex h-[78px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-[98px] lg:px-8 xl:px-4"
       >
-        <Logo />
+        <Logo logo={logo} />
 
         {/* Desktop menu */}
         <ul className="hidden items-center gap-8 lg:flex">

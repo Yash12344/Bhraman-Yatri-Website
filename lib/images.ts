@@ -16,6 +16,8 @@ export const GENERAL_IMAGE_DIR = "/site-images/general";
  */
 export const GALLERY_DIR = "/site-images/gallery";
 export const BLOG_IMAGE_DIR = "/site-images/blog";
+/** The operator's logo. Resolved on disk by `lib/branding.ts`. */
+export const LOGO_DIR = "/site-images/logo";
 
 /** Card and banner image for a trek: /site-images/treks/{slug}.jpg */
 export function trekCardImage(slug: string): string {
