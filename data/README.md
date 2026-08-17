@@ -178,6 +178,47 @@ railway station are absent. Every gap is itemised in that file's
 The page also states "4 days" while listing a three-day itinerary. Both are
 recorded as-is; ask the operator which is right before launch.
 
+## `legal/` — Privacy Policy and Terms & Conditions
+
+`data/legal/privacy-policy.json` and `data/legal/terms-and-conditions.json`
+render at `/privacy-policy` and `/terms-and-conditions` through one shared
+component. A section is `{ heading, body[], list[], table, note }` — add,
+remove or reword sections in the JSON and the page, its numbering and its
+"On this page" jump links all follow.
+
+Contact details are **not** written into that text. `{{SITE_NAME}}`,
+`{{EMAIL}}`, `{{PHONE}}`, `{{ADDRESS}}` and `{{URL}}` are filled from `SITE`
+in `lib/data.ts`, so a phone number changes in one place. Bump `lastUpdated`
+when the wording changes — it is shown on the page and drives `sitemap.xml`.
+
+### Where the text came from
+
+The **Terms** follow the operator's own terms document, reorganised into
+sections: booking and advance payment, rescheduling, the 20/10-day
+cancellation schedule, vouchers, force majeure, the anti-coercion and false
+price clauses, fitness and medical disclosure, conduct, luggage, third-party
+suppliers, liability capped at trip cost, and Dehradun jurisdiction. The
+cancellation schedule matches `cancellationPolicy` in the trek JSON.
+
+The **Privacy Policy** was written for this website rather than adapted from
+the operator's existing one, which describes advertisers, affiliate networks,
+tracking pixels, cookies, stored card numbers and sharing data with marketing
+partners. None of that is true of this site, and publishing it would commit
+the operator to practices they do not follow. What this policy states matches
+what the code actually does: form fields only, no analytics, no tracking
+cookies, no third-party scripts, no card data.
+
+### Before launch
+
+- **Have a lawyer review both.** They are drafts, not legal advice.
+- `{{ADDRESS}}` still resolves to the placeholder in `SITE.address`. A privacy
+  policy naming the wrong registered address is worse than no address.
+- Two statements about the balance payment differ: the booking page says
+  "remaining payment on arrival" (from the brochures), while the Terms say the
+  balance is due before the trek start date. Confirm which is right.
+
+---
+
 ## The booking form
 
 `/booking` is the site's single booking form, laid out to match the operator's

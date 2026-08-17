@@ -125,7 +125,7 @@ export const QUICK_LINKS: FooterLink[] = [
  */
 export const BOOKING = {
   paymentPageUrl: "",
-  termsUrl: "/contact",
+  termsUrl: "/terms-and-conditions",
   notes: [
     "You will receive the Booking Receipt promptly via email and WhatsApp.",
     "Kindly pay the booking amount only, remaining payment on arrival.",
@@ -135,8 +135,8 @@ export const BOOKING = {
 } as const;
 
 export const LEGAL_LINKS: FooterLink[] = [
-  { label: "Privacy Policy", href: "/contact" },
-  { label: "Terms & Conditions", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
 
 /**

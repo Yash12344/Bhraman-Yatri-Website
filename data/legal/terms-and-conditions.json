@@ -1,0 +1,256 @@
+{
+  "slug": "terms-and-conditions",
+  "title": "Terms & Conditions",
+  "summary": "The terms you agree to when you book a trek with us — payments, cancellations, rescheduling, fitness, risk and liability.",
+  "lastUpdated": "2026-08-17",
+  "sections": [
+    {
+      "heading": "About these terms",
+      "body": [
+        "The purchase of any travel service offered by {{SITE_NAME}} forms a contract between {{SITE_NAME}} and you. Booking with us represents your unconditional acceptance of these terms, and they are binding on you and on every travel companion you book for.",
+        "Trekking, peak climbing and mountaineering in the Himalayan region carry an inherent risk to life and property. Weather can change within minutes. We do everything within our ability to reduce risk, discomfort and hazard, but accidents, mishaps and deficiencies in service remain possible. Please read these terms carefully and make sure you understand them before you confirm a booking.",
+        "Each trek page on this website also lists details specific to that trek — its duration, grade, inclusions, exclusions and its own policies. Where a trek page and this page differ, the trek page governs that booking."
+      ]
+    },
+    {
+      "heading": "Booking and payment",
+      "list": [
+        "To confirm a booking, an advance payment of 20–50% of the total trek cost is required.",
+        "The remaining balance must be paid before the trek start date, as communicated by our team.",
+        "Failure to complete full payment may result in cancellation of the booking without refund.",
+        "Payments can be made through official company channels only.",
+        "You will receive a booking confirmation receipt promptly by email and WhatsApp.",
+        "Prices shown on this website are per person in Indian Rupees. Where a trek states that GST applies, it is charged in addition."
+      ],
+      "note": "Please check your receipt when it arrives and tell us straight away if the trek, the dates or the group size is wrong. You are responsible for verifying that the dates on your travel documents are correct."
+    },
+    {
+      "heading": "Rescheduling",
+      "list": [
+        "You may request to reschedule your trek, subject to availability.",
+        "Rescheduling is allowed one time only per booking.",
+        "A request must be made at least 7 days before the trek start date.",
+        "A rescheduling fee may apply, depending on the trek and the timing.",
+        "Last-minute rescheduling requests may not be accepted."
+      ],
+      "note": "If you reschedule to a future date and later cancel, the cancellation policy applies as per your original departure date, not the new one."
+    },
+    {
+      "heading": "If you cancel",
+      "body": [
+        "In the event you cancel your trek, the following applies. A few treks differ, so please also check the Policies section of your trek's page."
+      ],
+      "table": {
+        "columns": ["When you cancel", "What you receive"],
+        "rows": [
+          [
+            "20 days or more before the start date",
+            "Refund with 10% cancellation charges"
+          ],
+          [
+            "Between 20 and 10 days before the start date",
+            "Refund with 50% cancellation charges"
+          ],
+          [
+            "Less than 10 days before the start date",
+            "No refund"
+          ]
+        ]
+      },
+      "list": [
+        "Rather than cancel, you may transfer your booking to a friend for the same trek and the same batch. Tell us in advance so we can update the group list and any permits.",
+        "If you do not arrive, or you leave the group part-way through the trek, the full amount is charged and no refund is issued.",
+        "No refund, partial or otherwise, is made if you voluntarily leave or drop out after the trip has begun, or for accommodation, transport, sightseeing, meals or services you do not use."
+      ]
+    },
+    {
+      "heading": "If we change or cancel the trip",
+      "body": [
+        "Your safety and enjoyment are our first concern, and we carry that responsibility honestly. In pursuit of it we reserve the right to modify or cancel a trip, or part of a trip, in circumstances including acts of God, road blockage, political unrest, flight cancellation, delayed arrival, sickness, accidents and other events beyond our control. Wherever possible we will tell you in advance, or while on the trip.",
+        "Trekking in the Himalayas depends heavily on weather and other natural factors, so all itineraries are flexible by nature. Because of sudden weather changes, trail conditions, government restrictions or safety concerns, an itinerary may be modified, shortened or completed earlier than planned at the discretion of the trek leader. Where a trek is completed in fewer days than planned, it is considered successfully concluded: no additional stay, accommodation, meals or services are provided for the remaining days, and no refund, reimbursement or adjustment applies to unused days.",
+        "All decisions taken by the trek leader and the management team are final and binding, as they are made in the interest of participant safety. By booking, you acknowledge that trekking involves uncertainty and agree to comply with changes to the itinerary."
+      ],
+      "note": "Any extra cost arising from a natural calamity or unforeseen circumstance — snowfall, rain, earthquake, landslide, strike or government order — is borne by you."
+    },
+    {
+      "heading": "Refunds and vouchers",
+      "list": [
+        "Refunds are issued as a trek voucher valid for 365 days, emailed to you within up to 7 working days.",
+        "A voucher can be redeemed up to its value against the same trek or another trek within 365 days of the cancelled departure date. No refund is provided if it is not redeemed in that period.",
+        "Where harsh weather, government orders, protests, landslides, snowfall or other unforeseen circumstances force a cancellation before departure, we work out the best possible alternative plan or trek. Cashback is provided as a voucher; monetary refunds are not provided.",
+        "Once the package has started from the pickup point, no refund is provided in any form for anything that happens afterwards, including snowfall, forest department orders, government orders or natural calamity.",
+        "Where we cancel and suggest an alternative trip or dates, you may accept the alternative, take a voucher, or request another trip of your choice. Any difference in cost is borne by you."
+      ],
+      "note": "We are not liable for any additional costs you incur separately — flights, rail, hotels, visas, card charges or onward arrangements coinciding with the trip. In any event, our maximum liability is limited to the trip cost you have paid us."
+    },
+    {
+      "heading": "Refund claims made under pressure",
+      "body": [
+        "We maintain a transparent, predefined refund policy, and all refund claims are processed strictly in line with the terms agreed at the time of booking.",
+        "Any attempt to obtain a refund or financial benefit through coercion, intimidation, undue influence or blackmail — including threats to post negative reviews, defamatory statements or videos on social media or other public forums — is a material breach of this agreement. No refund, compensation or additional benefit will be granted on the basis of such conduct, and we reserve the right to pursue appropriate legal remedies.",
+        "You always retain the right to give honest, good-faith feedback about your genuine experience. This clause is directed only at false or malicious content published to extort money."
+      ]
+    },
+    {
+      "heading": "False price claims",
+      "body": [
+        "If you falsely claim that another company is offering the same package at a lower price, and use that to obtain our services at a reduced price, we treat it as misrepresentation."
+      ],
+      "list": [
+        "We may cancel your booking, charge the actual price, or decline to provide the service.",
+        "We may ask for proof of the price you have quoted — a written quotation, screenshot or invoice. Without valid proof the claim is treated as invalid.",
+        "A penalty may apply depending on the severity, and repeat or fraudulent conduct may result in being declined for future bookings."
+      ]
+    },
+    {
+      "heading": "What is included and excluded",
+      "body": [
+        "Inclusions differ for every trip. Accommodation, meals, arrival and departure transfers, guides, entrance fees, equipment and baggage handling are included only as specified on that trek's page."
+      ],
+      "list": [
+        "Generally included: transport from the pickup point to base camp and back, accommodation, meals as scheduled, permits, trekking equipment and a qualified guide.",
+        "Generally excluded: insurance, airfares, the cost of obtaining identity documents, excess baggage charges, gratuities to guides, drivers and camping staff, meals other than those specified, beverages, personal expenses such as laundry and phone calls, and optional activities."
+      ]
+    },
+    {
+      "heading": "Accommodation, meals and amenities",
+      "list": [
+        "Accommodation in hotels and camps is on a triple or quad sharing basis.",
+        "Only vegetarian food is served.",
+        "Meals run from dinner on day one to breakfast on the last day, between the points named on the trek page."
+      ],
+      "note": "We make every effort to keep you comfortable, but amenities in the Himalayan region are not the same as those you are used to at home, and weather affects the journey directly. Please come with patience, enthusiasm and a readiness to make some compromises."
+    },
+    {
+      "heading": "Fitness and medical disclosure",
+      "body": [
+        "Our treks require varied levels of fitness, based on physical stress, terrain, weather and climate. Some are physically demanding. Review the grade, altitude and daily distance on each trek page carefully before booking, and prepare accordingly.",
+        "We are not medical experts. It is your responsibility to obtain medical advice before you join a trip, and the onus of being fit and healthy rests with you. You are also expected to carry the right clothing and equipment."
+      ],
+      "list": [
+        "All participants must complete a medical declaration before the trek.",
+        "You must disclose any pre-existing medical condition, recent surgery or injury, ongoing medication, disability or pregnancy that could affect your fitness to complete the trek.",
+        "You confirm that neither you nor the companions you have booked for suffer from a condition that could create a hazard to yourselves or to others.",
+        "Non-disclosure may result in immediate removal from the trek at any stage, with full cancellation penalty and no refund."
+      ],
+      "note": "The trek leader may decline, accept or remove any participant, at that participant's own expense, whose condition could create a hazard to themselves or to anyone else on the trip. That judgement rests with the leader on the ground."
+    },
+    {
+      "heading": "Risk and personal responsibility",
+      "body": [
+        "You accept that active, adventure travel carries a degree of personal risk. You are likely to visit places whose political, cultural and geographical attributes present real risks, dangers and physical challenges — altitude sickness, weather, difficult terrain, falling rock and remoteness from medical care among them.",
+        "By booking, you accept that you are aware of these risks and assume them, and you release {{SITE_NAME}} from claims arising from injury, damage or loss resulting from these inherent risks. It is your responsibility to familiarise yourself with local customs, weather conditions, physical challenges and the laws in effect at each destination."
+      ]
+    },
+    {
+      "heading": "Emergencies and evacuation",
+      "body": [
+        "If you fall ill or have an accident during the trip, all hospital expenses, doctor's fees, evacuation from road or mountain, repatriation and any other charges arising directly or indirectly from your illness or accident are your responsibility."
+      ]
+    },
+    {
+      "heading": "Travel insurance",
+      "body": [
+        "Insurance is not included in any of our treks. We strongly recommend that every participant holds valid travel insurance covering:"
+      ],
+      "list": [
+        "Medical expenses",
+        "Accidents and injuries",
+        "Emergency evacuation",
+        "Trip cancellation and interruption"
+      ],
+      "note": "Please carry a copy of your policy on the trek. {{SITE_NAME}} is not responsible for medical or evacuation expenses incurred during a trek."
+    },
+    {
+      "heading": "Conduct on the trek",
+      "list": [
+        "Consumption of alcohol or any other harmful substance is strictly prohibited. If you are found in violation, your trek will be cancelled immediately, with no refund.",
+        "You agree to abide by the authority of the group leader. Their decision is binding on all participants in matters affecting the safety or well-being of anyone on the trip.",
+        "Behaviour that causes danger, distress or annoyance to others, damages property, or interferes with the mobility of the group can result in your participation being terminated, with no right to refund for missed or unused services.",
+        "If you choose to skip part of the scheduled itinerary, the package is considered complete at that point. Any further stay or transport is at your own expense.",
+        "Please carry your waste out with you and leave campsites as you found them."
+      ]
+    },
+    {
+      "heading": "Luggage and belongings",
+      "body": [
+        "Baggage and personal effects are at your risk throughout the trip, and you are solely responsible for your belongings. We are not responsible for the loss of baggage, identity documents, goods, tickets, cash or any other item you own while on tour, whatever the cause — including while carried by porters, ponies or vehicles, and during arrival, departure or a stay at a hotel or guest house.",
+        "Please carry valid photo identification, and present any document a trek requires in advance. We are not accountable where a trip formality is not completed in time, or an essential document is missing, before departure."
+      ]
+    },
+    {
+      "heading": "Backpack offloading",
+      "body": [
+        "On treks that offer it, you can offload your backpack to a mule or porter for a charge per bag per day, stated on that trek's page. Your bag must be within the stated weight limit and carry a waterproof cover. Suitcases, trolleys and duffel bags cannot be offloaded."
+      ]
+    },
+    {
+      "heading": "Communication",
+      "body": [
+        "All communication is sent to the email address and mobile number you give us when booking. We are not responsible for loss or delay of communication caused by an incorrect email address or phone number.",
+        "If your contact details change, please tell us in writing at {{EMAIL}} as early as possible."
+      ]
+    },
+    {
+      "heading": "Photographs and media",
+      "body": [
+        "We may take photographs and video of you during a trip and use them for promotional purposes. By booking, you grant us a royalty-free, worldwide licence to use those images in promotional material, on this website, on social media and in other marketing materials, without further consent or compensation.",
+        "If you would rather your images were not used, please tell us at the time of booking, or write to {{EMAIL}}, and we will respect that."
+      ],
+      "note": "Photographs on this website and in our materials are used for marketing. They do not imply that what they depict is part of your trip, nor guarantee that you will experience, encounter or see the same."
+    },
+    {
+      "heading": "Optional activities",
+      "body": [
+        "Optional activities do not form part of your trip or of this contract. Any assistance we or our partners give you in arranging them does not make us liable for them. Your contract for such an activity is directly with the activity provider, and you release {{SITE_NAME}} from claims arising from your participation."
+      ]
+    },
+    {
+      "heading": "Third-party suppliers",
+      "body": [
+        "{{SITE_NAME}} is a travel organiser. We do not own or operate the hotels, restaurants, transport, attractions or other facilities named in our itineraries; we engage third-party professionals to deliver them.",
+        "We take every reasonable step to select suppliers carefully and to describe their services accurately. But because we do not control their management, we cannot be held liable for injury, damage, loss, accident, delay or irregularity arising directly or indirectly from their acts or deficiencies. Where a supplier's own terms apply, we indicate them."
+      ]
+    },
+    {
+      "heading": "Liability",
+      "body": [
+        "We take responsibility for organising your trek with reasonable care and skill. We are not liable for losses caused by events outside our reasonable control, nor for travel you arrange separately, nor to pay compensation for loss arising from a trip being curtailed, altered, extended or cancelled.",
+        "You expressly agree that in any event our maximum liability is limited to the trip cost you have paid to us. Nothing in these terms limits any liability that cannot lawfully be limited."
+      ]
+    },
+    {
+      "heading": "Using this website",
+      "body": [
+        "This is the official website of {{SITE_NAME}}. By visiting and browsing it you accept these terms and our Privacy Policy, which together govern your relationship with us and with this website.",
+        "Content can change at any time without notice and is provided for general information. Distances, altitudes and timings are indicative, and conditions on the ground vary. We do not warrant the accuracy, timeliness or completeness of the content, and use of it is at your own risk.",
+        "The layout, design, graphics, text and photographs of this website are ours or licensed to us, and may not be reproduced without written permission. Please do not link to this website from another without our written consent. Where we link out to other websites, that is not an endorsement, and we are not responsible for their content. Trademarks mentioned that are not ours are acknowledged as belonging to their owners."
+      ]
+    },
+    {
+      "heading": "Changes to these terms",
+      "body": [
+        "We may add to, alter or modify these terms, or withdraw or discontinue a trip, at any time and without prior notice. Please check this page from time to time, as the version in force at the time of your booking is the one that applies.",
+        "The date at the top of this page shows when it was last updated."
+      ]
+    },
+    {
+      "heading": "Governing law and jurisdiction",
+      "body": [
+        "These terms are governed by the laws of India. All disputes arising out of bookings or participation in treks with {{SITE_NAME}} are subject to the jurisdiction of the courts of Dehradun, Uttarakhand only.",
+        "Arbitration and litigation are your constitutional right and may be exercised in accordance with Indian law."
+      ]
+    },
+    {
+      "heading": "Contact us",
+      "body": [
+        "If something has gone wrong, please tell us early — most problems are easier to fix on the trail than afterwards."
+      ],
+      "list": [
+        "Email: {{EMAIL}}",
+        "Phone and WhatsApp: {{PHONE}}",
+        "Registered office: {{ADDRESS}}"
+      ]
+    }
+  ]
+}

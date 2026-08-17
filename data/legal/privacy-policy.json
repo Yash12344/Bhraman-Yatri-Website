@@ -1,0 +1,139 @@
+{
+  "slug": "privacy-policy",
+  "title": "Privacy Policy",
+  "summary": "What we collect when you enquire or book a trek with us, why we collect it, and what we do with it.",
+  "lastUpdated": "2026-08-17",
+  "sections": [
+    {
+      "heading": "Who we are",
+      "body": [
+        "{{SITE_NAME}} organises guided treks and tours in the Indian Himalayas. This policy explains how we handle the personal information you give us through {{URL}}, and applies to everyone who uses this website, whether or not you go on to book a trek.",
+        "By using this website you agree to the practices described here, and to our Terms & Conditions. If you have a question about anything on this page, write to us at {{EMAIL}} or call {{PHONE}}."
+      ]
+    },
+    {
+      "heading": "Information you give us",
+      "body": [
+        "Almost everything we hold about you is something you typed into a form on this website or sent us directly."
+      ],
+      "list": [
+        "Booking form: your full name, mobile number, email address, city, the trek you want to join, your starting date, the number of people in your group, and the booking amount per person.",
+        "Enquiry and contact forms: your name, phone number, email address, the trek you are asking about, and your message.",
+        "Correspondence: anything you tell us over email, WhatsApp or a phone call — for example your fitness level, dietary needs or a medical condition you disclose before the trek.",
+        "Medical declaration: before a trek we ask you to declare pre-existing conditions, recent surgeries or injuries, and ongoing medication. We collect this only to keep you safe on the trail, and share it only with the guides responsible for your group."
+      ]
+    },
+    {
+      "heading": "Technical information",
+      "body": [
+        "Like every website, this one runs on a web server, and our hosting provider keeps standard access logs — the IP address a request came from, the time, the page requested and the browser used. These logs exist to keep the site running and secure, and to diagnose faults. We do not use them to build a profile of you or to track you across other websites, and we do not combine them with the details you enter into a form."
+      ]
+    },
+    {
+      "heading": "Information we do not collect",
+      "body": [
+        "We think it is as useful to be clear about what this website does not do."
+      ],
+      "list": [
+        "We do not take card or bank details on this website. Payments are handled by our payment provider on their own secure page, and card numbers never reach us or our servers.",
+        "We do not run analytics, advertising trackers or third-party scripts on this website, and we do not set tracking cookies.",
+        "There are no user accounts on this website, so we hold no usernames or passwords.",
+        "We do not buy personal information from anyone, and we do not sell yours."
+      ]
+    },
+    {
+      "heading": "Why we use your information",
+      "list": [
+        "To answer your enquiry and advise you on which trek suits you.",
+        "To confirm your booking and send you a booking receipt by email and WhatsApp.",
+        "To organise your trek — arranging transport, accommodation, permits, guides and meals for your group and dates.",
+        "To keep you safe on the trail, which is why we ask you to disclose any medical condition before you arrive.",
+        "To contact you about a change to your trek, such as a delay or a route change caused by weather.",
+        "To keep records we are required by law to keep, such as those relating to payments and taxes."
+      ],
+      "note": "We do not send marketing emails or promotional messages unless you have asked us to."
+    },
+    {
+      "heading": "Who we share it with",
+      "body": [
+        "We share the minimum needed to actually run your trek, and nothing more."
+      ],
+      "list": [
+        "Our staff, contractors, guides and local partners — the trek leader, drivers, campsite and homestay operators for your dates — where they need the information to perform a function for us. They receive your name, group size and any safety-relevant information, and nothing more.",
+        "Government authorities, where a permit or entry registration requires the names of trekkers, for example in a national park or forest area.",
+        "Our payment provider, who processes the payment itself and holds those payment records.",
+        "Anyone we are legally obliged to share information with, such as a court order or a lawful request from a public authority."
+      ],
+      "note": "We do not sell, rent or trade your personal information to anyone for marketing purposes."
+    },
+    {
+      "heading": "Email and WhatsApp",
+      "body": [
+        "We confirm bookings and stay in touch by email and WhatsApp, because that is what works in the mountains. When you message us on WhatsApp, that conversation is also carried and stored by WhatsApp under their own privacy terms, which we do not control.",
+        "If you would rather we contacted you only by phone or only by email, tell us and we will."
+      ]
+    },
+    {
+      "heading": "How long we keep it",
+      "body": [
+        "We keep enquiry details only as long as we are in conversation with you and for a reasonable period afterwards in case you come back to us.",
+        "We keep booking and payment records for as long as tax and accounting rules require, after which they are deleted or anonymised."
+      ]
+    },
+    {
+      "heading": "Your rights",
+      "body": [
+        "The information is yours. You can ask us at any time to:"
+      ],
+      "list": [
+        "Tell you what personal information we hold about you.",
+        "Correct anything that is wrong or out of date.",
+        "Delete your information, where we are not required to keep it.",
+        "Stop contacting you, or contact you only in a particular way.",
+        "Withdraw a consent you previously gave us."
+      ],
+      "note": "Write to {{EMAIL}} and we will respond as soon as we reasonably can. We may need to confirm your identity first, so that we do not hand your information to somebody else."
+    },
+    {
+      "heading": "Keeping your information safe",
+      "body": [
+        "This website is served over an encrypted connection, and access to booking information is limited to the people who need it to organise your trek. No system is perfectly secure, but we do not keep information we do not need, which is the simplest protection there is."
+      ]
+    },
+    {
+      "heading": "Children",
+      "body": [
+        "Our treks are not aimed at children booking on their own. If you are under 18, please book through a parent or guardian, who should make the booking and disclose any medical condition on your behalf."
+      ]
+    },
+    {
+      "heading": "Other websites",
+      "body": [
+        "This website links to places we do not control — our social media profiles and our payment provider's page among them. Once you follow such a link, that site's own privacy practices govern what they collect and how they use it, not this policy. We are not responsible for the content or practices of other companies, and we suggest you read their terms before sharing anything with them."
+      ]
+    },
+    {
+      "heading": "If the business changes hands",
+      "body": [
+        "If {{SITE_NAME}} is ever merged, acquired or otherwise transferred, the information we hold may transfer with it. Any new owner would remain bound by this policy for information collected under it, and we would say so on this page."
+      ]
+    },
+    {
+      "heading": "Changes to this policy",
+      "body": [
+        "If we change how we handle personal information, we will update this page and change the date at the top. Significant changes will be pointed out to anyone with a booking in progress. Please check back from time to time, as the version in force is the one on this page."
+      ]
+    },
+    {
+      "heading": "Contact us",
+      "body": [
+        "For any question about this policy, or to exercise any of the rights above:"
+      ],
+      "list": [
+        "Email: {{EMAIL}}",
+        "Phone and WhatsApp: {{PHONE}}",
+        "Address: {{ADDRESS}}"
+      ]
+    }
+  ]
+}

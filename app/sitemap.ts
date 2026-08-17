@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { TREKS } from "@/lib/treks";
 import { getBlogPosts } from "@/lib/blog";
+import { PRIVACY_POLICY, TERMS_AND_CONDITIONS } from "@/lib/legal";
 import { SITE } from "@/lib/data";
 
 /**
@@ -10,14 +11,28 @@ import { SITE } from "@/lib/data";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  const staticRoutes = ["", "/about", "/treks", "/gallery", "/blog", "/contact"].map(
-    (path) => ({
-      url: `${SITE.url}${path}`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: path === "" ? 1 : 0.7,
-    })
-  );
+  const staticRoutes = [
+    "",
+    "/about",
+    "/treks",
+    "/gallery",
+    "/blog",
+    "/contact",
+  ].map((path) => ({
+    url: `${SITE.url}${path}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: path === "" ? 1 : 0.7,
+  }));
+
+  // Rarely change and never the landing page for a search, but they should
+  // still be indexed — /booking stays out, it is noindex.
+  const legalRoutes = [PRIVACY_POLICY, TERMS_AND_CONDITIONS].map((doc) => ({
+    url: `${SITE.url}/${doc.slug}`,
+    lastModified: new Date(doc.lastUpdated),
+    changeFrequency: "yearly" as const,
+    priority: 0.3,
+  }));
 
   const trekRoutes = TREKS.map((trek) => ({
     url: `${SITE.url}/treks/${trek.slug}`,
@@ -33,5 +48,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...trekRoutes, ...blogRoutes];
+  return [...staticRoutes, ...trekRoutes, ...blogRoutes, ...legalRoutes];
 }
