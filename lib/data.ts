@@ -115,6 +115,25 @@ export const QUICK_LINKS: FooterLink[] = [
   { label: "Contact Us", href: "/contact" },
 ];
 
+/**
+ * Booking page copy and the payment hand-off.
+ *
+ * `paymentPageUrl` is the operator's hosted payment page (Razorpay or
+ * similar). Leave it empty and the form records the booking and promises a
+ * payment link instead of showing a Pay button — so the page never implies it
+ * is taking money when nothing is wired up behind it.
+ */
+export const BOOKING = {
+  paymentPageUrl: "",
+  termsUrl: "/contact",
+  notes: [
+    "You will receive the Booking Receipt promptly via email and WhatsApp.",
+    "Kindly pay the booking amount only, remaining payment on arrival.",
+  ],
+  /** Shown under the form; plain text rather than trademarked brand logos. */
+  paymentMethods: ["UPI", "VISA", "Mastercard", "RuPay"],
+} as const;
+
 export const LEGAL_LINKS: FooterLink[] = [
   { label: "Privacy Policy", href: "/contact" },
   { label: "Terms & Conditions", href: "/contact" },

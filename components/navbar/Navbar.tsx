@@ -92,7 +92,7 @@ export function Navbar({ regions, logo = null }: NavbarProps) {
         </ul>
 
         <div className="flex items-center gap-3">
-          <Link href="/contact" className="hidden lg:block">
+          <Link href="/booking" className="hidden lg:block">
             <Button variant="primary" size="md" tabIndex={-1}>
               Book Now
             </Button>
@@ -172,7 +172,7 @@ export function Navbar({ regions, logo = null }: NavbarProps) {
           })}
 
           <li className="pt-2">
-            <Link href="/contact">
+            <Link href="/booking">
               <Button variant="primary" size="md" className="w-full" tabIndex={-1}>
                 Book Now
               </Button>

@@ -178,6 +178,38 @@ railway station are absent. Every gap is itemised in that file's
 The page also states "4 days" while listing a three-day itinerary. Both are
 recorded as-is; ask the operator which is right before launch.
 
+## The booking form
+
+`/booking` is the site's single booking form, laid out to match the operator's
+existing payment page: brand and terms on the left, fields on the right.
+Trek pages and the "Book Now" buttons link to it, and `?trek={slug}` prefills
+the trek name and its starting price.
+
+### Switching on online payment
+
+`BOOKING.paymentPageUrl` in `lib/data.ts` is empty. While it is empty:
+
+- the button reads **"Book Now · ₹total"**, not "Pay",
+- submitting records the booking and tells the customer a payment link will
+  follow by email and WhatsApp.
+
+Set it to the operator's hosted payment page (their Razorpay Payment Page URL)
+and the button becomes **"Pay ₹total"** and hands off there after submission.
+The page never shows a Pay button unless something is actually behind it.
+
+**Still to wire:** the submit handler in
+`components/booking/BookingPaymentForm.tsx` logs to the console like the other
+forms on the site. It needs pointing at an API route, inbox or CRM before
+launch, or bookings will not reach anyone. Taking card details directly on the
+site — rather than handing off to a hosted page — would additionally need
+server-side order creation and payment-signature verification.
+
+The `UPI / VISA / MASTERCARD / RUPAY` strip is plain text rather than the brand
+logos, which are trademarks and were not available offline. Drop real SVGs in
+and swap `BOOKING.paymentMethods` for them if the operator wants the marks.
+
+---
+
 ## Contact details
 
 Site-wide branding, phone, email and address live in `lib/data.ts` under

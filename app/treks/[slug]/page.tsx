@@ -21,7 +21,7 @@ import { QuickFacts } from "@/components/trek/QuickFacts";
 import { Timeline } from "@/components/trek/Timeline";
 import { CheckList } from "@/components/trek/CheckList";
 import { Gallery } from "@/components/gallery/Gallery";
-import { BookingForm } from "@/components/booking/BookingForm";
+import { WhatsAppIcon } from "@/components/shared/WhatsAppIcon";
 import { TrekCard } from "@/components/treks/TrekCard";
 import { getTrekGallery } from "@/lib/gallery";
 import { TREKS, getRelatedTreks, getTrekBySlug } from "@/lib/treks";
@@ -416,6 +416,8 @@ export default async function TrekPage({ params }: TrekPageProps) {
                   </ul>
                 )}
 
+                {/* One booking form for the whole site, on /booking — this
+                    hands off to it with the trek and price prefilled. */}
                 <div className="mt-6 border-t border-neutral-100 pt-6">
                   <h2 className="text-base font-bold uppercase tracking-wide text-gray-900">
                     Book This Trek
@@ -423,9 +425,29 @@ export default async function TrekPage({ params }: TrekPageProps) {
                   <p className="mt-1 text-xs text-gray-500">
                     We reply within 24 hours.
                   </p>
-                  <div className="mt-4">
-                    <BookingForm trekName={trek.name} trekSlug={trek.slug} />
-                  </div>
+                  <Link
+                    href={`/booking?trek=${trek.slug}`}
+                    className="mt-4 block"
+                  >
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      className="w-full"
+                      tabIndex={-1}
+                    >
+                      Book Now
+                      <span className="sr-only"> — {trek.name}</span>
+                    </Button>
+                  </Link>
+                  <a
+                    href={SITE.whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 flex items-center justify-center gap-2 text-sm font-semibold text-forest-700 transition-colors hover:text-forest-800"
+                  >
+                    <WhatsAppIcon aria-hidden="true" className="size-4" />
+                    Ask on WhatsApp
+                  </a>
                 </div>
               </div>
             </aside>
