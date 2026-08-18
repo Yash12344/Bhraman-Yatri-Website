@@ -178,6 +178,31 @@ railway station are absent. Every gap is itemised in that file's
 The page also states "4 days" while listing a three-day itinerary. Both are
 recorded as-is; ask the operator which is right before launch.
 
+## `about.json` — the About Us page
+
+Every word on `/about` lives here: the intro, the pull quote, "Who We Are",
+the four stat descriptions, the five "How We Work" cards, "Why Bhraman Yatri?",
+"Our Promise" and the closing band. Reword any of it and the page follows.
+
+**The four numbers are not in this file.** They are counted from the trek data
+at build time, so they cannot go stale:
+
+| Shown | Where it comes from |
+|---|---|
+| `10+` Curated Treks | number of files in `data/treks/`, plus a "+" |
+| `2` Himalayan Regions | distinct regions across those files |
+| `5` Seasons Covered | seasons that actually have a trek running |
+| `24×7` Trekker Support | fixed, in `lib/about.ts` |
+
+Add an eleventh trek and the page says `11+` on the next build.
+
+Each "How We Work" card names an `icon`: `shield`, `compass`, `rupee`,
+`users` or `headset`. These map to the site's Lucide icon set in
+`lib/about.ts` — the site uses drawn icons rather than emoji so they match the
+rest of the design and stay sharp at any size.
+
+---
+
 ## `legal/` — Privacy Policy and Terms & Conditions
 
 `data/legal/privacy-policy.json` and `data/legal/terms-and-conditions.json`
