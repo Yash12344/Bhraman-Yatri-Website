@@ -5,7 +5,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { Button } from "@/components/ui/button";
-import { ABOUT, aboutIcon, getAboutStats } from "@/lib/about";
+import { ABOUT } from "@/lib/about";
 import { HERO_SLIDES, SITE } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -21,8 +21,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const stats = getAboutStats();
-
   return (
     <>
       <PageHero
@@ -88,13 +86,13 @@ export default function AboutPage() {
             <SectionTitle id="glance-heading" title={ABOUT.stats.heading} />
           </FadeIn>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat, index) => (
+            {ABOUT.stats.items.map((stat, index) => (
               <FadeIn key={stat.id} delay={index * 0.08}>
                 <div className="flex h-full flex-col rounded-2xl border border-neutral-100 bg-white p-6 text-center shadow-[0_10px_30px_-22px_rgba(0,0,0,0.3)]">
                   <p className="text-4xl font-extrabold text-saffron-500">
                     {stat.value}
                   </p>
-                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-gray-900">
+                  <p className="mt-2 text-xs font-semibold tracking-wide text-gray-900">
                     {stat.label}
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-gray-500">
@@ -120,24 +118,24 @@ export default function AboutPage() {
             />
           </FadeIn>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {ABOUT.howWeWork.items.map((item, index) => {
-              const Icon = aboutIcon(item.icon);
-              return (
-                <FadeIn key={item.id} delay={index * 0.08}>
-                  <div className="flex h-full flex-col rounded-2xl border border-neutral-100 bg-white p-6 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.3)]">
-                    <span className="flex size-12 items-center justify-center rounded-xl bg-forest-50 text-forest-700">
-                      <Icon aria-hidden="true" className="size-6" />
-                    </span>
-                    <h3 className="mt-4 text-base font-bold uppercase tracking-wide text-gray-900">
-                      {item.title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
-                </FadeIn>
-              );
-            })}
+            {ABOUT.howWeWork.items.map((item, index) => (
+              <FadeIn key={item.id} delay={index * 0.08}>
+                <div className="flex h-full flex-col rounded-2xl border border-neutral-100 bg-white p-6 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.3)]">
+                  <span
+                    aria-hidden="true"
+                    className="flex size-12 items-center justify-center rounded-xl bg-forest-50 text-2xl leading-none"
+                  >
+                    {item.emoji}
+                  </span>
+                  <h3 className="mt-4 text-base font-bold tracking-wide text-gray-900">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                    {item.description}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
           </div>
         </Container>
       </section>
@@ -152,7 +150,7 @@ export default function AboutPage() {
             {ABOUT.whyUs.items.map((item, index) => (
               <FadeIn key={item.title} delay={index * 0.08}>
                 <div className="h-full border-t-2 border-saffron-500 pt-5">
-                  <h3 className="text-lg font-bold uppercase leading-snug tracking-wide text-gray-900">
+                  <h3 className="text-lg font-bold leading-snug tracking-wide text-gray-900">
                     {item.title}
                   </h3>
                   <p className="mt-3 text-base leading-relaxed text-gray-600">
@@ -195,10 +193,10 @@ export default function AboutPage() {
       {/* Closing band */}
       <section className="bg-forest-800 py-14 text-white">
         <Container className="text-center">
-          <h2 className="text-2xl font-extrabold uppercase tracking-wide md:text-3xl">
+          <h2 className="text-2xl font-extrabold tracking-wide md:text-3xl">
             {ABOUT.closing.title}
           </h2>
-          <p className="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-saffron-400">
+          <p className="mt-3 text-sm font-semibold tracking-[0.2em] text-saffron-400">
             {ABOUT.closing.tagline}
           </p>
           <p className="mx-auto mt-4 max-w-xl text-base text-white/85">

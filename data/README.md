@@ -180,26 +180,20 @@ recorded as-is; ask the operator which is right before launch.
 
 ## `about.json` — the About Us page
 
-Every word on `/about` lives here: the intro, the pull quote, "Who We Are",
-the four stat descriptions, the five "How We Work" cards, "Why Bhraman Yatri?",
-"Our Promise" and the closing band. Reword any of it and the page follows.
+Holds the About page **exactly as the client supplied it** — every heading,
+paragraph, emoji and figure, in their own wording and capitalisation. Reword
+anything here and the page follows. Nothing on `/about` is written in code.
 
-**The four numbers are not in this file.** They are counted from the trek data
-at build time, so they cannot go stale:
+Two things to know when editing:
 
-| Shown | Where it comes from |
-|---|---|
-| `10+` Curated Treks | number of files in `data/treks/`, plus a "+" |
-| `2` Himalayan Regions | distinct regions across those files |
-| `5` Seasons Covered | seasons that actually have a trek running |
-| `24×7` Trekker Support | fixed, in `lib/about.ts` |
-
-Add an eleventh trek and the page says `11+` on the next build.
-
-Each "How We Work" card names an `icon`: `shield`, `compass`, `rupee`,
-`users` or `headset`. These map to the site's Lucide icon set in
-`lib/about.ts` — the site uses drawn icons rather than emoji so they match the
-rest of the design and stay sharp at any size.
+- **The four numbers are written out, not counted.** `"value": "10+"` under
+  `stats` is literal text. When treks are added, update it here by hand — the
+  page will not do it for you. (It can be switched back to counting the trek
+  files automatically; ask your developer, it is a few lines.)
+- **The emoji are the icons.** Each `howWeWork` item carries an `emoji` field
+  and that is what appears in the tile. Paste a different emoji to change it.
+  Emoji are drawn by the reader's own device, so they look slightly different
+  on Windows, Android, iPhone and Mac — that is normal and not a fault.
 
 ---
 

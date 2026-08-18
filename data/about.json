@@ -1,7 +1,9 @@
 {
+  "_README": "The About Us page, exactly as supplied by the client. Reword anything here and the page follows. Note: the four numbers under 'OUR JOURNEY AT A GLANCE' are written out below rather than counted from the trek data, so remember to update '10+' by hand when treks are added.",
+
   "hero": {
-    "title": "About Bhraman Yatri",
-    "subtitle": "Explore Beyond Limits"
+    "title": "ABOUT BHRAMAN YATRI",
+    "subtitle": "EXPLORE BEYOND LIMITS"
   },
 
   "intro": {
@@ -14,7 +16,7 @@
   },
 
   "whoWeAre": {
-    "heading": "Who We Are",
+    "heading": "WHO WE ARE",
     "body": [
       "Bhraman Yatri is a community of travellers, explorers, and adventure enthusiasts who share a deep love for the mountains and the outdoors.",
       "We understand that planning a trek or mountain trip can sometimes feel complicated. That's why we take care of the important details — from carefully planned itineraries and stays to local arrangements, experienced guides, and continuous support.",
@@ -24,87 +26,91 @@
   },
 
   "stats": {
-    "heading": "Our Journey At A Glance",
+    "heading": "OUR JOURNEY AT A GLANCE",
     "items": [
       {
         "id": "treks",
-        "label": "Curated Treks",
+        "value": "10+",
+        "label": "CURATED TREKS",
         "description": "Carefully planned trekking experiences across beautiful Himalayan trails."
       },
       {
         "id": "regions",
-        "label": "Himalayan Regions",
+        "value": "2",
+        "label": "HIMALAYAN REGIONS",
         "description": "Exploring the diverse landscapes of Uttarakhand and Himachal Pradesh."
       },
       {
         "id": "seasons",
-        "label": "Seasons Covered",
+        "value": "5",
+        "label": "SEASONS COVERED",
         "description": "Experiences designed around different seasons, landscapes, and travel styles."
       },
       {
         "id": "support",
-        "label": "Trekker Support",
+        "value": "24×7",
+        "label": "TREKKER SUPPORT",
         "description": "Reliable assistance and guidance before, during, and throughout your journey."
       }
     ]
   },
 
   "howWeWork": {
-    "heading": "How We Work",
+    "heading": "HOW WE WORK",
     "items": [
       {
         "id": "safety",
-        "icon": "shield",
-        "title": "Safety First",
+        "emoji": "🛡️",
+        "title": "SAFETY FIRST",
         "description": "Your safety is our highest priority. We focus on responsible planning, suitable routes, experienced teams, and necessary precautions to make your journey as safe and comfortable as possible."
       },
       {
         "id": "guides",
-        "icon": "compass",
-        "title": "Expert Guides",
+        "emoji": "🧭",
+        "title": "EXPERT GUIDES",
         "description": "Our trips are supported by experienced local guides and trek leaders who understand the terrain, routes, weather, and local environment."
       },
       {
         "id": "value",
-        "icon": "rupee",
-        "title": "Best Value",
+        "emoji": "💰",
+        "title": "BEST VALUE",
         "description": "We believe a great travel experience should offer genuine value. We focus on providing quality services, reliable arrangements, and memorable experiences at competitive prices."
       },
       {
         "id": "groups",
-        "icon": "users",
-        "title": "Small Groups",
+        "emoji": "👥",
+        "title": "SMALL GROUPS",
         "description": "We prefer manageable group sizes wherever possible, allowing for better coordination, more personal attention, and a more enjoyable experience for every traveller."
       },
       {
         "id": "support",
-        "icon": "headset",
-        "title": "24×7 Support",
+        "emoji": "📲",
+        "title": "24×7 SUPPORT",
         "description": "Your journey doesn't end when you leave home. Our team remains available to assist you with queries, guidance, and support throughout your trip."
       }
     ]
   },
 
   "whyUs": {
-    "heading": "Why Bhraman Yatri?",
+    "heading": "WHY BHRAMAN YATRI?",
     "items": [
       {
-        "title": "Experience the mountains, not just the destination",
+        "title": "EXPERIENCE THE MOUNTAINS, NOT JUST THE DESTINATION",
         "body": "We want you to slow down, breathe the mountain air, walk the trails, meet the locals, watch the sunsets, and experience the Himalayas beyond the usual tourist spots."
       },
       {
-        "title": "Travel with confidence",
+        "title": "TRAVEL WITH CONFIDENCE",
         "body": "From the moment you start planning your trip until you return home, we aim to provide clear communication, dependable arrangements, and dedicated support."
       },
       {
-        "title": "Created for every explorer",
+        "title": "CREATED FOR EVERY EXPLORER",
         "body": "Whether you're looking for your first trek, an adventure with friends, a family getaway, or a peaceful escape into the mountains — there's a journey waiting for you."
       }
     ]
   },
 
   "promise": {
-    "heading": "Our Promise",
+    "heading": "OUR PROMISE",
     "lead": "At Bhraman Yatri, we don't simply organize trips. We create experiences.",
     "body": [
       "We are committed to making every journey more organized, meaningful, and memorable while encouraging travellers to respect the mountains, local communities, and the environment."
@@ -113,8 +119,8 @@
   },
 
   "closing": {
-    "title": "Bhraman Yatri",
-    "tagline": "Explore. Experience. Remember.",
+    "title": "BHRAMAN YATRI",
+    "tagline": "EXPLORE. EXPERIENCE. REMEMBER.",
     "line": "Your journey to the Himalayas starts here."
   }
 }
