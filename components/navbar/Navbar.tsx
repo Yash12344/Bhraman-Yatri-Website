@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { BookNowButton } from "@/components/booking/BookNowButton";
 import { Logo } from "@/components/shared/Logo";
 import { TreksMegaMenu } from "@/components/navbar/TreksMegaMenu";
 import { MobileTreksAccordion } from "@/components/navbar/MobileTreksAccordion";
@@ -92,11 +92,7 @@ export function Navbar({ regions, logo = null }: NavbarProps) {
         </ul>
 
         <div className="flex items-center gap-3">
-          <Link href="/booking" className="hidden lg:block">
-            <Button variant="primary" size="md" tabIndex={-1}>
-              Book Now
-            </Button>
-          </Link>
+          <BookNowButton linkClassName="hidden lg:block" />
           <button
             type="button"
             aria-label={isMobileOpen ? "Close menu" : "Open menu"}
@@ -172,11 +168,7 @@ export function Navbar({ regions, logo = null }: NavbarProps) {
           })}
 
           <li className="pt-2">
-            <Link href="/booking">
-              <Button variant="primary" size="md" className="w-full" tabIndex={-1}>
-                Book Now
-              </Button>
-            </Link>
+            <BookNowButton className="w-full" />
           </li>
         </ul>
       </div>

@@ -1,0 +1,11 @@
+{
+  "paymentPageUrl": "",
+
+  "_README_1": "PASTE YOUR RAZORPAY PAYMENT PAGE LINK ABOVE, between the empty quotes on the first line.",
+  "_README_2": "It should look like: \"paymentPageUrl\": \"https://rzp.io/l/your-link-here\"",
+  "_README_3": "Keep the quotes and the comma exactly as they are. Only the text inside the quotes changes.",
+  "_README_4": "Every Book Now button on the website then sends the customer straight to that page.",
+  "_README_5": "While this is empty, Book Now sends people to the Contact page instead, so nothing is broken.",
+  "_README_6": "After changing this, the website must be published again ('deploy') for it to take effect.",
+  "_README_7": "Full instructions are in the file README.md, in this same folder."
+}

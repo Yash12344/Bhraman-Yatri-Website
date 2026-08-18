@@ -22,6 +22,7 @@ import { Timeline } from "@/components/trek/Timeline";
 import { CheckList } from "@/components/trek/CheckList";
 import { Gallery } from "@/components/gallery/Gallery";
 import { WhatsAppIcon } from "@/components/shared/WhatsAppIcon";
+import { BookNowButton } from "@/components/booking/BookNowButton";
 import { TrekCard } from "@/components/treks/TrekCard";
 import { getTrekGallery } from "@/lib/gallery";
 import { TREKS, getRelatedTreks, getTrekBySlug } from "@/lib/treks";
@@ -416,8 +417,8 @@ export default async function TrekPage({ params }: TrekPageProps) {
                   </ul>
                 )}
 
-                {/* One booking form for the whole site, on /booking — this
-                    hands off to it with the trek and price prefilled. */}
+                {/* Payment happens on the operator's hosted payment page, so
+                    Book Now is a link out to it. See lib/booking.ts. */}
                 <div className="mt-6 border-t border-neutral-100 pt-6">
                   <h2 className="text-base font-bold uppercase tracking-wide text-gray-900">
                     Book This Trek
@@ -425,20 +426,12 @@ export default async function TrekPage({ params }: TrekPageProps) {
                   <p className="mt-1 text-xs text-gray-500">
                     We reply within 24 hours.
                   </p>
-                  <Link
-                    href={`/booking?trek=${trek.slug}`}
-                    className="mt-4 block"
-                  >
-                    <Button
-                      variant="primary"
-                      size="lg"
-                      className="w-full"
-                      tabIndex={-1}
-                    >
-                      Book Now
-                      <span className="sr-only"> — {trek.name}</span>
-                    </Button>
-                  </Link>
+                  <BookNowButton
+                    size="lg"
+                    className="w-full"
+                    linkClassName="mt-4"
+                    srSuffix={trek.name}
+                  />
                   <a
                     href={SITE.whatsappHref}
                     target="_blank"

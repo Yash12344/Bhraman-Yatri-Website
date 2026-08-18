@@ -25,8 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "" ? 1 : 0.7,
   }));
 
-  // Rarely change and never the landing page for a search, but they should
-  // still be indexed — /booking stays out, it is noindex.
+  // Rarely change and are never the landing page for a search, but they
+  // should still be indexed.
   const legalRoutes = [PRIVACY_POLICY, TERMS_AND_CONDITIONS].map((doc) => ({
     url: `${SITE.url}/${doc.slug}`,
     lastModified: new Date(doc.lastUpdated),

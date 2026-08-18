@@ -219,35 +219,75 @@ cookies, no third-party scripts, no card data.
 
 ---
 
-## The booking form
+## The Razorpay payment link — where to paste it
 
-`/booking` is the site's single booking form, laid out to match the operator's
-existing payment page: brand and terms on the left, fields on the right.
-Trek pages and the "Book Now" buttons link to it, and `?trek={slug}` prefills
-the trek name and its starting price.
+**File: `data/payment.json`**
 
-### Switching on online payment
+Every **Book Now** button on the website — in the top menu, in the phone menu,
+and on each trek's page — sends the customer straight to your Razorpay payment
+page. That link is the only thing you need to set, and it lives in one file.
 
-`BOOKING.paymentPageUrl` in `lib/data.ts` is empty. While it is empty:
+### How to paste it in
 
-- the button reads **"Book Now · ₹total"**, not "Pay",
-- submitting records the booking and tells the customer a payment link will
-  follow by email and WhatsApp.
+1. Open the file `data/payment.json`.
+2. You will see this on the second line:
 
-Set it to the operator's hosted payment page (their Razorpay Payment Page URL)
-and the button becomes **"Pay ₹total"** and hands off there after submission.
-The page never shows a Pay button unless something is actually behind it.
+   ```json
+   "paymentPageUrl": "",
+   ```
 
-**Still to wire:** the submit handler in
-`components/booking/BookingPaymentForm.tsx` logs to the console like the other
-forms on the site. It needs pointing at an API route, inbox or CRM before
-launch, or bookings will not reach anyone. Taking card details directly on the
-site — rather than handing off to a hosted page — would additionally need
-server-side order creation and payment-signature verification.
+3. Paste your Razorpay link **between the two quote marks**, so it reads:
 
-The `UPI / VISA / MASTERCARD / RUPAY` strip is plain text rather than the brand
-logos, which are trademarks and were not available offline. Drop real SVGs in
-and swap `BOOKING.paymentMethods` for them if the operator wants the marks.
+   ```json
+   "paymentPageUrl": "https://rzp.io/l/your-link-here",
+   ```
+
+4. Save the file.
+5. Publish the website again (your developer or hosting provider calls this
+   "deploy"). The buttons start using the new link straight away.
+
+**Keep the quotes and the comma exactly as they are.** Only the text *inside*
+the quotes changes. Do not delete the `_README_` lines below it — they are
+just notes and the website ignores them.
+
+### Where to find your Razorpay link
+
+In your Razorpay Dashboard, go to **Payment Pages**, open the page you want to
+use, and copy its link. It usually looks like `https://rzp.io/l/something`.
+
+### While the link is empty
+
+Nothing breaks. Book Now takes people to the **Contact** page instead, so they
+can still reach you. As soon as you paste a link in, every Book Now button
+switches over — and opens the payment page in a new tab, so your website stays
+open behind it.
+
+### Changing it later
+
+Same file, same steps. To go back to the contact form, empty the quotes again.
+
+---
+
+## Note for developers: how Book Now is wired
+
+`lib/booking.ts` reads `data/payment.json` and exports `bookingHref`. The
+single `BookNowButton` component uses it, so the navbar, the mobile menu and
+every trek sidebar stay in step and there is nothing per-page to update.
+
+- Link set → external `<a target="_blank" rel="noopener noreferrer">`.
+- Link empty → internal `<Link href="/contact">`.
+
+Both render an identical button, so no layout depends on which is active.
+
+There is no on-site booking form and no `/booking` route: payment and the
+customer's details are collected on the operator's hosted Razorpay page.
+That also keeps card data off this site entirely, which is why the Privacy
+Policy can say what it says. If the operator ever wants to take payment
+in-page instead, that needs their Razorpay key and secret, server-side order
+creation and payment-signature verification.
+
+The enquiry and contact forms still log to the console and need pointing at an
+API route, inbox or CRM before launch.
 
 ---
 
