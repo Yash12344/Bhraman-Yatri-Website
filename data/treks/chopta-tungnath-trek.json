@@ -120,8 +120,27 @@
     "Anything apart from Inclusion"
   ],
   "backpackOffloading": [],
-  "thingsToCarry": [],
-  "thingsToCarryNotes": [],
+  "thingsToCarry": [
+    "Rucksack (50-70 Ltr.)",
+    "Trekking Shoes (Ankle Shoes)",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Water Bottles",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+  ],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb."
+  ],
   "cancellationPolicy": {
     "rules": [
       {
@@ -165,7 +184,6 @@
       "Highlights",
       "Short Overview (prose)",
       "Full Overview (prose)",
-      "Things to Carry",
       "Backpack Offloading Charges",
       "FAQs",
       "Available Dates"
@@ -175,7 +193,8 @@
       "Overview spells the railway station \"Haridwar/Rishkesh\" (missing an 'i'), reproduced verbatim.",
       "Overview gives trek distance as 14 kms; the itinerary totals 2 km (Deoriatal) + 9 km round trip = 11 km.",
       "Key Notes say food runs \"(Chopta to Chopta)\", but stays are at Sari Village.",
-      "This is the only brochure in the set with combined Inclusions and Exclusions on a single page."
+      "This is the only brochure in the set with combined Inclusions and Exclusions on a single page.",
+      "This brochure printed no Things to Carry page. The list shown is the operator’s standard list, taken verbatim from the treks whose brochures do print one (Kedarkantha, Kuari Pass, Brahmatal, Hampta Pass, Har Ki Dun). No item was invented."
     ]
   }
 }

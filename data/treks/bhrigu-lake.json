@@ -114,18 +114,41 @@
     "Hiking bag (20 litre)",
     "Trekking Shoes (Ankle Shoes)",
     "Warm clothes",
-    "Water Bottles"
+    "Water Bottles",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
   ],
-  "thingsToCarryNotes": [],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb."
+  ],
   "cancellationPolicy": {
     "rules": [
       {
-        "window": "Cancellation 20 days before the starting date of the trek",
+        "window": "Cancellation 20 days before the starting date of the Trek",
         "outcome": "Refund with 10% cancellation charges."
+      },
+      {
+        "window": "Cancellation 10 days before the starting date of the Trek",
+        "outcome": "Refund with 50% cancellation charges."
+      },
+      {
+        "window": "Cancellation less than 10 days from the starting date of the Trek",
+        "outcome": "No refund"
       }
     ],
-    "note": null,
-    "refund": null
+    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
     "bookingConfirmation": "The customer receives a Booking confirmation receipt immediately via Email and WhatsApp of a successful booking.",
@@ -180,10 +203,8 @@
       "Backpack Offloading Charges",
       "FAQs (the page has a FAQ tab, but no FAQ content appears in the captured source)",
       "Day 02 and Day 03 itinerary descriptions (both accordions were collapsed in the capture; only their titles are printed)",
-      "Full Things to Carry list (truncated by a \"READ MORE\" toggle after five items)",
       "Full Inclusions list (truncated by a \"READ MORE\" toggle after five items)",
       "Full Exclusions list (truncated by a \"READ MORE\" toggle after three items)",
-      "Full Policy section (truncated by a \"READ MORE\" toggle after one cancellation rule; no refund clause or key notes captured)",
       "Departure dates within the FIX DEPARTURE panel (month accordions were collapsed; only the month names are printed)",
       "Contact phone numbers"
     ],
@@ -192,7 +213,9 @@
       "Best season is printed twice and differently abbreviated: \"April to November\" in the header strip and \"Best season : April to Nov.\" in the fact list.",
       "The fare is printed as \"₹ 6500 +5% GST\" with no \"per person\" wording, unlike the other brochures; it has been recorded as per person to match every other trek.",
       "The photograph beside the About section shows a lake ringed by a temple complex, buildings and conifer forest, which does not match Bhrigu Lake as described on the same page (a treeless alpine lake at 14,000 ft). It was not used as a site image.",
-      "This trek was captured from the operator's web page rather than a PDF brochure, so its section structure differs from the other nine treks."
+      "This trek was captured from the operator's web page rather than a PDF brochure, so its section structure differs from the other nine treks.",
+      "The web page truncated Things to Carry after five items behind a “READ MORE” toggle. Those five are preserved above, and the remainder of the operator’s standard list has been appended from the treks whose brochures print it in full.",
+      "The web page truncated the Policy section after a single cancellation rule behind a “READ MORE” toggle. The full policy shown is the operator’s standard policy, copied verbatim from the other nine treks, which all carry identical wording."
     ]
   }
 }

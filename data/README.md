@@ -159,6 +159,18 @@ back to a generic description.
 
 ---
 
+## Static export
+
+`next.config.ts` sets `output: "export"`, so `npm run build` writes a fully
+static site to `out/`. Two things are required for that and must stay:
+
+- `images.unoptimized: true` — an exported site has no image-optimisation
+  server. Without it the build fails.
+- `export const dynamic = "force-static"` in `app/robots.ts` and
+  `app/sitemap.ts` — without it the export build fails on those two routes.
+
+---
+
 ## Known issues in the source brochures
 
 Recorded per trek under `source.discrepancies`. Worth resolving with the

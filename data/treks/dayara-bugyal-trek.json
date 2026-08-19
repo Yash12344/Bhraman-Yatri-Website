@@ -150,8 +150,27 @@
     "Ensure your backpack weighs less than 11 kg and is equipped with a waterproof cover.",
     "Suitcases, trolleys, or duffel bags are not allowed."
   ],
-  "thingsToCarry": [],
-  "thingsToCarryNotes": [],
+  "thingsToCarry": [
+    "Rucksack (50-70 Ltr.)",
+    "Trekking Shoes (Ankle Shoes)",
+    "Jacket",
+    "Fleece/Woolen Clothes",
+    "Thermal Inner Wears (Both Upper and Lower)",
+    "Gloves, Cap & Neck Cover",
+    "Trek Pants & Trousers",
+    "Sunglasses",
+    "Water Bottles",
+    "Moisturizer & Sunscreen",
+    "Raincoat & Ponchos",
+    "Power banks",
+    "Personal Toiletries Kit",
+    "Toilet paper roll and sanitizer",
+    "Personal basic medical kit",
+    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+  ],
+  "thingsToCarryNotes": [
+    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb."
+  ],
   "cancellationPolicy": {
     "rules": [
       {
@@ -196,12 +215,12 @@
       "Highlights",
       "Short Overview (prose)",
       "Full Overview (prose)",
-      "Things to Carry",
       "FAQs",
       "Available Dates"
     ],
     "discrepancies": [
-      "Day 4 page labels the drive duration \"Trek Duration: 8-9 hours\", which appears to be a mislabelled drive duration."
+      "Day 4 page labels the drive duration \"Trek Duration: 8-9 hours\", which appears to be a mislabelled drive duration.",
+      "This brochure printed no Things to Carry page. The list shown is the operator’s standard list, taken verbatim from the treks whose brochures do print one (Kedarkantha, Kuari Pass, Brahmatal, Hampta Pass, Har Ki Dun). No item was invented."
     ]
   }
 }

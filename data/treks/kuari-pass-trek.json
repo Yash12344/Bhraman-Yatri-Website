@@ -6,12 +6,12 @@
   "durationNights": 5,
   "price": [
     {
-      "amount": 7999,
+      "amount": 8499,
       "currency": "INR",
       "perPerson": true,
       "route": "Rishikesh to Rishikesh",
       "startingFrom": false,
-      "raw": "Rs. 7,999/-"
+      "raw": "Rs. 8,499/-"
     }
   ],
   "region": "Uttarakhand",

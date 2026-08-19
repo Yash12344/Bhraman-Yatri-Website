@@ -4,6 +4,9 @@ import { getBlogPosts } from "@/lib/blog";
 import { PRIVACY_POLICY, TERMS_AND_CONDITIONS } from "@/lib/legal";
 import { SITE } from "@/lib/data";
 
+/** Required by `output: "export"`: emit this once at build time. */
+export const dynamic = "force-static";
+
 /**
  * Static routes plus one entry per trek JSON and per blog post — new treks and
  * articles appear automatically, with no edit here.

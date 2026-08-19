@@ -450,23 +450,9 @@ const images = [
     extras: `<ellipse cx="600" cy="830" rx="330" ry="52" fill="#8fb6cd" opacity="0.75"/>
              <ellipse cx="600" cy="826" rx="300" ry="40" fill="#c9dfe9" opacity="0.6"/>`,
   },
-  {
-    name: "treks/dayara-bugyal-trek",
-    w: 1200,
-    h: 900,
-    seed: 139,
-    sky: ["#3179b6", "#86b6d6", "#d8e9ec"],
-    sun: { x: 0.34, y: 0.14, color: "#fcf8e2", disc: 0.03 },
-    cloud: { coverage: 1.32, horizon: 56, seed: 131 },
-    layers: [
-      { base: 0.5, amp: 0.36, rock: "#7fa0b8", snow: "#f1f6fb", snowDepth: 0.24, haze: "#d6e5f0", hazeOpacity: 0.45 },
-      { base: 0.68, amp: 0.26, rock: "#5a8a63", texture: 0.1 },
-      { base: 1.0, amp: 0.18, rock: "#6aa85c", texture: 0.15 },
-    ],
-    extras: `<rect x="0" y="740" width="1200" height="160" fill="#74b163"/>`,
-  },
-  // Bhrigu Lake is not listed here: it ships with real photographs taken from
-  // the operator's own page, so there is no placeholder to generate.
+  // Bhrigu Lake and Dayara Bugyal are not listed here: both ship with real
+  // photographs taken from the operator's own brochure and web page, so there
+  // is no placeholder to generate — regenerating would overwrite them.
   {
     name: "treks/sar-pass-trek",
     w: 1200,
