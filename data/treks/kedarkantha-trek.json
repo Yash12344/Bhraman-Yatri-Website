@@ -209,7 +209,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -273,7 +273,8 @@
       "FAQs"
     ],
     "discrepancies": [
-      "Brief itinerary gives Day 2 trek as 3.5 km; the Day 2 page text says \"about 4km\"."
+      "Brief itinerary gives Day 2 trek as 3.5 km; the Day 2 page text says \"about 4km\".",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

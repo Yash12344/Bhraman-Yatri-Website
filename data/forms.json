@@ -1,0 +1,14 @@
+{
+  "web3formsAccessKey": "",
+  "recipientEmail": "info@bhramanyatri.com",
+
+  "_README_1": "PASTE YOUR WEB3FORMS ACCESS KEY ABOVE, between the empty quotes on the first line.",
+  "_README_2": "Get one free at https://web3forms.com — enter info@bhramanyatri.com as the email to receive submissions at, and they email you an Access Key. No password or account is needed.",
+  "_README_3": "It looks like: \"web3formsAccessKey\": \"a1b2c3d4-1234-5678-9abc-def012345678\"",
+  "_README_4": "Keep the quotes and the comma exactly as they are. Only the text inside the quotes changes.",
+  "_README_5": "This key is safe to keep in the website's files. It is designed to be public and cannot be used to read your email or your account.",
+  "_README_6": "IMPORTANT: the address that receives enquiries is the one you type on the Web3Forms website when creating the key. The 'recipientEmail' line above is only a reminder of which address that should be; changing it here does NOT change where email goes.",
+  "_README_7": "While the key is empty, the Contact and Enquiry forms show an error telling the visitor to email or WhatsApp instead. They never falsely claim a message was sent.",
+  "_README_8": "After changing this, the website must be published again ('deploy') for it to take effect.",
+  "_README_9": "Full instructions are in the file README.md, in this same folder."
+}

@@ -147,7 +147,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -215,7 +215,8 @@
       "The photograph beside the About section shows a lake ringed by a temple complex, buildings and conifer forest, which does not match Bhrigu Lake as described on the same page (a treeless alpine lake at 14,000 ft). It was not used as a site image.",
       "This trek was captured from the operator's web page rather than a PDF brochure, so its section structure differs from the other nine treks.",
       "The web page truncated Things to Carry after five items behind a “READ MORE” toggle. Those five are preserved above, and the remainder of the operator’s standard list has been appended from the treks whose brochures print it in full.",
-      "The web page truncated the Policy section after a single cancellation rule behind a “READ MORE” toggle. The full policy shown is the operator’s standard policy, copied verbatim from the other nine treks, which all carry identical wording."
+      "The web page truncated the Policy section after a single cancellation rule behind a “READ MORE” toggle. The full policy shown is the operator’s standard policy, copied verbatim from the other nine treks, which all carry identical wording.",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

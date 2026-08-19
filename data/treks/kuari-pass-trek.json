@@ -79,7 +79,7 @@
       "pickupPoint": "Rishikesh railway station",
       "dropPoint": null,
       "description": [
-        "Transport from the Rishikesh railway station will be arranged by Himalayan Ambition. Breakfast and lunch will be offered on the way. While going from Rishikesh to Joshimath you will through some famous places like Rishikesh, Dhari Devi, Karnapray, and Chamoli that are known for their beauty and religious significance.",
+        "Transport from the Rishikesh railway station will be arranged by Bhraman Yatri. Breakfast and lunch will be offered on the way. While going from Rishikesh to Joshimath you will through some famous places like Rishikesh, Dhari Devi, Karnapray, and Chamoli that are known for their beauty and religious significance.",
         "Make sure that you keep your cameras ready to capture the eye-catchy views of nature.",
         "On reaching the Joshimath, you will be welcomed by a host of ice peaks."
       ],
@@ -217,7 +217,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -252,7 +252,8 @@
     "discrepancies": [
       "Day 6 header gives the drive as 275km while the same page's text says 247 km; Day 1 gives 247km for the same route.",
       "Things to Carry note refers to \"Sankri basecamp market\", but this trek's base camp is Joshimath — appears copied from the Kedarkantha brochure.",
-      "Day 2 spells the village both \"Tugashi\" (heading) and \"Tugasi\" (body text)."
+      "Day 2 spells the village both \"Tugashi\" (heading) and \"Tugasi\" (body text).",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

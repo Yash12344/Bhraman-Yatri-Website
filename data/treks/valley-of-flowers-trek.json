@@ -193,7 +193,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -228,7 +228,8 @@
     ],
     "discrepancies": [
       "Brief itinerary calls Day 4 \"Valley of Flowers to Hemkund Sahib and return\"; the Day 4 page is titled \"Ghangaria to Hemkund Sahib and return\". The day page title has been used here.",
-      "Day 4 states Hemkund Sahib is \"over 4,298 meters\" (≈14,100 ft), matching the Overview altitude."
+      "Day 4 states Hemkund Sahib is \"over 4,298 meters\" (≈14,100 ft), matching the Overview altitude.",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

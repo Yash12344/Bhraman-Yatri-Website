@@ -36,8 +36,16 @@ const RAW_TREKS = [
 /**
  * A trek plus the values the UI derives from it. Keeping derivation in one
  * place means pages never re-implement pricing or season logic.
+ *
+ * `source` and `availableDates` are deliberately dropped. Nothing renders
+ * either, and both carry the source operator's own details — the brochure
+ * filename and brand, and booking phone numbers inside the availability notes.
+ * Pages like /treks and / hand treks to client components, which serialises
+ * whatever they carry into the page source, so leaving these on published a
+ * competitor's contact details in every visitor's View Source. The JSON files
+ * keep both; the view model does not expose them.
  */
-export interface TrekView extends Trek {
+export interface TrekView extends Omit<Trek, "source" | "availableDates"> {
   /** Lowest published fare across all departure cities. */
   startingPrice: number;
   /** The full price entry the starting fare came from. */
@@ -89,8 +97,12 @@ function toView(trek: Trek): TrekView {
     entry.amount < cheapest.amount ? entry : cheapest
   );
 
+  const { source: _source, availableDates: _availableDates, ...presentable } = trek;
+  void _source;
+  void _availableDates;
+
   return {
-    ...trek,
+    ...presentable,
     startingPrice: startingPriceEntry.amount,
     startingPriceEntry,
     regionLabel: normalizeRegion(trek.region),

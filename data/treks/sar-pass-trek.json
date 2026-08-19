@@ -176,7 +176,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -213,7 +213,8 @@
       "Day distances in the headers and body text disagree throughout: Day 1 header says 2 km trek, body says 10 km; Day 3 header says 5 km, body says 6 km; Day 4 header says 12 km, body says 14 km; Day 5 header says 6-7 km, body says 10 km. Header values are used for the trekDistance fields and body values retained in description.",
       "Day 2 body says \"a challenging ascent for the first 9 kilometers\" within an 8 km day.",
       "Day 1 body says the trek takes \"approximately 4-6 hours\"; the header says 1 hr.",
-      "Several body paragraphs have missing spaces between words (e.g. \"theParvati Valley\", \"3,400 meters\"), reproduced verbatim from the brochure."
+      "Several body paragraphs have missing spaces between words (e.g. \"theParvati Valley\", \"3,400 meters\"), reproduced verbatim from the brochure.",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

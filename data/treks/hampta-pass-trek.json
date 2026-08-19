@@ -201,7 +201,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -272,7 +272,8 @@
       "Overview altitude (14,100 ft) is given both as the Hampta Pass height (Day 3) and Chandratal's height (Day 4).",
       "Day 4 header gives the drive as 4-5 hours; the body says 3 hours to reach and 2 hours to return.",
       "Available Dates are for the 2025 season and will need refreshing.",
-      "Chandratal is conditional: the Day 5 note says the visit happens on day 4 or day 5 only if road and weather permit."
+      "Chandratal is conditional: the Day 5 note says the visit happens on day 4 or day 5 only if road and weather permit.",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

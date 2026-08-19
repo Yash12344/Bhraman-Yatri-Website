@@ -156,7 +156,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -194,7 +194,8 @@
       "Overview gives trek distance as 14 kms; the itinerary totals 2 km (Deoriatal) + 9 km round trip = 11 km.",
       "Key Notes say food runs \"(Chopta to Chopta)\", but stays are at Sari Village.",
       "This is the only brochure in the set with combined Inclusions and Exclusions on a single page.",
-      "This brochure printed no Things to Carry page. The list shown is the operator’s standard list, taken verbatim from the treks whose brochures do print one (Kedarkantha, Kuari Pass, Brahmatal, Hampta Pass, Har Ki Dun). No item was invented."
+      "This brochure printed no Things to Carry page. The list shown is the operator’s standard list, taken verbatim from the treks whose brochures do print one (Kedarkantha, Kuari Pass, Brahmatal, Hampta Pass, Har Ki Dun). No item was invented.",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

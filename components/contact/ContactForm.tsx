@@ -8,12 +8,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { FieldError, FieldIcon } from "@/components/forms/FormField";
+import { FieldError, FieldIcon, FormAlert } from "@/components/forms/FormField";
 import { contactSchema, type ContactFormValues } from "@/lib/validations";
+import { submitForm } from "@/lib/forms";
 import { cn } from "@/lib/utils";
 
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [sendError, setSendError] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
@@ -25,9 +27,28 @@ export function ContactForm() {
   });
 
   const onSubmit = async (values: ContactFormValues) => {
-    // Simulated submission — wire this to an API route or CRM endpoint.
-    await new Promise((resolve) => setTimeout(resolve, 600));
-    console.info("Contact message:", values);
+    setSendError(null);
+    try {
+      await submitForm({
+        subject: `Website contact: ${values.subject}`,
+        fromName: values.name,
+        fields: {
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          subject: values.subject,
+          message: values.message,
+        },
+      });
+    } catch (error) {
+      // Only a delivered message earns the success screen.
+      setSendError(
+        error instanceof Error
+          ? error.message
+          : "Sorry — we could not send your message just now. Please try again."
+      );
+      return;
+    }
     setIsSubmitted(true);
     reset();
   };
@@ -139,6 +160,13 @@ export function ContactForm() {
         />
         <FieldError id="contact-message-error" message={errors.message?.message} />
       </div>
+
+      {/* Only occupies a grid row when there is actually something to say. */}
+      {sendError && (
+        <div className="sm:col-span-2">
+          <FormAlert message={sendError} />
+        </div>
+      )}
 
       <div className="sm:col-span-2">
         <Button

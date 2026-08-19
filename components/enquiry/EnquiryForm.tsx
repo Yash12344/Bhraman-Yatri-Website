@@ -8,8 +8,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select } from "@/components/ui/select";
-import { FieldError, FieldIcon } from "@/components/forms/FormField";
+import { FieldError, FieldIcon, FormAlert } from "@/components/forms/FormField";
 import { enquirySchema, type EnquiryFormValues } from "@/lib/validations";
+import { submitForm } from "@/lib/forms";
 import { cn } from "@/lib/utils";
 
 export interface TrekOption {
@@ -24,6 +25,7 @@ interface EnquiryFormProps {
 
 export function EnquiryForm({ treks }: EnquiryFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [sendError, setSendError] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
@@ -35,9 +37,32 @@ export function EnquiryForm({ treks }: EnquiryFormProps) {
   });
 
   const onSubmit = async (values: EnquiryFormValues) => {
-    // Simulated submission — wire this to an API route or CRM endpoint.
-    await new Promise((resolve) => setTimeout(resolve, 600));
-    console.info("Enquiry submitted:", values);
+    setSendError(null);
+    // The field holds a slug; send the trek's name, which is what reads
+    // sensibly in an inbox.
+    const trekName =
+      treks.find((trek) => trek.slug === values.trek)?.name ?? values.trek;
+    try {
+      await submitForm({
+        subject: `Website enquiry: ${trekName}`,
+        fromName: values.name,
+        fields: {
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          trek: trekName,
+          message: values.message,
+        },
+      });
+    } catch (error) {
+      // Only a delivered enquiry earns the success screen.
+      setSendError(
+        error instanceof Error
+          ? error.message
+          : "Sorry — we could not send your enquiry just now. Please try again."
+      );
+      return;
+    }
     setIsSubmitted(true);
     reset();
   };
@@ -190,6 +215,13 @@ export function EnquiryForm({ treks }: EnquiryFormProps) {
           {isSubmitting ? "Submitting..." : "Submit Enquiry"}
         </Button>
       </div>
+
+      {/* Only occupies a grid row when there is actually something to say. */}
+      {sendError && (
+        <div className="md:col-span-3">
+          <FormAlert message={sendError} />
+        </div>
+      )}
     </form>
   );
 }

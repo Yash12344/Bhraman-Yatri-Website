@@ -287,7 +287,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -324,7 +324,8 @@
       "Brief itinerary Day 2 reads \"Driver 19km/1.5hrs\" (apparent typo for \"Drive\").",
       "Day 5 and Day 6 pages give no distances or durations; the brief itinerary does.",
       "Things to Carry note mentions \"the final day of the summit climb\", but this trek has no summit day.",
-      "Gallery page shows Kashmir Great Lakes photographs rather than Har Ki Dun."
+      "Gallery page shows Kashmir Great Lakes photographs rather than Har Ki Dun.",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }

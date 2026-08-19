@@ -159,6 +159,50 @@ back to a generic description.
 
 ---
 
+## `forms.json` — where enquiries are emailed
+
+**File: `data/forms.json`**
+
+The Contact form and the homepage Enquiry form send submissions through
+[Web3Forms](https://web3forms.com), which emails them on. The site is a static
+export with no server of its own, so there is no API route it could post to —
+the browser talks to Web3Forms directly.
+
+### How to switch it on
+
+1. Go to https://web3forms.com and enter **info@bhramanyatri.com** as the
+   address that should receive submissions. No account or password is needed.
+2. They email you an **Access Key**.
+3. Open `data/forms.json` and paste it between the empty quotes on line 2:
+
+   ```json
+   "web3formsAccessKey": "a1b2c3d4-1234-5678-9abc-def012345678",
+   ```
+
+4. Save, then publish the website again ("deploy").
+
+The key is **safe to keep in the repository**. Web3Forms access keys are
+designed to be public: a key only authorises posting to the one inbox it was
+created for, and cannot be used to read mail or reach the account. No secret
+is involved, which is what makes this work on static hosting at all.
+
+### Where the email actually goes
+
+The recipient is fixed to whatever address was typed on the Web3Forms site
+when the key was created. The `recipientEmail` line in `forms.json` is a
+**reminder of the intended address only** — editing it does not redirect mail.
+To change the recipient, create a new key for the new address.
+
+### Until the key is set
+
+Both forms show an error asking the visitor to email or WhatsApp instead, and
+keep everything they typed so they can retry. **They never claim a message was
+sent when it was not** — success is shown only after Web3Forms confirms the
+submission with `success: true`. A rejected key, a bad response or no network
+all land on the error state.
+
+---
+
 ## Static export
 
 `next.config.ts` sets `output: "export"`, so `npm run build` writes a fully

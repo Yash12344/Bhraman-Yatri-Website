@@ -222,7 +222,7 @@
         "outcome": "No refund"
       }
     ],
-    "note": "HA gives you a facility in the event of cancellation due to some reason to transfer your Trek (same Trek and same batch) to your friend.",
+    "note": "If you need to cancel, we offer the facility to transfer your Trek (same Trek and same batch) to your friend.",
     "refund": "The refund will be given in the form of a Trek voucher with 1 year validity, you will get an email for your Trek voucher, which can take up to 7 working days."
   },
   "termsAndConditions": {
@@ -260,7 +260,8 @@
       "Things to Carry note refers to \"Sankri basecamp market\", but this trek's base camp is Lohajung — appears copied from the Kedarkantha brochure.",
       "Key Notes originally said food is served \"(Sankri to Sankri)\", copied from the Kedarkantha brochure; this trek runs Rishikesh–Lohajung and never touches Sankri. Corrected to \"Food will be served from Day 1 Dinner to Last Day Breakfast\".",
       "Key Notes mention spikes and gaiters \"for the summit climb during the night trek\"; this itinerary has no night summit climb.",
-      "Trek name is spelled both \"Brahmatal\" (cover) and \"Bhramatal\"/\"Bharamatal\" (itinerary pages)."
+      "Trek name is spelled both \"Brahmatal\" (cover) and \"Bhramatal\"/\"Bharamatal\" (itinerary pages).",
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
     ]
   }
 }
