@@ -298,71 +298,63 @@ cookies, no third-party scripts, no card data.
 
 **File: `data/payment.json`**
 
-Every **Book Now** button on the website — in the top menu, in the phone menu,
-and on each trek's page — sends the customer straight to your Razorpay payment
-page. That link is the only thing you need to set, and it lives in one file.
+The booking flow is:
 
-### How to paste it in
+```
+Trek page  ->  Book Now  ->  /booking?trek=<slug>  ->  Razorpay Payment Page
+```
 
-1. Open the file `data/payment.json`.
-2. You will see this on the second line:
+**How to switch on payment**
 
-   ```json
-   "paymentPageUrl": "",
-   ```
-
-3. Paste your Razorpay link **between the two quote marks**, so it reads:
+1. In your Razorpay Dashboard go to **Payment Pages**, open the page you want
+   to use, and copy its link (usually `https://rzp.io/l/something`).
+2. Open `data/payment.json` and paste it between the quotes on line 2:
 
    ```json
    "paymentPageUrl": "https://rzp.io/l/your-link-here",
    ```
 
-4. Save the file.
-5. Publish the website again (your developer or hosting provider calls this
-   "deploy"). The buttons start using the new link straight away.
+3. Save, then publish the website again ("deploy").
 
-**Keep the quotes and the comma exactly as they are.** Only the text *inside*
-the quotes changes. Do not delete the `_README_` lines below it — they are
-just notes and the website ignores them.
+**No Razorpay API key is needed.** A hosted Payment Page needs none, so no
+secret is ever stored in this website — which is what lets the site stay a
+static export with no server.
 
-### Where to find your Razorpay link
+**While the link is empty:** Book Now and the booking form still work. Only
+the last step changes — instead of going to payment, it tells the customer to
+contact you so you can confirm the booking directly. It never claims a booking
+was paid.
 
-In your Razorpay Dashboard, go to **Payment Pages**, open the page you want to
-use, and copy its link. It usually looks like `https://rzp.io/l/something`.
-
-### While the link is empty
-
-Nothing breaks. Book Now takes people to the **Contact** page instead, so they
-can still reach you. As soon as you paste a link in, every Book Now button
-switches over — and opens the payment page in a new tab, so your website stays
-open behind it.
-
-### Changing it later
-
-Same file, same steps. To go back to the contact form, empty the quotes again.
+The customer's name, email and phone are passed to Razorpay as `prefill`
+values so they do not retype them. If a page ignores those, the customer just
+fills them in again — nothing breaks.
 
 ---
 
 ## Note for developers: how Book Now is wired
 
-`lib/booking.ts` reads `data/payment.json` and exports `bookingHref`. The
-single `BookNowButton` component uses it, so the navbar, the mobile menu and
-every trek sidebar stay in step and there is nothing per-page to update.
+`lib/booking.ts` is the whole of it. The single `BookNowButton` component
+links to `bookingStartHref(slug)`, so the navbar, the mobile menu and every
+trek sidebar stay in step with nothing per-page to update. From a trek page it
+carries `?trek=<slug>`, which the form reads to preselect that trek.
 
-- Link set → external `<a target="_blank" rel="noopener noreferrer">`.
-- Link empty → internal `<Link href="/contact">`.
+`/booking` renders a server page (the trek list, trimmed to what the form
+needs) around a client form. The query string is read client-side with
+`useSearchParams` inside a `Suspense` boundary, because `output: "export"` has
+no request at build time for a server component to read.
 
-Both render an identical button, so no layout depends on which is active.
+On submit the form redirects to `paymentPageUrlWithPrefill(...)`, or shows an
+error if no payment page is configured. There is no success state on this
+site at all: success is the Razorpay receipt, so nothing here can claim a
+booking was paid.
 
-There is no on-site booking form and no `/booking` route: payment and the
-customer's details are collected on the operator's hosted Razorpay page.
-That also keeps card data off this site entirely, which is why the Privacy
-Policy can say what it says. If the operator ever wants to take payment
-in-page instead, that needs their Razorpay key and secret, server-side order
-creation and payment-signature verification.
+Card data never touches this site, which is what the Privacy Policy relies on.
+Taking payment in-page instead would need Razorpay keys, server-side order
+creation and signature verification — impossible on a static export without
+adding backend infrastructure.
 
-The enquiry and contact forms still log to the console and need pointing at an
-API route, inbox or CRM before launch.
+The booking details are used to prefill Razorpay. They are **not** emailed to
+the operator: wiring the forms to Web3Forms is a separate, later step.
 
 ---
 

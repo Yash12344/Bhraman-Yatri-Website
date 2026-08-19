@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { Button, type ButtonProps } from "@/components/ui/button";
-import { bookingHref, hasPaymentPage } from "@/lib/booking";
+import { bookingStartHref } from "@/lib/booking";
 import { cn } from "@/lib/utils";
 
 interface BookNowButtonProps {
   label?: string;
+  /** Trek being booked, so the booking form opens with it already chosen. */
+  trekSlug?: string;
   /** Appended to the accessible name, e.g. the trek being booked. */
   srSuffix?: string;
   variant?: ButtonProps["variant"];
@@ -17,41 +19,28 @@ interface BookNowButtonProps {
 /**
  * The single Book Now control, used by the navbar and every trek page.
  *
- * Once a payment page is configured it becomes an external link opening in a
- * new tab; until then it is an internal link to the contact page. Both look
- * identical, so nothing about the design depends on which is active.
+ * It always opens the booking form. From a trek page it carries that trek, so
+ * the customer never retypes what they were already looking at. Payment
+ * happens after the form, on the operator's Razorpay page.
  */
 export function BookNowButton({
   label = "Book Now",
+  trekSlug,
   srSuffix,
   variant = "primary",
   size = "md",
   className,
   linkClassName,
 }: BookNowButtonProps) {
-  const button = (
-    <Button variant={variant} size={size} className={className} tabIndex={-1}>
-      {label}
-      {srSuffix && <span className="sr-only"> — {srSuffix}</span>}
-    </Button>
-  );
-
-  if (hasPaymentPage) {
-    return (
-      <a
-        href={bookingHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={cn("block", linkClassName)}
-      >
-        {button}
-      </a>
-    );
-  }
-
   return (
-    <Link href={bookingHref} className={cn("block", linkClassName)}>
-      {button}
+    <Link
+      href={bookingStartHref(trekSlug)}
+      className={cn("block", linkClassName)}
+    >
+      <Button variant={variant} size={size} className={className} tabIndex={-1}>
+        {label}
+        {srSuffix && <span className="sr-only"> — {srSuffix}</span>}
+      </Button>
     </Link>
   );
 }
