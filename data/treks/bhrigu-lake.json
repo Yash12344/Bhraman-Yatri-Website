@@ -92,7 +92,10 @@
       "duration": null,
       "pickupPoint": null,
       "dropPoint": null,
-      "description": [],
+      "description": [
+        "In the morning by 8, we will leave for Gulaba from Rola Kholi. The track for today is going to be less demanding due to easy descents. After reaching Gulaba, all the trekkers will move towards Manali from the vehicle. In the afternoon, we will reach the Manali bus terminal. The trekkers can accordingly get their tickets done.",
+        "In this way, your beautiful trekking journey will come to an end."
+      ],
       "notes": []
     }
   ],
@@ -101,37 +104,57 @@
     "Accommodation (Hotel, Homestay, Camping)",
     "Meals : All Meals as per menu from first day Dinner to last day Breakfast at basecamp; Vegetarian Meal.",
     "Camping charges : Camping and forest permit fees for Indian Nationals.",
-    "Trekking equipment : High quality tents (living tent- triple sharing, kitchen tent, dinning tent, toilet tent)"
+    "Trekking equipment : High quality tents (living tent- triple sharing, kitchen tent, dinning tent, toilet tent)",
+    "Sleeping bags, mattresses, liners, Utensils, Gaitors, Microspikes/crampons, ice axe.",
+    "Safety equipment : First aid medical kit, oxygen cylinder, stretchers, rope.",
+    "Mountaineering qualified and experienced Trek leader, Guides, Cook and Support staff."
   ],
   "exclusions": [
     "Meals during road journeys",
     "Insurance",
-    "Any personal expenses"
+    "Any personal expenses",
+    "Mules or porter to carry personal luggage",
+    "Anything apart from inclusions"
   ],
-  "backpackOffloading": [],
+  "backpackOffloading": [
+    "Offload your backpack to a mule or porter to lighten your load during the trek.",
+    "Offloading charges range from ₹300 to ₹900 per day per bag, depending on the specific trek.",
+    "Ensure your backpack weighs less than 11 kg and is equipped with a waterproof cover.",
+    "Suitcases, trolleys, or duffel bags are not allowed."
+  ],
   "thingsToCarry": [
     "Backpack & Rain Cover (50-70 Litres)",
     "Hiking bag (20 litre)",
     "Trekking Shoes (Ankle Shoes)",
     "Warm clothes",
     "Water Bottles",
-    "Jacket",
-    "Fleece/Woolen Clothes",
-    "Thermal Inner Wears (Both Upper and Lower)",
-    "Gloves, Cap & Neck Cover",
-    "Trek Pants & Trousers",
+    "Jacket (Down or padded)",
+    "Fleece or woolen clothes",
+    "Trek pants and Trousers",
+    "T-shirts (collar and full sleeves)",
+    "Thermal inner wears (both upper and lower)",
+    "Woolen or Fleece cap",
+    "Hand Gloves",
+    "Socks (4 pairs)",
+    "Neck cover, Muffler, Balaclava, any",
     "Sunglasses",
-    "Moisturizer & Sunscreen",
-    "Raincoat & Ponchos",
+    "Sunscreeen Lotion (SPF 50/70)",
+    "Moisturizer and Lip Balm",
+    "Sun cap",
+    "Raincoat and Ponchos",
     "Power banks",
-    "Personal Toiletries Kit",
+    "Trekking pole",
+    "Headlight",
+    "Small Hiking bag (10-20litre) (for summit climb or if you opt to offload your backpack)",
+    "Tiffin box",
+    "Flip flops",
+    "Glucose, Dry fruits",
+    "Personal Toiletries kit",
     "Toilet paper roll and sanitizer",
     "Personal basic medical kit",
-    "Government Photo Identity Card (Passport, Aadhaar Card, Driving license or Voter ID)"
+    "Original with photocopy of government photo identity card any one (Passport, Aadhaar Card, Driving license or Voter ID)"
   ],
-  "thingsToCarryNotes": [
-    "A small hiking bag is used only if the main bag is given to a porter or mule. It is also needed on the final day of the summit climb."
-  ],
+  "thingsToCarryNotes": [],
   "cancellationPolicy": {
     "rules": [
       {
@@ -200,13 +223,10 @@
     "missingSections": [
       "Nearest railway station (not printed on the page)",
       "Duration in nights (the page states \"4 days\" only)",
-      "Backpack Offloading Charges",
       "FAQs (the page has a FAQ tab, but no FAQ content appears in the captured source)",
-      "Day 02 and Day 03 itinerary descriptions (both accordions were collapsed in the capture; only their titles are printed)",
-      "Full Inclusions list (truncated by a \"READ MORE\" toggle after five items)",
-      "Full Exclusions list (truncated by a \"READ MORE\" toggle after three items)",
       "Departure dates within the FIX DEPARTURE panel (month accordions were collapsed; only the month names are printed)",
-      "Contact phone numbers"
+      "Contact phone numbers",
+      "Day 02 itinerary description (still not supplied; Day 01 and Day 03 came from client screenshots)"
     ],
     "discrepancies": [
       "The header strip states \"4 days\" but the itinerary lists only three days (Day 01 to Day 03).",
@@ -216,7 +236,8 @@
       "This trek was captured from the operator's web page rather than a PDF brochure, so its section structure differs from the other nine treks.",
       "The web page truncated Things to Carry after five items behind a “READ MORE” toggle. Those five are preserved above, and the remainder of the operator’s standard list has been appended from the treks whose brochures print it in full.",
       "The web page truncated the Policy section after a single cancellation rule behind a “READ MORE” toggle. The full policy shown is the operator’s standard policy, copied verbatim from the other nine treks, which all carry identical wording.",
-      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from."
+      "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from.",
+      "Day 03, Inclusions, Exclusions, Backpack Offloading Charges and Things to Carry were supplied by the client as screenshots of their own page and transcribed verbatim. The Things to Carry screenshot groups items under BASIC GEARS / CLOTHES / ACCESSORIES / OTHERS / MANDATORY DOCUMENTS; the schema stores a flat list, so the headings are not stored. Source spellings kept as shown, including \"Sunscreeen\", \"Gaitors\" and \"Headlight\"."
     ]
   }
 }
