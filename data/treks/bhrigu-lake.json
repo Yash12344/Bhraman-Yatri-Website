@@ -235,7 +235,15 @@
   },
   "termsAndConditions": {
     "bookingConfirmation": "The customer receives a Booking confirmation receipt immediately via Email and WhatsApp of a successful booking.",
-    "keyNotes": []
+    "keyNotes": [
+      "Only veg food will be served.",
+      "Food will be served from Day 1 Dinner to Last Day Breakfast",
+      "If there is any cancellation within 10 days of arrival date, or guest does not arrive and leave group during Trek, that will be charged with full amount no refund will be issued in any case.",
+      "If you skip your itinerary as per the schedule, our package will get over immediately at that moment only. For further stay and transportation you have to pay and manage by your own.",
+      "Disclose your medical conditions before arrival, do not hide any illness issues.",
+      "Consumption of alcohol or any other harmful substances is strictly prohibited. If found in violation, your trek will be canceled immediately.",
+      "Balance payment will not be accepted via website or card. Please pay only through cash or UPI/bank transfer."
+    ]
   },
   "faqs": [],
   "availableDates": {
@@ -295,6 +303,7 @@
       "This trek was captured from the operator's web page rather than a PDF brochure, so its section structure differs from the other nine treks.",
       "The web page truncated Things to Carry after five items behind a “READ MORE” toggle. Those five are preserved above, and the remainder of the operator’s standard list has been appended from the treks whose brochures print it in full.",
       "The web page truncated the Policy section after a single cancellation rule behind a “READ MORE” toggle. The full policy shown is the operator’s standard policy, copied verbatim from the other nine treks, which all carry identical wording.",
+      "The Policy section of the web page printed only the Booking Confirmation and Cancellation rules — no list of key notes. The Terms & Conditions notes shown are the operator’s standard notes, copied verbatim from the other nine treks. Only notes that are true of this trek were taken: the two food notes match this trek’s own “Vegetarian Meal” and “first day Dinner to last day Breakfast” inclusions. Deliberately left out: the “(place to place)” wording the other treks attach to the food note, because this page never names a start or end point for meals; “Accommodation … Triple and quad sharing basis”, because this trek’s own inclusions specify triple-sharing living tents only; and “Spikes and gaiters will be provided for the summit climb during the night trek”, because this itinerary has no night summit climb.",
       "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from.",
       "Day 03, Inclusions, Exclusions, Backpack Offloading Charges and Things to Carry were supplied by the client as screenshots of their own page and transcribed verbatim. The Things to Carry screenshot groups items under BASIC GEARS / CLOTHES / ACCESSORIES / OTHERS / MANDATORY DOCUMENTS; the schema stores a flat list, so the headings are not stored. Source spellings kept as shown, including \"Sunscreeen\", \"Gaitors\" and \"Headlight\".",
       "Day 02, as supplied by the client, mentions lunch twice: the trek starts “after having lunch” and then stops “near the lake” for lunch. Transcribed as shown rather than corrected."
