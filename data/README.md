@@ -184,8 +184,7 @@ Send to submit it."* — never "message sent". If the browser blocks the popup
 it says *"Unable to open WhatsApp. Please try again."* and keeps everything
 typed so they can retry.
 
-Booking is separate and unaffected: Book Now still goes to the booking form and
-on to Razorpay.
+Booking is separate and unaffected: Book Now goes straight to Razorpay.
 
 ---
 
@@ -274,9 +273,13 @@ cookies, no third-party scripts, no card data.
 - **Have a lawyer review both.** They are drafts, not legal advice.
 - `{{ADDRESS}}` still resolves to the placeholder in `SITE.address`. A privacy
   policy naming the wrong registered address is worse than no address.
-- Two statements about the balance payment differ: the booking page says
+- Two statements about the balance payment differ: the trek pages say
   "remaining payment on arrival" (from the brochures), while the Terms say the
   balance is due before the trek start date. Confirm which is right.
+- The Privacy Policy still lists a "Booking form" among the places you collect
+  personal information. Book Now now goes straight to Razorpay, so those
+  details are collected by Razorpay rather than by this website. Ask your
+  lawyer whether that line should be reworded.
 
 ---
 
@@ -287,8 +290,12 @@ cookies, no third-party scripts, no card data.
 The booking flow is:
 
 ```
-Trek page  ->  Book Now  ->  /booking?trek=<slug>  ->  Razorpay Payment Page
+Trek page  ->  Book Now  ->  Razorpay Payment Page
 ```
+
+Every Book Now button on the site — the navbar, the mobile menu and each trek
+sidebar — opens that page directly. The customer fills in their details once,
+on Razorpay.
 
 **How to switch on payment**
 
@@ -306,41 +313,33 @@ Trek page  ->  Book Now  ->  /booking?trek=<slug>  ->  Razorpay Payment Page
 secret is ever stored in this website — which is what lets the site stay a
 static export with no server.
 
-**While the link is empty:** Book Now and the booking form still work. Only
-the last step changes — instead of going to payment, it tells the customer to
-contact you so you can confirm the booking directly. It never claims a booking
-was paid.
-
-The customer's name, email and phone are passed to Razorpay as `prefill`
-values so they do not retype them. If a page ignores those, the customer just
-fills them in again — nothing breaks.
+**While the link is empty:** Book Now takes the customer to the Contact page
+instead, so the button still leads somewhere useful and never claims a booking
+was made. Paste the link in and it goes to Razorpay again.
 
 ---
 
 ## Note for developers: how Book Now is wired
 
-`lib/booking.ts` is the whole of it. The single `BookNowButton` component
-links to `bookingStartHref(slug)`, so the navbar, the mobile menu and every
-trek sidebar stay in step with nothing per-page to update. From a trek page it
-carries `?trek=<slug>`, which the form reads to preselect that trek.
+`lib/booking.ts` is the whole of it: it reads the link out of
+`data/payment.json` and exports `bookNowHref`. The single `BookNowButton`
+component is a plain anchor to that href, so the navbar, the mobile menu and
+every trek sidebar stay in step with nothing per-page to update.
 
-`/booking` renders a server page (the trek list, trimmed to what the form
-needs) around a client form. The query string is read client-side with
-`useSearchParams` inside a `Suspense` boundary, because `output: "export"` has
-no request at build time for a server component to read.
+The trek is not passed to Razorpay. A hosted Payment Page collects only the
+fields the operator configured on it in the Razorpay dashboard, and there is
+no documented, page-independent query parameter for naming the trek — adding
+one would just put a parameter in the URL that Razorpay ignores.
 
-On submit the form redirects to `paymentPageUrlWithPrefill(...)`, or shows an
-error if no payment page is configured. There is no success state on this
-site at all: success is the Razorpay receipt, so nothing here can claim a
-booking was paid.
+There is no success state on this site at all: success is the Razorpay
+receipt, so nothing here can claim a booking was paid. No booking details are
+collected by this website and nothing is emailed to the operator — Razorpay's
+own payment notification is the record of a booking.
 
 Card data never touches this site, which is what the Privacy Policy relies on.
 Taking payment in-page instead would need Razorpay keys, server-side order
 creation and signature verification — impossible on a static export without
 adding backend infrastructure.
-
-The booking details are used to prefill Razorpay. They are not emailed to the
-operator — Razorpay's own payment notification is the record of a booking.
 
 ---
 

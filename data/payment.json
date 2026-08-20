@@ -5,8 +5,8 @@
   "_README_2": "It should look like: \"paymentPageUrl\": \"https://rzp.io/l/your-link-here\"",
   "_README_3": "Get it from your Razorpay Dashboard: Payment Pages -> open your page -> copy its link.",
   "_README_4": "Keep the quotes and the comma exactly as they are. Only the text inside the quotes changes.",
-  "_README_5": "The flow is: Book Now -> booking form (name, phone, email, trek, participants) -> this Razorpay page.",
-  "_README_6": "While this is empty, the booking form still works but the last step shows a message asking the customer to contact you, instead of going to payment. It never pretends a booking was paid.",
+  "_README_5": "The flow is: Book Now -> this Razorpay page. The customer enters their details once, on Razorpay.",
+  "_README_6": "While this is empty, Book Now takes the customer to the Contact page instead, so the button still leads somewhere useful. It never pretends a booking was paid.",
   "_README_7": "No Razorpay API key is needed. A hosted Payment Page needs no key, and no secret is ever stored in this website.",
   "_README_8": "After changing this, the website must be published again ('deploy') for it to take effect.",
   "_README_9": "Full instructions are in the file README.md, in this same folder."

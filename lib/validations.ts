@@ -21,25 +21,6 @@ export const enquirySchema = z.object({
 
 export type EnquiryFormValues = z.infer<typeof enquirySchema>;
 
-/**
- * The booking form on /booking. Only what is needed to hold a slot and hand
- * the customer to the payment page.
- */
-export const bookingSchema = z.object({
-  name,
-  email,
-  phone,
-  trek: z.string().min(1, "Please choose a trek"),
-  // Registered with `valueAsNumber`, so an empty field arrives as NaN.
-  participants: z
-    .number({ error: "Please enter the number of participants" })
-    .int("Please enter a whole number")
-    .min(1, "At least 1 participant")
-    .max(30, "For groups above 30, please call us"),
-});
-
-export type BookingFormValues = z.infer<typeof bookingSchema>;
-
 export const contactSchema = z.object({
   name,
   email,

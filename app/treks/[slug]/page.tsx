@@ -445,8 +445,8 @@ export default async function TrekPage({ params }: TrekPageProps) {
                   </ul>
                 )}
 
-                {/* Book Now opens the booking form carrying this trek; the
-                    form then hands off to Razorpay. See lib/booking.ts. */}
+                {/* Book Now goes straight to the operator's Razorpay Payment
+                    Page. See lib/booking.ts. */}
                 <div className="mt-6 border-t border-neutral-100 pt-6">
                   <h2 className="text-base font-bold uppercase tracking-wide text-gray-900">
                     Book This Trek
@@ -458,7 +458,6 @@ export default async function TrekPage({ params }: TrekPageProps) {
                     size="lg"
                     className="w-full"
                     linkClassName="mt-4"
-                    trekSlug={trek.slug}
                     srSuffix={trek.name}
                   />
                   <a
