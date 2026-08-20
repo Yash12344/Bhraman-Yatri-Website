@@ -157,6 +157,63 @@
     "Personal basic medical kit",
     "Original with photocopy of government photo identity card any one (Passport, Aadhaar Card, Driving license or Voter ID)"
   ],
+  "thingsToCarryGroups": [
+    {
+      "title": "BASIC GEARS",
+      "items": [
+        "Backpack & Rain Cover (50-70 Litres)",
+        "Hiking bag (20 litre)",
+        "Trekking Shoes (Ankle Shoes)",
+        "Warm clothes",
+        "Water Bottles"
+      ]
+    },
+    {
+      "title": "CLOTHES",
+      "items": [
+        "Jacket (Down or padded)",
+        "Fleece or woolen clothes",
+        "Trek pants and Trousers",
+        "T-shirts (collar and full sleeves)",
+        "Thermal inner wears (both upper and lower)",
+        "Woolen or Fleece cap",
+        "Hand Gloves",
+        "Socks (4 pairs)",
+        "Neck cover, Muffler, Balaclava, any"
+      ]
+    },
+    {
+      "title": "ACCESSORIES",
+      "items": [
+        "Sunglasses",
+        "Sunscreeen Lotion (SPF 50/70)",
+        "Moisturizer and Lip Balm",
+        "Sun cap",
+        "Raincoat and Ponchos",
+        "Power banks",
+        "Trekking pole",
+        "Headlight"
+      ]
+    },
+    {
+      "title": "OTHERS",
+      "items": [
+        "Small Hiking bag (10-20litre) (for summit climb or if you opt to offload your backpack)",
+        "Tiffin box",
+        "Flip flops",
+        "Glucose, Dry fruits",
+        "Personal Toiletries kit",
+        "Toilet paper roll and sanitizer",
+        "Personal basic medical kit"
+      ]
+    },
+    {
+      "title": "MANDATORY DOCUMENTS",
+      "items": [
+        "Original with photocopy of government photo identity card any one (Passport, Aadhaar Card, Driving license or Voter ID)"
+      ]
+    }
+  ],
   "thingsToCarryNotes": [],
   "cancellationPolicy": {
     "rules": [

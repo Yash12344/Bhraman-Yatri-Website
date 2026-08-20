@@ -73,6 +73,12 @@ export interface TermsAndConditions {
   keyNotes: string[];
 }
 
+/** One heading from a source's Things to Carry list, with its items. */
+export interface ThingsToCarryGroup {
+  title: string;
+  items: string[];
+}
+
 export interface Faq {
   question: string;
   answer: string;
@@ -133,6 +139,13 @@ export interface Trek {
   /** The brochure's "Backpack Offloading Charges" panel. */
   backpackOffloading: string[];
   thingsToCarry: string[];
+  /**
+   * The same items grouped under the source's own headings, when it prints
+   * them. `null` where the source gives a plain list — the flat
+   * `thingsToCarry` above is always populated either way, so nothing that
+   * reads it needs to know about grouping.
+   */
+  thingsToCarryGroups: ThingsToCarryGroup[] | null;
   /** Callouts printed under the Things to Carry grid. */
   thingsToCarryNotes: string[];
 

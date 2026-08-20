@@ -328,20 +328,48 @@ export default async function TrekPage({ params }: TrekPageProps) {
                     <Package aria-hidden="true" className="size-5 text-saffron-500" />
                     Things To Carry
                   </h2>
-                  <ul className="grid gap-x-6 gap-y-2.5 sm:grid-cols-2 lg:grid-cols-3">
-                    {trek.thingsToCarry.map((item, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-2 text-sm text-gray-600"
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="mt-1.5 size-1.5 shrink-0 rounded-full bg-saffron-400"
-                        />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  {/* Grouped when the source prints headings, otherwise the
+                      plain list every other trek uses. Same bullet styling. */}
+                  {trek.thingsToCarryGroups ? (
+                    <div className="space-y-6">
+                      {trek.thingsToCarryGroups.map((group) => (
+                        <div key={group.title}>
+                          <h3 className="mb-3 text-sm font-bold uppercase tracking-wide text-gray-900">
+                            {group.title}
+                          </h3>
+                          <ul className="grid gap-x-6 gap-y-2.5 sm:grid-cols-2 lg:grid-cols-3">
+                            {group.items.map((item, index) => (
+                              <li
+                                key={index}
+                                className="flex items-start gap-2 text-sm text-gray-600"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  className="mt-1.5 size-1.5 shrink-0 rounded-full bg-saffron-400"
+                                />
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <ul className="grid gap-x-6 gap-y-2.5 sm:grid-cols-2 lg:grid-cols-3">
+                      {trek.thingsToCarry.map((item, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-sm text-gray-600"
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="mt-1.5 size-1.5 shrink-0 rounded-full bg-saffron-400"
+                          />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                   {trek.thingsToCarryNotes.length > 0 && (
                     <ul className="mt-5 space-y-2 rounded-xl bg-saffron-50 p-4">
                       {trek.thingsToCarryNotes.map((note, index) => (

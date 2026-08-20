@@ -177,6 +177,7 @@
     "Suitcases, trolleys, or duffel bags are not allowed."
   ],
   "thingsToCarry": [],
+  "thingsToCarryGroups": null,
   "thingsToCarryNotes": [],
   "cancellationPolicy": {
     "rules": [

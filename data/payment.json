@@ -1,5 +1,5 @@
 {
-  "paymentPageUrl": "",
+  "paymentPageUrl": "https://rzp.io/rzp/bhramanyatripayment",
 
   "_README_1": "PASTE YOUR RAZORPAY PAYMENT PAGE LINK ABOVE, between the empty quotes on the first line.",
   "_README_2": "It should look like: \"paymentPageUrl\": \"https://rzp.io/l/your-link-here\"",
