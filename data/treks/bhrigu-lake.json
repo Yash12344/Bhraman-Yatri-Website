@@ -80,7 +80,10 @@
       "duration": null,
       "pickupPoint": null,
       "dropPoint": null,
-      "description": [],
+      "description": [
+        "Get up early in the morning and witness the most beautiful sunrise. After having lunch, we will start our trek toward Bhrigu lake. At the starting, the trek route is a rocky patch and also this part of the trek involves a steep ascent. You will notice that the nature of the trail keeps on changing.",
+        "Bhrigu lake is no less than a stunning marvel that keeps on changing its color as per the season. Near the lake, we will also stop for lunch and spend some quality time with nature to relax. On the same day, we will trek back to Rola Kholi."
+      ],
       "notes": []
     },
     {
@@ -225,8 +228,7 @@
       "Duration in nights (the page states \"4 days\" only)",
       "FAQs (the page has a FAQ tab, but no FAQ content appears in the captured source)",
       "Departure dates within the FIX DEPARTURE panel (month accordions were collapsed; only the month names are printed)",
-      "Contact phone numbers",
-      "Day 02 itinerary description (still not supplied; Day 01 and Day 03 came from client screenshots)"
+      "Contact phone numbers"
     ],
     "discrepancies": [
       "The header strip states \"4 days\" but the itinerary lists only three days (Day 01 to Day 03).",
@@ -237,7 +239,8 @@
       "The web page truncated Things to Carry after five items behind a “READ MORE” toggle. Those five are preserved above, and the remainder of the operator’s standard list has been appended from the treks whose brochures print it in full.",
       "The web page truncated the Policy section after a single cancellation rule behind a “READ MORE” toggle. The full policy shown is the operator’s standard policy, copied verbatim from the other nine treks, which all carry identical wording.",
       "Customer-facing text referred to the source operator, Himalayan Ambition (as “HA” in the cancellation note, and by name in the Kuari Pass Day 1 description). Reworded for Bhraman Yatri without changing the meaning of the policy. The source.brand/source.file fields below still record where the data came from.",
-      "Day 03, Inclusions, Exclusions, Backpack Offloading Charges and Things to Carry were supplied by the client as screenshots of their own page and transcribed verbatim. The Things to Carry screenshot groups items under BASIC GEARS / CLOTHES / ACCESSORIES / OTHERS / MANDATORY DOCUMENTS; the schema stores a flat list, so the headings are not stored. Source spellings kept as shown, including \"Sunscreeen\", \"Gaitors\" and \"Headlight\"."
+      "Day 03, Inclusions, Exclusions, Backpack Offloading Charges and Things to Carry were supplied by the client as screenshots of their own page and transcribed verbatim. The Things to Carry screenshot groups items under BASIC GEARS / CLOTHES / ACCESSORIES / OTHERS / MANDATORY DOCUMENTS; the schema stores a flat list, so the headings are not stored. Source spellings kept as shown, including \"Sunscreeen\", \"Gaitors\" and \"Headlight\".",
+      "Day 02, as supplied by the client, mentions lunch twice: the trek starts “after having lunch” and then stops “near the lake” for lunch. Transcribed as shown rather than corrected."
     ]
   }
 }
