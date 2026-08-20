@@ -10,7 +10,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { FieldError, FieldIcon, FormAlert } from "@/components/forms/FormField";
 import { contactSchema, type ContactFormValues } from "@/lib/validations";
-import { submitForm } from "@/lib/forms";
+import {
+  buildWhatsAppEnquiryUrl,
+  openWhatsApp,
+  WHATSAPP_FAILED_MESSAGE,
+  WHATSAPP_OPENED_MESSAGE,
+} from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
 export function ContactForm() {
@@ -26,29 +31,24 @@ export function ContactForm() {
     defaultValues: { name: "", email: "", phone: "", subject: "", message: "" },
   });
 
-  const onSubmit = async (values: ContactFormValues) => {
+  // Validation runs first; only then is the enquiry handed to WhatsApp. The
+  // details never leave the browser except into the customer's own message.
+  const onSubmit = (values: ContactFormValues) => {
     setSendError(null);
-    try {
-      await submitForm({
-        subject: `Website contact: ${values.subject}`,
-        fromName: values.name,
-        fields: {
-          name: values.name,
-          email: values.email,
-          phone: values.phone,
-          subject: values.subject,
-          message: values.message,
-        },
-      });
-    } catch (error) {
-      // Only a delivered message earns the success screen.
-      setSendError(
-        error instanceof Error
-          ? error.message
-          : "Sorry — we could not send your message just now. Please try again."
-      );
+
+    const url = buildWhatsAppEnquiryUrl([
+      ["Name", values.name],
+      ["Phone", values.phone],
+      ["Email", values.email],
+      ["Subject", values.subject],
+      ["Message", values.message],
+    ]);
+
+    if (!url || !openWhatsApp(url)) {
+      setSendError(WHATSAPP_FAILED_MESSAGE);
       return;
     }
+
     setIsSubmitted(true);
     reset();
   };
@@ -60,12 +60,12 @@ export function ContactForm() {
         className="flex min-h-72 flex-col items-center justify-center gap-3 text-center"
       >
         <CheckCircle2 aria-hidden="true" className="size-12 text-forest-500" />
-        <p className="text-lg font-semibold text-gray-900">Message sent!</p>
-        <p className="max-w-sm text-sm text-gray-500">
-          Thanks for reaching out — we&apos;ll reply within 24 hours.
+        <p className="text-lg font-semibold text-gray-900">
+          Almost there — press Send in WhatsApp
         </p>
+        <p className="max-w-sm text-sm text-gray-500">{WHATSAPP_OPENED_MESSAGE}</p>
         <Button variant="primary" size="md" onClick={() => setIsSubmitted(false)}>
-          Send Another Message
+          Write Another Message
         </Button>
       </div>
     );

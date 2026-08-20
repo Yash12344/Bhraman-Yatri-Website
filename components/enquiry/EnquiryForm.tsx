@@ -10,7 +10,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select } from "@/components/ui/select";
 import { FieldError, FieldIcon, FormAlert } from "@/components/forms/FormField";
 import { enquirySchema, type EnquiryFormValues } from "@/lib/validations";
-import { submitForm } from "@/lib/forms";
+import {
+  buildWhatsAppEnquiryUrl,
+  openWhatsApp,
+  WHATSAPP_FAILED_MESSAGE,
+  WHATSAPP_OPENED_MESSAGE,
+} from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
 export interface TrekOption {
@@ -36,33 +41,28 @@ export function EnquiryForm({ treks }: EnquiryFormProps) {
     defaultValues: { name: "", phone: "", email: "", trek: "", message: "" },
   });
 
-  const onSubmit = async (values: EnquiryFormValues) => {
+  // Validation runs first; only then is the enquiry handed to WhatsApp. The
+  // details never leave the browser except into the customer's own message.
+  const onSubmit = (values: EnquiryFormValues) => {
     setSendError(null);
     // The field holds a slug; send the trek's name, which is what reads
-    // sensibly in an inbox.
+    // sensibly in a message.
     const trekName =
       treks.find((trek) => trek.slug === values.trek)?.name ?? values.trek;
-    try {
-      await submitForm({
-        subject: `Website enquiry: ${trekName}`,
-        fromName: values.name,
-        fields: {
-          name: values.name,
-          email: values.email,
-          phone: values.phone,
-          trek: trekName,
-          message: values.message,
-        },
-      });
-    } catch (error) {
-      // Only a delivered enquiry earns the success screen.
-      setSendError(
-        error instanceof Error
-          ? error.message
-          : "Sorry — we could not send your enquiry just now. Please try again."
-      );
+
+    const url = buildWhatsAppEnquiryUrl([
+      ["Name", values.name],
+      ["Phone", values.phone],
+      ["Email", values.email],
+      ["Trek", trekName],
+      ["Message", values.message],
+    ]);
+
+    if (!url || !openWhatsApp(url)) {
+      setSendError(WHATSAPP_FAILED_MESSAGE);
       return;
     }
+
     setIsSubmitted(true);
     reset();
   };
@@ -75,18 +75,16 @@ export function EnquiryForm({ treks }: EnquiryFormProps) {
       >
         <CheckCircle2 aria-hidden="true" className="size-12 text-forest-500" />
         <p className="text-lg font-semibold text-gray-900">
-          Thank you for your enquiry!
+          Almost there — press Send in WhatsApp
         </p>
-        <p className="max-w-sm text-sm text-gray-500">
-          Our team will get back to you within 24 hours to plan your adventure.
-        </p>
+        <p className="max-w-sm text-sm text-gray-500">{WHATSAPP_OPENED_MESSAGE}</p>
         <Button
           variant="primary"
           size="md"
           className="mt-2"
           onClick={() => setIsSubmitted(false)}
         >
-          Send Another Enquiry
+          Write Another Enquiry
         </Button>
       </div>
     );
