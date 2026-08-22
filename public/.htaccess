@@ -1,0 +1,30 @@
+# Apache configuration for the exported site on Hostinger.
+#
+# Everything in public/ is copied into out/ as-is, so this file ships with the
+# site and must sit in the same folder as index.html on the server.
+#
+# The site is exported as a directory per page (next.config.ts sets
+# trailingSlash: true), so /about/ finds about/index.html on its own. These
+# rules cover the rest: the no-slash spelling of the same URL, and a real 404
+# page instead of Apache's.
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.html
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # /terms-and-conditions -> /terms-and-conditions/
+  #
+  # Apache's DirectorySlash normally does this by itself, but it can be turned
+  # off, and the link on the Razorpay Payment Page has no trailing slash — so
+  # the redirect is spelled out here rather than assumed. It only fires when
+  # the path really is a directory, so it cannot loop and cannot affect files.
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+# The site's own 404 page, not Apache's default.
+ErrorDocument 404 /404.html

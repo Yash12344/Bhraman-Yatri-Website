@@ -197,6 +197,29 @@ static site to `out/`. Two things are required for that and must stay:
   server. Without it the build fails.
 - `export const dynamic = "force-static"` in `app/robots.ts` and
   `app/sitemap.ts` — without it the export build fails on those two routes.
+- `trailingSlash: true` — see below.
+
+### Why `trailingSlash: true`, and the `.htaccess`
+
+On Hostinger there is no Next.js server to turn a clean URL into a file:
+Apache just serves the folder you upload. Without this setting the export
+writes `terms-and-conditions.html`, so opening
+`bhramanyatri.com/terms-and-conditions` directly asks for a file that does not
+exist and gets a 404 — which is what the Terms & Conditions link on the
+Razorpay Payment Page does.
+
+With it, each page is exported as its own folder containing `index.html`, so
+`/terms-and-conditions/` is served directly and Apache redirects
+`/terms-and-conditions` to it. Both spellings work.
+
+`public/.htaccess` is copied into `out/` and makes that redirect explicit,
+sets `index.html` as the directory index, and points 404s at the site's own
+404 page.
+
+**When uploading to Hostinger:** `.htaccess` starts with a dot, so FTP clients
+and file managers often hide it. Turn on "show hidden files" and make sure it
+reaches the web root alongside `index.html`. The site still works without it —
+Apache handles the redirect by itself — but it is the safety net.
 
 ---
 
