@@ -299,10 +299,11 @@ cookies, no third-party scripts, no card data.
 - Two statements about the balance payment differ: the trek pages say
   "remaining payment on arrival" (from the brochures), while the Terms say the
   balance is due before the trek start date. Confirm which is right.
-- The Privacy Policy still lists a "Booking form" among the places you collect
-  personal information. Book Now now goes straight to Razorpay, so those
-  details are collected by Razorpay rather than by this website. Ask your
-  lawyer whether that line should be reworded.
+- The Privacy Policy's "Information you give us" list has been corrected to
+  match the current flow: Book Now goes straight to the payment provider's
+  page, so the site itself has no booking form. Its `lastUpdated` date was
+  deliberately left as it was — bump it if your lawyer wants the correction
+  dated.
 
 ---
 

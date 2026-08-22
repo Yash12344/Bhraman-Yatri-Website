@@ -17,8 +17,8 @@
         "Almost everything we hold about you is something you typed into a form on this website or sent us directly."
       ],
       "list": [
-        "Booking form: your full name, mobile number, email address, city, the trek you want to join, your starting date, the number of people in your group, and the booking amount per person.",
-        "Enquiry and contact forms: your name, phone number, email address, the trek you are asking about, and your message.",
+        "Booking and payment: this website has no booking form. When you press Book Now you go straight to our payment provider's own page (Razorpay), so the details you enter there in order to pay are given to them on that page and not to this website.",
+        "Enquiry and contact forms: your name, phone number, email address, the trek you are asking about, and your message. Submitting one of these forms opens WhatsApp with your enquiry written out, ready for you to send to us.",
         "Correspondence: anything you tell us over email, WhatsApp or a phone call — for example your fitness level, dietary needs or a medical condition you disclose before the trek.",
         "Medical declaration: before a trek we ask you to declare pre-existing conditions, recent surgeries or injuries, and ongoing medication. We collect this only to keep you safe on the trail, and share it only with the guides responsible for your group."
       ]
