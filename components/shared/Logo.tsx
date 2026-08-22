@@ -6,7 +6,16 @@ import { cn } from "@/lib/utils";
 
 interface LogoProps {
   variant?: "dark" | "light";
-  /** "md" is the navbar mark; "sm" is the smaller footer mark. */
+  /**
+   * "md" is the navbar mark; "sm" is the smaller footer mark.
+   *
+   * Both sizes are set in one place below and apply to the uploaded logo and
+   * the built-in mark alike, so the two never drift apart.
+   *
+   * The navbar mark takes its largest step at `xl`, not `lg`: between 1024px
+   * and 1279px the logo, the nav links and Book Now already fill the bar
+   * exactly, so growing it there squeezes the nav instead of the whitespace.
+   */
   size?: "sm" | "md";
   /**
    * The operator's uploaded logo, resolved on the server. When present it
@@ -47,7 +56,7 @@ export function Logo({
           priority
           className={cn(
             "w-auto object-contain",
-            size === "sm" ? "h-11" : "h-12 lg:h-14"
+            size === "sm" ? "h-14" : "h-16 xl:h-20"
           )}
         />
       ) : (
@@ -55,7 +64,7 @@ export function Logo({
           <svg
             viewBox="0 0 52 44"
             aria-hidden="true"
-            className={cn("shrink-0", size === "sm" ? "size-11" : "size-12 lg:size-14")}
+            className={cn("shrink-0", size === "sm" ? "size-14" : "size-16 xl:size-20")}
           >
             {/* Sun disc behind the range */}
             <circle cx="26" cy="19" r="15" fill="var(--color-saffron-500)" />
